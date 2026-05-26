@@ -1,0 +1,106 @@
+[2026-05-16 15:12:41] INFO     soil_combined — 
+======================================================================
+  Interval-Aware SVR — SOIL / combined
+======================================================================
+[2026-05-16 15:12:41] INFO     soil_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+[2026-05-16 15:12:41] INFO     soil_combined — Raw dataset: 743 rows
+[2026-05-16 15:12:41] INFO     soil_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260516_151241/interval_table_soil.csv
+[2026-05-16 15:12:41] INFO     soil_combined — 
+======================================================================
+  Model Training
+======================================================================
+[2026-05-16 15:20:08] INFO     soil_combined — 5-fold CV on training set: R²=0.5028 (±0.0808)  RMSE(log10)=0.6264  RMSE(days-geom)=4.23×
+[2026-05-16 15:20:08] INFO     soil_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-05-16 15:20:08] INFO     soil_combined —   [test]  Interval coverage probability : 0.184 (32/174)
+[2026-05-16 15:20:08] INFO     soil_combined —   [test]  Mean interval loss            : 0.5594 log10 days  (~3.63 days geom. equiv.)
+[2026-05-16 15:20:08] INFO     soil_combined —   [test]  Class accuracy                : 0.184
+[2026-05-16 15:20:08] INFO     soil_combined —   [test]  Spearman rho                  : 0.639  (p=0.0000)
+[2026-05-16 15:20:08] INFO     soil_combined —   [test]  Kendall tau                   : 0.478  (p=0.0000)
+[2026-05-16 15:20:08] INFO     soil_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-05-16 15:20:08] INFO     soil_combined —   [train] Interval coverage probability : 0.199 (104/522)
+[2026-05-16 15:20:08] INFO     soil_combined —   [train] Mean interval loss            : 0.6260 log10 days  (~4.23 days geom. equiv.)
+[2026-05-16 15:20:08] INFO     soil_combined —   [train] Class accuracy                : 0.199
+[2026-05-16 15:20:08] INFO     soil_combined —   [train] Spearman rho                  : 0.862  (p=0.0000)
+[2026-05-16 15:20:08] INFO     soil_combined —   [train] Kendall tau                   : 0.724  (p=0.0000)
+[2026-05-16 15:20:08] INFO     soil_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-05-16 15:20:30] INFO     soil_combined — PCA dimensionality: 70 components ≥95%, 118 components ≥99% (of 281 total).
+[2026-05-16 15:20:30] INFO     soil_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-05-16 15:20:30] INFO     soil_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.201 (35/174)
+[2026-05-16 15:20:30] INFO     soil_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5614 log10 days  (~3.64 days geom. equiv.)
+[2026-05-16 15:20:30] INFO     soil_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.201
+[2026-05-16 15:20:30] INFO     soil_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.704  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.528  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined — Strategy A  top-SVR (importance>0): n=176  coverage=0.201  MIL=0.5614  rho=0.704
+[2026-05-16 15:20:30] INFO     soil_combined —   [B  top-X (N=176)] Interval coverage probability : 0.201 (35/174)
+[2026-05-16 15:20:30] INFO     soil_combined —   [B  top-X (N=176)] Mean interval loss            : 0.5614 log10 days  (~3.64 days geom. equiv.)
+[2026-05-16 15:20:30] INFO     soil_combined —   [B  top-X (N=176)] Class accuracy                : 0.201
+[2026-05-16 15:20:30] INFO     soil_combined —   [B  top-X (N=176)] Spearman rho                  : 0.704  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined —   [B  top-X (N=176)] Kendall tau                   : 0.528  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined — Strategy B  top-X (N=176): n=176  coverage=0.201  MIL=0.5614  rho=0.704
+[2026-05-16 15:20:30] INFO     soil_combined —   [C  top-N pca99 (N=118)] Interval coverage probability : 0.201 (35/174)
+[2026-05-16 15:20:30] INFO     soil_combined —   [C  top-N pca99 (N=118)] Mean interval loss            : 0.5720 log10 days  (~3.73 days geom. equiv.)
+[2026-05-16 15:20:30] INFO     soil_combined —   [C  top-N pca99 (N=118)] Class accuracy                : 0.201
+[2026-05-16 15:20:30] INFO     soil_combined —   [C  top-N pca99 (N=118)] Spearman rho                  : 0.709  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined —   [C  top-N pca99 (N=118)] Kendall tau                   : 0.527  (p=0.0000)
+[2026-05-16 15:20:30] INFO     soil_combined — Strategy C  top-N pca99 (N=118): n=118  coverage=0.201  MIL=0.5720  rho=0.709
+[2026-05-16 15:22:05] INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.167 (29/174)
+[2026-05-16 15:22:05] INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5645 log10 days  (~3.67 days geom. equiv.)
+[2026-05-16 15:22:05] INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.167
+[2026-05-16 15:22:05] INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.619  (p=0.0000)
+[2026-05-16 15:22:05] INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.462  (p=0.0000)
+[2026-05-16 15:22:05] INFO     soil_combined — Winner: C  top-N pca99 (N=118)  (n=118, coverage=0.201, rho=0.709)
+[2026-05-16 15:22:05] INFO     soil_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-05-16 15:22:05] INFO     soil_combined — 5-fold CV on training set: R²=0.4776 (±0.0758)  RMSE(log10)=0.6418  RMSE(days-geom)=4.38×
+[2026-05-16 15:22:05] INFO     soil_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-05-16 15:22:05] INFO     soil_combined —   [final] Interval coverage probability : 0.201 (35/174)
+[2026-05-16 15:22:05] INFO     soil_combined —   [final] Mean interval loss            : 0.5720 log10 days  (~3.73 days geom. equiv.)
+[2026-05-16 15:22:05] INFO     soil_combined —   [final] Class accuracy                : 0.201
+[2026-05-16 15:22:05] INFO     soil_combined —   [final] Spearman rho                  : 0.709  (p=0.0000)
+[2026-05-16 15:22:05] INFO     soil_combined —   [final] Kendall tau                   : 0.527  (p=0.0000)
+[2026-05-16 15:22:05] INFO     soil_combined — Model saved to models/SVR_soil_combined_20260516_151241.joblib
+[2026-05-16 15:22:05] INFO     soil_combined — Parameters saved to models/SVR_soil_combined_20260516_151241.json
+[2026-05-16 15:22:05] INFO     soil_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-05-16 15:22:06] INFO     soil_combined — Learning curve val R² (final): 0.4226 ± 0.1989
+[2026-05-16 15:22:06] INFO     soil_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260516_151241
+[2026-05-16 15:22:06] INFO     soil_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-05-16 15:22:13] INFO     soil_combined — PCA dimensionality: 48 components ≥95%, 71 components ≥99% (of 118 total).
+[2026-05-16 15:22:13] INFO     soil_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-05-16 15:22:13] INFO     soil_combined — PCA coverage: 98.3%
+[2026-05-16 15:22:13] INFO     soil_combined — AD-outside test compounds: 139
+[2026-05-16 15:22:13] INFO     soil_combined — Training split CSV saved to models/training_split_soil_combined_20260516_151241.csv
+[2026-05-16 15:22:13] INFO     soil_combined — T_half meta columns saved to models/t_half_meta_soil_combined_20260516_151241.csv
+[2026-05-16 15:22:13] INFO     soil_combined — AD artefact saved to models/SVR_soil_combined_20260516_151241_ad.npz
+[2026-05-16 15:22:13] INFO     soil_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260516_151241/ad_membership_soil.csv
+[2026-05-16 15:22:13] INFO     soil_combined — Model JSON patched with artefact paths.
+[2026-05-16 15:22:13] INFO     soil_combined — 
+======================================================================
+  Run complete
+======================================================================
+[2026-05-16 15:22:13] INFO     soil_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260516_151241

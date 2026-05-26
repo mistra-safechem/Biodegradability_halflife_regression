@@ -1,0 +1,17 @@
+[2026-02-18 13:45:01] SedimentData, outlier removal: False
+============================================================
+[2026-02-18 13:45:01]   Preprocessing
+============================================================
+[2026-02-18 13:45:01] Number of samples: 221, Number of features: 375
+[2026-02-18 13:45:01] After dropping NaNs: 221 samples remain.
+[2026-02-18 13:45:01] Outlier removal not applied.
+[2026-02-18 13:45:01] After scaling: 221 samples, 375 features.
+[2026-02-18 13:45:01] After scaling and decorrelation: 221 samples, 246 features.
+============================================================
+[2026-02-18 13:45:01]   Model section
+============================================================
+[2026-02-18 13:45:01] After removing constant features: 221 samples, 246 features.
+[2026-02-18 13:45:31] Best results at test size: 0.4
+[2026-02-18 13:45:31] SVR parameters for best test size: {'C': 1, 'epsilon': 0.1, 'gamma': 'auto', 'kernel': 'rbf'}
+[2026-02-18 13:45:31] SVR metrics for best test size (0.4):
+{'R2': 0.6302075021562008, 'MAE': 256.1971985955313, 'MSE': 233927.2928105184, 'RMSE': 483.66030725139973, 'Explained Variance': 0.6661238815448149}

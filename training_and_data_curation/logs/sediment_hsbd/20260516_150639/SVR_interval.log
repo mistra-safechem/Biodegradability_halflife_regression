@@ -1,0 +1,106 @@
+[2026-05-16 15:06:39] INFO     sediment_hsbd — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / hsbd
+======================================================================
+[2026-05-16 15:06:39] INFO     sediment_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+[2026-05-16 15:06:39] INFO     sediment_hsbd — Raw dataset: 347 rows
+[2026-05-16 15:06:39] INFO     sediment_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260516_150639/interval_table_sediment.csv
+[2026-05-16 15:06:39] INFO     sediment_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+[2026-05-16 15:06:54] INFO     sediment_hsbd — 5-fold CV on training set: R²=0.5278 (±0.0646)  RMSE(log10)=0.5491  RMSE(days-geom)=3.54×
+[2026-05-16 15:06:54] INFO     sediment_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [test]  Interval coverage probability : 0.235 (19/81)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [test]  Mean interval loss            : 0.4893 log10 days  (~3.09 days geom. equiv.)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [test]  Class accuracy                : 0.235
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [test]  Spearman rho                  : 0.821  (p=0.0000)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [test]  Kendall tau                   : 0.661  (p=0.0000)
+[2026-05-16 15:06:54] INFO     sediment_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [train] Interval coverage probability : 0.235 (57/243)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [train] Mean interval loss            : 0.4587 log10 days  (~2.88 days geom. equiv.)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [train] Class accuracy                : 0.235
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [train] Spearman rho                  : 0.978  (p=0.0000)
+[2026-05-16 15:06:54] INFO     sediment_hsbd —   [train] Kendall tau                   : 0.896  (p=0.0000)
+[2026-05-16 15:06:54] INFO     sediment_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-05-16 15:06:58] INFO     sediment_hsbd — PCA dimensionality: 47 components ≥95%, 78 components ≥99% (of 246 total).
+[2026-05-16 15:06:58] INFO     sediment_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.198 (16/81)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.4929 log10 days  (~3.11 days geom. equiv.)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.198
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.840  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.677  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd — Strategy A  top-SVR (importance>0): n=158  coverage=0.198  MIL=0.4929  rho=0.840
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [B  top-X (N=158)] Interval coverage probability : 0.198 (16/81)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [B  top-X (N=158)] Mean interval loss            : 0.4929 log10 days  (~3.11 days geom. equiv.)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [B  top-X (N=158)] Class accuracy                : 0.198
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [B  top-X (N=158)] Spearman rho                  : 0.840  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [B  top-X (N=158)] Kendall tau                   : 0.677  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd — Strategy B  top-X (N=158): n=158  coverage=0.198  MIL=0.4929  rho=0.840
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Interval coverage probability : 0.198 (16/81)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Mean interval loss            : 0.5158 log10 days  (~3.28 days geom. equiv.)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Class accuracy                : 0.198
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Spearman rho                  : 0.834  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Kendall tau                   : 0.671  (p=0.0000)
+[2026-05-16 15:06:58] INFO     sediment_hsbd — Strategy C  top-N pca99 (N=78): n=78  coverage=0.198  MIL=0.5158  rho=0.834
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.235 (19/81)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5154 log10 days  (~3.28 days geom. equiv.)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.235
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.808  (p=0.0000)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.648  (p=0.0000)
+[2026-05-16 15:07:42] INFO     sediment_hsbd — Winner: D  RFE (LinearSVR→RBF)  (n=158, coverage=0.235, rho=0.808)
+[2026-05-16 15:07:42] INFO     sediment_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-05-16 15:07:42] INFO     sediment_hsbd — 5-fold CV on training set: R²=0.5142 (±0.0674)  RMSE(log10)=0.5550  RMSE(days-geom)=3.59×
+[2026-05-16 15:07:42] INFO     sediment_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [final] Interval coverage probability : 0.235 (19/81)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [final] Mean interval loss            : 0.5154 log10 days  (~3.28 days geom. equiv.)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [final] Class accuracy                : 0.235
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [final] Spearman rho                  : 0.808  (p=0.0000)
+[2026-05-16 15:07:42] INFO     sediment_hsbd —   [final] Kendall tau                   : 0.648  (p=0.0000)
+[2026-05-16 15:07:42] INFO     sediment_hsbd — Model saved to models/SVR_sediment_hsbd_20260516_150639.joblib
+[2026-05-16 15:07:42] INFO     sediment_hsbd — Parameters saved to models/SVR_sediment_hsbd_20260516_150639.json
+[2026-05-16 15:07:42] INFO     sediment_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-05-16 15:07:42] INFO     sediment_hsbd — Learning curve val R² (final): 0.2157 ± 0.4628
+[2026-05-16 15:07:42] INFO     sediment_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260516_150639
+[2026-05-16 15:07:42] INFO     sediment_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-05-16 15:07:44] INFO     sediment_hsbd — PCA dimensionality: 40 components ≥95%, 66 components ≥99% (of 158 total).
+[2026-05-16 15:07:44] INFO     sediment_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-05-16 15:07:44] INFO     sediment_hsbd — PCA coverage: 97.5%
+[2026-05-16 15:07:44] INFO     sediment_hsbd — AD-outside test compounds: 62
+[2026-05-16 15:07:44] INFO     sediment_hsbd — Training split CSV saved to models/training_split_sediment_hsbd_20260516_150639.csv
+[2026-05-16 15:07:44] INFO     sediment_hsbd — T_half meta columns saved to models/t_half_meta_sediment_hsbd_20260516_150639.csv
+[2026-05-16 15:07:44] INFO     sediment_hsbd — AD artefact saved to models/SVR_sediment_hsbd_20260516_150639_ad.npz
+[2026-05-16 15:07:44] INFO     sediment_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260516_150639/ad_membership_sediment.csv
+[2026-05-16 15:07:44] INFO     sediment_hsbd — Model JSON patched with artefact paths.
+[2026-05-16 15:07:44] INFO     sediment_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+[2026-05-16 15:07:44] INFO     sediment_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260516_150639

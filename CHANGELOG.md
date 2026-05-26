@@ -6,14 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
-## [Unreleased]
-
----
-
-## [0.2.0] - TBD — Final Release (2/2): Modelling Pipeline
+## [0.2.0] - 2026-05-26 — Full Release (2/2): Modelling Pipeline
 
 ### Added
-- *(to be defined)*
+- Entire pipeline for data curation and model creation in `training_and_data_curation/`.
+- See `training_and_data_curation/README.md` for usage and documentation
 
 ---
 

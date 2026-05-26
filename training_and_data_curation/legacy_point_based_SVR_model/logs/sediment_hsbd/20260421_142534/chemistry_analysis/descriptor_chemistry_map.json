@@ -1,0 +1,82 @@
+{
+  "MACCS_114": {
+    "importance": 0.005917561932265744,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MolLogP": {
+    "importance": 0.006283034325223674,
+    "interpretation": "Lipophilicity (partition coefficient)"
+  },
+  "BCUT2D_CHGLO": {
+    "importance": 0.006375876689979199,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_Ar_N": {
+    "importance": 0.006466373057061489,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_141": {
+    "importance": 0.006670935291555355,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState1": {
+    "importance": 0.006757366690665584,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_ketone_Topliss": {
+    "importance": 0.007008346501965751,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_146": {
+    "importance": 0.007279207115384381,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_Ar_OH": {
+    "importance": 0.007310255177986005,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_163": {
+    "importance": 0.007980522235819673,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_096": {
+    "importance": 0.008376065182105649,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "NumHeteroatoms": {
+    "importance": 0.008692496903394778,
+    "interpretation": "Heteroatom count"
+  },
+  "MACCS_099": {
+    "importance": 0.008847711941639375,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SlogP_VSA10": {
+    "importance": 0.009038488520196512,
+    "interpretation": "Molecular descriptor"
+  },
+  "NumRotatableBonds": {
+    "importance": 0.009714248423605687,
+    "interpretation": "Molecular flexibility"
+  },
+  "MACCS_165": {
+    "importance": 0.00971461341111134,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "PEOE_VSA10": {
+    "importance": 0.010856032032676228,
+    "interpretation": "Molecular descriptor"
+  },
+  "EState_VSA9": {
+    "importance": 0.01098224795665614,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_Al_COO": {
+    "importance": 0.011616295115302766,
+    "interpretation": "Molecular descriptor"
+  },
+  "SMR_VSA1": {
+    "importance": 0.013943041429516984,
+    "interpretation": "Molecular descriptor"
+  }
+}

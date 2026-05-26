@@ -1,0 +1,2 @@
+fragment_smiles,in_high_activity,in_outliers
+ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,False,True

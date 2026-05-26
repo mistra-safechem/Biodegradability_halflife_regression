@@ -1,0 +1,106 @@
+[2026-05-16 15:07:47] INFO     sediment_vega — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / vega
+======================================================================
+[2026-05-16 15:07:47] INFO     sediment_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+[2026-05-16 15:07:47] INFO     sediment_vega — Raw dataset: 221 rows
+[2026-05-16 15:07:47] INFO     sediment_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260516_150747/interval_table_sediment.csv
+[2026-05-16 15:07:47] INFO     sediment_vega — 
+======================================================================
+  Model Training
+======================================================================
+[2026-05-16 15:07:52] INFO     sediment_vega — 5-fold CV on training set: R²=0.7948 (±0.0550)  RMSE(log10)=0.3235  RMSE(days-geom)=2.11×
+[2026-05-16 15:07:52] INFO     sediment_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-05-16 15:07:52] INFO     sediment_vega —   [test]  Interval coverage probability : 0.698 (37/53)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [test]  Mean interval loss            : 0.0786 log10 days  (~1.20 days geom. equiv.)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [test]  Class accuracy                : 0.698
+[2026-05-16 15:07:52] INFO     sediment_vega —   [test]  Spearman rho                  : 0.903  (p=0.0000)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [test]  Kendall tau                   : 0.798  (p=0.0000)
+[2026-05-16 15:07:52] INFO     sediment_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-05-16 15:07:52] INFO     sediment_vega —   [train] Interval coverage probability : 0.809 (127/157)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [train] Mean interval loss            : 0.0401 log10 days  (~1.10 days geom. equiv.)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [train] Class accuracy                : 0.809
+[2026-05-16 15:07:52] INFO     sediment_vega —   [train] Spearman rho                  : 0.968  (p=0.0000)
+[2026-05-16 15:07:52] INFO     sediment_vega —   [train] Kendall tau                   : 0.879  (p=0.0000)
+[2026-05-16 15:07:52] INFO     sediment_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-05-16 15:07:54] INFO     sediment_vega — PCA dimensionality: 34 components ≥95%, 55 components ≥99% (of 188 total).
+[2026-05-16 15:07:54] INFO     sediment_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-05-16 15:07:54] INFO     sediment_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.736 (39/53)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.736
+[2026-05-16 15:07:54] INFO     sediment_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.921  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.822  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega — Strategy A  top-SVR (importance>0): n=131  coverage=0.736  MIL=0.0697  rho=0.921
+[2026-05-16 15:07:54] INFO     sediment_vega —   [B  top-X (N=131)] Interval coverage probability : 0.736 (39/53)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [B  top-X (N=131)] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [B  top-X (N=131)] Class accuracy                : 0.736
+[2026-05-16 15:07:54] INFO     sediment_vega —   [B  top-X (N=131)] Spearman rho                  : 0.921  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [B  top-X (N=131)] Kendall tau                   : 0.822  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega — Strategy B  top-X (N=131): n=131  coverage=0.736  MIL=0.0697  rho=0.921
+[2026-05-16 15:07:54] INFO     sediment_vega —   [C  top-N pca99 (N=55)] Interval coverage probability : 0.660 (35/53)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [C  top-N pca99 (N=55)] Mean interval loss            : 0.0787 log10 days  (~1.20 days geom. equiv.)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [C  top-N pca99 (N=55)] Class accuracy                : 0.660
+[2026-05-16 15:07:54] INFO     sediment_vega —   [C  top-N pca99 (N=55)] Spearman rho                  : 0.910  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega —   [C  top-N pca99 (N=55)] Kendall tau                   : 0.807  (p=0.0000)
+[2026-05-16 15:07:54] INFO     sediment_vega — Strategy C  top-N pca99 (N=55): n=55  coverage=0.660  MIL=0.0787  rho=0.910
+[2026-05-16 15:08:12] INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.660 (35/53)
+[2026-05-16 15:08:12] INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.0832 log10 days  (~1.21 days geom. equiv.)
+[2026-05-16 15:08:12] INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.660
+[2026-05-16 15:08:12] INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.898  (p=0.0000)
+[2026-05-16 15:08:12] INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.791  (p=0.0000)
+[2026-05-16 15:08:12] INFO     sediment_vega — Winner: A  top-SVR (importance>0)  (n=131, coverage=0.736, rho=0.921)
+[2026-05-16 15:08:12] INFO     sediment_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-05-16 15:08:13] INFO     sediment_vega — 5-fold CV on training set: R²=0.7903 (±0.0556)  RMSE(log10)=0.3268  RMSE(days-geom)=2.12×
+[2026-05-16 15:08:13] INFO     sediment_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-05-16 15:08:13] INFO     sediment_vega —   [final] Interval coverage probability : 0.736 (39/53)
+[2026-05-16 15:08:13] INFO     sediment_vega —   [final] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+[2026-05-16 15:08:13] INFO     sediment_vega —   [final] Class accuracy                : 0.736
+[2026-05-16 15:08:13] INFO     sediment_vega —   [final] Spearman rho                  : 0.921  (p=0.0000)
+[2026-05-16 15:08:13] INFO     sediment_vega —   [final] Kendall tau                   : 0.822  (p=0.0000)
+[2026-05-16 15:08:13] INFO     sediment_vega — Model saved to models/SVR_sediment_vega_20260516_150747.joblib
+[2026-05-16 15:08:13] INFO     sediment_vega — Parameters saved to models/SVR_sediment_vega_20260516_150747.json
+[2026-05-16 15:08:13] INFO     sediment_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-05-16 15:08:13] INFO     sediment_vega — Learning curve val R² (final): -6.0939 ± 6.3270
+[2026-05-16 15:08:13] INFO     sediment_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260516_150747
+[2026-05-16 15:08:13] INFO     sediment_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-05-16 15:08:14] INFO     sediment_vega — PCA dimensionality: 30 components ≥95%, 48 components ≥99% (of 131 total).
+[2026-05-16 15:08:14] INFO     sediment_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-05-16 15:08:14] INFO     sediment_vega — PCA coverage: 98.1%
+[2026-05-16 15:08:14] INFO     sediment_vega — AD-outside test compounds: 14
+[2026-05-16 15:08:14] INFO     sediment_vega — Training split CSV saved to models/training_split_sediment_vega_20260516_150747.csv
+[2026-05-16 15:08:14] INFO     sediment_vega — T_half meta columns saved to models/t_half_meta_sediment_vega_20260516_150747.csv
+[2026-05-16 15:08:14] INFO     sediment_vega — AD artefact saved to models/SVR_sediment_vega_20260516_150747_ad.npz
+[2026-05-16 15:08:14] INFO     sediment_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260516_150747/ad_membership_sediment.csv
+[2026-05-16 15:08:14] INFO     sediment_vega — Model JSON patched with artefact paths.
+[2026-05-16 15:08:14] INFO     sediment_vega — 
+======================================================================
+  Run complete
+======================================================================
+[2026-05-16 15:08:14] INFO     sediment_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260516_150747

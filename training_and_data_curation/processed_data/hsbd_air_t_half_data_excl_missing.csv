@@ -1,0 +1,563 @@
+Compound	CAS	T_half_air_days	Canonical_smiles
+ETHYL CARBAMATE	51-79-6	0.7083	CCOC(=N)O
+PROPANE	130071-47-5|74-98-6	99.0	CCC
+p, p' - DDT	nan	7.08333333333333	
+benzo a pyrene	nan	7.08333333333333	
+dibenz(a,h)anthracene	53-70-3	7.08333333333333	c1ccc2c(c1)ccc1cc3c(ccc4ccccc43)cc12
+benzamide	55-21-0|55738-52-8	0.708333333333333	N=C(O)c1ccccc1
+tetrachlorometane	nan	708.333333333333	
+parathion	56-38-2	0.708333333333333	CCOP(=S)(OCC)Oc1ccc([N+](=O)[O-])cc1
+benz a anthracene	nan	7.08333333333333	
+chlordane	12789-03-6|33442-85-2|5103-71-9|5103-74-2	2.29166666666667	ClC1=C(Cl)C2(Cl)C3C(Cl)C(Cl)CC3C1(Cl)C2(Cl)Cl
+lindane	119911-69-2|319-84-6|319-85-7|319-86-8|55963-79-6|58-89-9|608-73-1|6108-10-7|6108-11-8|6108-12-9|6108-13-0	7.08333333333333	ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl
+ethane, 1,1'-oxybis-	60-29-7|667919-88-2	0.708333333333333	CCOCC
+acetamide	60-35-5|74330-92-0	0.708333333333333	CC(=N)O
+dieldrin	60-57-1|605-72-1	2.29166666666667	ClC1=C(Cl)[C@]2(Cl)[C@@H]3[C@@H]4C[C@@H]([C@H]5O[C@@H]45)[C@@H]3[C@@]1(Cl)C2(Cl)Cl
+benzenamine	136260-71-4|62-53-3	0.208333333333333	Nc1ccccc1
+ethanethioamide	62-55-5	0.708333333333333	CC(=N)S
+methanamine, n-methyl-n-nitroso-	62-75-9	0.208333333333333	CN(C)N=O
+1-naphthalenol, methylcarbamate	27636-33-5|3197-92-0|63-25-2	2.29166666666667	CN=C(O)Oc1cccc2ccccc12
+ethanol	42845-45-4|64-17-5|8000-16-6	2.29166666666667	CCO
+formic acid	64-18-6|82069-14-5	7.08333333333333	O=CO
+acetic acid	64-19-7|77671-22-8	2.29166666666667	CC(=O)O
+benzoic acid	14322-82-8|65-85-0	2.29166666666667	O=C(O)c1ccccc1
+methanol	170082-17-4|67-56-1	7.08333333333333	CO
+2-propanol	1344575-38-7|67-63-0|8003-15-4	2.29166666666667	CC(C)O
+2-propanone	67-64-1	70.8333333333333	CC(C)=O
+methane, trichloro-	67-66-3	70.8333333333333	ClC(Cl)Cl
+ethane, hexachloro-	67-72-1	708.333333333333	ClC(Cl)(Cl)C(Cl)(Cl)Cl
+benzoic acid, 2-hydroxy-	29656-58-4|69-72-7|8052-31-1	2.29166666666667	O=C(O)c1ccccc1O
+1-propanol	142583-61-7|62309-51-7|71-23-8	2.29166666666667	CCCO
+1-butanol	1219794-84-9|35296-72-1|6167-45-9|64118-16-7|71-36-3	2.29166666666667	CCCCO
+1-pentanol	148587-12-6|30899-19-5|71-41-0	2.29166666666667	CCCCCO
+benzene	25053-22-9|26181-88-4|3355-34-8|54682-86-9|62485-97-6|71-43-2	0.708333333333333	c1ccccc1
+methoxychlor	1644449-82-0|72-43-5	0.708333333333333	COc1ccc(C(c2ccc(OC)cc2)C(Cl)(Cl)Cl)cc1
+p,p' - DDE	nan	7.08333333333333	
+methane, bromochloro-	13590-47-1|74-97-5	22.9166666666667	ClCBr
+ethene, chloro-	1187028-37-0|75-01-4	2.29166666666667	C=CCl
+ethanamine	75-04-7	0.708333333333333	CCN
+acetaldehyde	75-07-0	0.208333333333333	CC=O
+methane, dichloro-	75-09-2	70.8333333333333	ClCCl
+methane, bromodichloro-	75-27-4	22.9166666666667	ClC(Cl)Br
+2-propanol, 2-methyl-	25-65-0|75-65-0	7.08333333333333	CC(C)(C)O
+propanoic acid, 2,2-dichloro-	75-99-0	22.9166666666667	CC(Cl)(Cl)C(=O)O
+ethane, pentachloro-	76-01-7	708.333333333333	ClC(Cl)C(Cl)(Cl)Cl
+1-propanol, 2-methyl-	78-83-1	2.29166666666667	CC(C)CO
+propane, 1,2-dichloro-	78-87-5	22.9166666666667	CC(Cl)CCl
+2-butanone	78-93-3	7.08333333333333	CCC(C)=O
+ethene, trichloro-	123919-09-5|79-01-6	7.08333333333333	ClC=C(Cl)Cl
+2-propenoic acid	55927-87-2|79-10-7|9063-87-0	0.708333333333333	C=CC(=O)O
+acetic acid, chloro-	79-11-8	22.9166666666667	O=C(O)CCl
+acetic acid, methyl ester	79-20-9	2.29166666666667	COC(C)=O
+ethane, 1,1,2,2-tetrachloro-	79-34-5	708.333333333333	ClC(Cl)C(Cl)Cl
+2-propenoic acid, 2-methyl-, methyl ester	114512-63-9|143476-91-9|51391-19-6|80-62-6|9065-11-6|97555-82-3	0.708333333333333	C=C(C)C(=O)OC
+1,2-benzenedicarboxylic acid, diethyl ester	84-66-2	7.08333333333333	CCOC(=O)c1ccccc1C(=O)OCC
+1,2-benzenedicarboxylic acid, dibutyl ester	84-74-2	2.29166666666667	CCCCOC(=O)c1ccccc1C(=O)OCCCC
+phenanthrene	85-01-8	2.29166666666667	c1ccc2c(c1)ccc1ccccc12
+1,2-benzenedicarboxylic acid, butyl phenylmethyl ester	85-68-7	2.29166666666667	CCCCOC(=O)c1ccccc1C(=O)OCc1ccccc1
+benzenamine, n-nitroso-n-phenyl-	382165-80-2|86-30-6	0.208333333333333	O=NN(c1ccccc1)c1ccccc1
+9h-fluorene	86-73-7	2.29166666666667	c1ccc2c(c1)Cc1ccccc1-2
+benzenamine, 2,6-dimethyl-	87-62-7	0.208333333333333	Cc1cccc(C)c1N
+phenol, 2,4,6-trichloro-	88-06-2	7.08333333333333	Oc1c(Cl)cc(Cl)cc1Cl
+benzene, 1-methyl-2-nitro-	1321-12-6|88-72-2	0.708333333333333	Cc1ccccc1[N+](=O)[O-]
+phenol, 2-nitro-	25154-55-6|78813-12-4|88-75-5	2.29166666666667	O=[N+]([O-])c1ccccc1O
+1,2-benzenedicarboxylic acid	254110-94-6|57142-78-6|88-99-3	2.29166666666667	O=C(O)c1ccccc1C(=O)O
+phenol, 2-methoxy-	90-05-1|9009-62-5	0.708333333333333	COc1ccccc1O
+naphthalene, 1-methyl-	1321-94-4|90-12-0	0.708333333333333	Cc1cccc2ccccc12
+naphthalene	31807-65-5|91-20-3	0.708333333333333	c1ccc2ccccc2c1
+quinoline	15793-82-5|15793-83-6|15793-84-7|15793-85-8|15793-86-9|15793-87-0|31177-31-8|54978-41-5|91-22-5	2.29166666666667	c1ccc2ncccc2c1
+2-naphthalenamine	612-52-2|91-59-8	0.208333333333333	Nc1ccc2ccccc2c1
+1,1'-biphenyl	nan	2.29166666666667	c1ccc(-c2ccccc2)cc1
+1,1'-biphenyl -4,4'-diamine	nan	0.208333333333333	Nc1ccc(-c2ccc(N)cc2)cc1
+acetic acid, (2,4-dichlorophenoxy)-	64296-19-1|94-75-7	0.708333333333333	O=C(O)COc1ccc(Cl)cc1Cl
+2,4-dichlorophenoxybutyric acid	94-82-6	2.29166666666667	O=C(O)CCCOc1ccc(Cl)cc1Cl
+benzo b thiophene	nan	7.08333333333333	
+benzene, 1,2-dimethyl-	95-47-6	0.708333333333333	Cc1ccccc1C
+phenol, 2-methyl-	95-48-7	0.208333333333333	Cc1ccccc1O
+benzene, 1,2-dichloro-	95-50-1	22.9166666666667	Clc1ccccc1Cl
+benzenamine, 2-chloro-	27134-26-5|95-51-2	2.29166666666667	Nc1ccccc1Cl
+benzenamine, 2-methyl-	121536-13-8|68408-22-0|95-53-4	0.208333333333333	Cc1ccccc1N
+benzene, 1,2,4-trimethyl-	95-36-3|95-63-6	0.708333333333333	Cc1ccc(C)c(C)c1
+benzene, 1,2,4,5-tetramethyl-	15220-27-6|95-93-2	0.708333333333333	Cc1cc(C)c(C)cc1C
+benzene, 1,2,4,5-tetrachloro-	12408-10-5|63697-22-3|95-94-3	70.8333333333333	Clc1cc(Cl)c(Cl)cc1Cl
+phenol, 2,4,5-trichloro-	95-95-4	7.08333333333333	Oc1cc(Cl)c(Cl)cc1Cl
+oxirane, phenyl-	192506-02-8|25189-69-9|96-09-3	0.708333333333333	c1ccc(C2CO2)cc1
+propane, 1,2,3-trichloro-	96-18-4	22.9166666666667	ClCC(Cl)CCl
+3-pentanone	96-22-0	2.29166666666667	CCC(=O)CC
+benzene, (1-methylethyl)-	101316-43-2|98-82-8	0.708333333333333	CC(C)c1ccccc1
+ethanone, 1-phenyl-	98-86-2	22.9166666666667	CC(=O)c1ccccc1
+benzene, nitro-	98-95-3	0.208333333333333	O=[N+]([O-])c1ccccc1
+benzene, 1-methyl-4-nitro-	99-99-0	0.708333333333333	Cc1ccc([N+](=O)[O-])cc1
+phenol, 4-nitro-	100-02-7	2.29166666666667	O=[N+]([O-])c1ccc(O)cc1
+benzene, ethyl-	100-41-4|20302-26-5	0.708333333333333	CCc1ccccc1
+benzene, ethenyl-	100-42-5|12770-88-6|25086-18-4|6911-81-5|98444-30-5	0.208333333333333	C=Cc1ccccc1
+benzenemethanol	100-51-6|185532-71-2|66072-40-0	2.29166666666667	OCc1ccccc1
+benzene, methoxy-	100-66-3	0.708333333333333	COc1ccccc1
+benzene, 1,1'-oxybis-	101-84-8|32576-61-7	0.708333333333333	c1ccc(Oc2ccccc2)cc1
+benzene, propyl-	103-65-1	0.708333333333333	CCCc1ccccc1
+benzeneacetic acid	103-82-2|17303-65-0|51146-16-8	2.29166666666667	O=C(O)Cc1ccccc1
+phenol, 2,4-dimethyl-	105-67-9	0.708333333333333	Cc1ccc(O)c(C)c1
+benzene, 1,4-dimethyl-	106-42-3|136777-61-2	0.708333333333333	Cc1ccc(C)cc1
+benzene, 1,4-dichloro-	106-46-7|55232-43-4	22.9166666666667	Clc1ccc(Cl)cc1
+benzenamine, 4-chloro-	106-47-8	0.208333333333333	Nc1ccc(Cl)cc1
+1,3-butadiene	106-99-0|130983-70-9|1983-06-8|25339-57-5|26952-74-9	0.208333333333333	C=CC=C
+2-propenal	107-02-8|81788-96-7	0.208333333333333	C=CC=O
+ethane, 1,2-dichloro-	107-06-2|25323-30-2|52399-93-6	70.8333333333333	ClCCCl
+propanenitrile	107-12-0	70.8333333333333	CCC#N
+2-propenenitrile	107-13-1|63908-52-1	2.29166666666667	C=CC#N
+2-propen-1-ol	107-18-6	2.29166666666667	C=CCO
+1,2-ethanediol	107-21-1	2.29166666666667	OCCO
+methane, chloromethoxy-	107-30-2	0.708333333333333	COCCl
+formic acid, methyl ester	107-31-3	2.29166666666667	COC=O
+2-pentanone	107-87-9	2.29166666666667	CCCC(C)=O
+butanoic acid	107-92-6	2.29166666666667	CCCC(=O)O
+acetic acid ethenyl ester	108-05-4|93196-02-2	2.29166666666667	C=COC(C)=O
+2-pentanone, 4-methyl-	108-10-1	2.29166666666667	CC(=O)CC(C)C
+benzene, 1,3-dimethyl-	108-38-3	0.708333333333333	Cc1cccc(C)c1
+propane, 2,2'-oxybis 1-chloro-	nan	0.708333333333333	
+benzene, 1,3,5-trimethyl-	108-67-8|19121-63-2	0.708333333333333	Cc1cc(C)cc(C)c1
+benzene, 1,3,5-trichloro-	108-70-3|63697-19-8	22.9166666666667	Clc1cc(Cl)cc(Cl)c1
+benzene, bromo-	108-86-1|52753-63-6	7.08333333333333	Brc1ccccc1
+cyclohexane, methyl-	108-87-2	0.708333333333333	CC1CCCCC1
+benzene, methyl-	108-88-3|25013-04-1	0.708333333333333	Cc1ccccc1
+pyridine, 4-methyl-	108-89-4|69046-49-7|92075-35-9	22.9166666666667	Cc1ccncc1
+benzene, chloro-	108-90-7|50717-45-8	7.08333333333333	Clc1ccccc1
+cyclohexanamine	108-91-8|157973-60-9	0.208333333333333	NC1CCCCC1
+cyclohexanol	108-93-0	2.29166666666667	OC1CCCCC1
+cyclohexanone	108-94-1|9075-99-4	2.29166666666667	O=C1CCCCC1
+phenol	108-95-2|17442-59-0|27073-41-2|63496-48-0|73607-76-8	0.708333333333333	Oc1ccccc1
+pyridine, 3-methyl-	108-99-6	22.9166666666667	Cc1cccnc1
+acetic acid, propyl ester	109-60-4	2.29166666666667	CCCOC(C)=O
+pentane	102056-77-9|107949-95-1|109-66-0	0.708333333333333	CCCCC
+1-pentene	109-67-1|25587-78-4	0.208333333333333	C=CCCC
+1-butanamine	109-73-9	0.708333333333333	CCCCN
+formic acid, ethyl ester	109-94-4	2.29166666666667	CCOC=O
+furan, tetrahydro-	109-99-9|24979-97-3	0.708333333333333	C1CCOC1
+furan	110-00-9|25067-54-3	0.708333333333333	c1ccoc1
+thiophene	107760-19-0|110-02-1|25233-34-5|51325-05-4	2.29166666666667	c1ccsc1
+2-heptanone	110-43-0	2.29166666666667	CCCCCC(C)=O
+hexane	110-54-3|478799-92-7|50981-41-4|92112-69-1	0.708333333333333	CCCCCC
+ethene, (2-chloroethoxy)-	110-75-8|29160-08-5	0.708333333333333	C=COCCCl
+cyclohexane	110-82-7|12217-02-6	0.708333333333333	C1CCCCC1
+cyclohexene	110-83-8|25012-94-6	0.208333333333333	C1=CCCCC1
+pyridine	110-86-1|29761-81-7	22.9166666666667	c1ccncc1
+1-hexanol	111-27-3|25917-35-5	2.29166666666667	CCCCCCO
+ethanol, 2,2'-iminobis-	111-42-2	0.208333333333333	OCCNCCO
+propane, 1,1'-oxybis-	111-43-3	0.708333333333333	CCCOCCC
+ethane, 1,1'-oxybis 2-chloro-	nan	0.708333333333333	
+octane	111-65-9|31372-91-5|9065-92-3	0.708333333333333	CCCCCCCC
+1-octene	111-66-0|26746-84-9	0.208333333333333	C=CCCCCCC
+1-octanol	111-87-5|220713-26-8|29063-28-3	2.29166666666667	CCCCCCCCO
+ethane, 1,1'- methylenebis(oxy) bis 2-chloro-	nan	0.708333333333333	
+dodecane	112-40-3|93685-81-5	0.708333333333333	CCCCCCCCCCCC
+propoxur	114-26-1	0.208333333333333	CN=C(O)Oc1ccccc1OC(C)C
+methane, oxybis-	115-10-6|157621-61-9	0.708333333333333	COC
+aldicarb	116-06-3	0.208333333333333	CN=C(O)ON=CC(C)(C)SC
+HCB	118-74-1	708.333333333333	Clc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl
+benzoic acid, 2-methyl-	118-90-1|25567-10-6|442197-98-0	2.29166666666667	Cc1ccccc1C(=O)O
+benzoic acid, 2-chloro-	118-91-2|26264-09-5	7.08333333333333	O=C(O)c1ccccc1Cl
+methanone, diphenyl-	119-61-9	22.9166666666667	O=C(c1ccccc1)c1ccccc1
+anthracene	120-12-7|54261-80-2	2.29166666666667	c1ccc2cc3ccccc3cc2c1
+1,2-benzenediol	120-80-9|12385-08-9|26982-53-6	0.708333333333333	Oc1ccccc1O
+benzene, 1,2,4-trichloro-	104810-41-5|120-82-1|63697-18-7	22.9166666666667	Clc1ccc(Cl)c(Cl)c1
+phenol, 2,4-dichloro-	120-83-2|3317-66-6	2.29166666666667	Oc1ccc(Cl)cc1Cl
+benzene, 1-methyl-2,4-dinitro-	121-14-2|1326-41-6|84029-42-5	0.708333333333333	Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]
+benzenamine, n,n-dimethyl-	101357-19-1|121-69-7|86362-18-7	0.208333333333333	CN(C)c1ccccc1
+malathion	121-75-5	0.708333333333333	CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC
+1,3,5-triazine-2,4-diamine, 6-chloro-n,n'-diethyl-	122-34-9	2.29166666666667	CCN=c1nc(Cl)[nH]c(=NCC)[nH]1
+benzenamine, n-phenyl-	122-39-4|25656-57-9	0.208333333333333	c1ccc(Nc2ccccc2)cc1
+propanal	123-38-6|25722-18-3	0.208333333333333	CCC=O
+butanal	123-72-8|27789-14-6	0.208333333333333	CCCC=O
+acetic acid, butyl ester	123-86-4	2.29166666666667	CCCCOC(C)=O
+1,4-dioxane	123-91-1|28552-22-9	2.29166666666667	C1COCCO1
+decane	116372-01-1|124-18-5|63335-87-5	0.708333333333333	CCCCCCCCCC
+methanamine, n-methyl-	124-40-3|20786-94-1	0.208333333333333	CNC
+1,3-butadiene, 2-chloro-	126-99-8	2.29166666666667	C=CC(=C)Cl
+pyrene	129-00-0|1346601-04-4|41496-25-7	7.08333333333333	c1cc2ccc3cccc4ccc(c1)c2c34
+1,2-benzenedicarboxylic acid, dimethyl ester	131-11-3	7.08333333333333	COC(=O)c1ccccc1C(=O)OC
+dibenzofuran	132-64-9	2.29166666666667	c1ccc2c(c1)oc1ccccc12
+1-naphthalenamine	134-32-7|25168-10-9	0.208333333333333	Nc1cccc2ccccc12
+thioperoxydicarbonic diamide, tetramethyl-	137-26-8	7.08333333333333	CN(C)C(=S)SSC(=S)N(C)C
+ethanol, 2-amino-	12220-07-4|12220-09-6|141-43-5	0.208333333333333	NCCO
+acetic acid ethyl ester	141-78-6	2.29166666666667	CCOC(C)=O
+cyclopentene	10016-46-3|142-29-0|29300-20-7	0.208333333333333	C1=CCCC1
+hexanoic acid	142-62-1|56279-38-0	2.29166666666667	CCCCCC(=O)O
+perylene	198-55-0|69736-15-8	7.08333333333333	c1cc2cccc3c4cccc5cccc(c(c1)c23)c54
+fluoranthene	206-44-0|76774-50-0	7.08333333333333	c1ccc2c(c1)-c1cccc3cccc-2c13
+benzo(k)fluoranthene	207-08-9	7.08333333333333	c1ccc2cc3c(cc2c1)-c1cccc2cccc-3c12
+chrysene	218-01-9|65777-08-4	7.08333333333333	c1ccc2c(c1)ccc1c3ccccc3ccc21
+cyclopentane	287-92-3	0.708333333333333	C1CCCC1
+cyclo-octane	nan	0.708333333333333	C1CCCCCCC1
+parathion methyl	298-00-0	0.708333333333333	COP(=S)(OC)Oc1ccc([N+](=O)[O-])cc1
+aldrin	309-00-2	0.208333333333333	ClC1=C(Cl)[C@]2(Cl)[C@H]3[C@H]([C@@H]4C=C[C@H]3C4)[C@@]1(Cl)C2(Cl)Cl
+delta-hexachlorocyclohexane	119911-69-2|319-84-6|319-85-7|319-86-8|55963-79-6|58-89-9|608-73-1|6108-10-7|6108-11-8|6108-12-9|6108-13-0	7.08333333333333	ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl
+diuron	330-54-1	0.708333333333333	CN(C)C(O)=Nc1ccc(Cl)c(Cl)c1
+linuron	330-55-2|56645-87-5	0.708333333333333	CON(C)C(O)=Nc1ccc(Cl)c(Cl)c1
+diazinon	333-41-5	22.9166666666667	CCOP(=S)(OCC)Oc1cc(C)nc(C(C)C)n1
+benzene, fluoro-	462-06-6	0.708333333333333	Fc1ccccc1
+1h-indene, 2,3-dihydro-	496-11-7|56573-11-6	0.708333333333333	c1ccc2c(c1)CCC2
+benzene, 1,2,3-trimethyl-	25551-13-7|526-73-8	0.708333333333333	Cc1cccc(C)c1C
+phenol, 2-methyl-4,6-dinitro-	534-52-1	7.08333333333333	Cc1cc([N+](=O)[O-])cc([N+](=O)[O-])c1O
+benzene, 1,3-dichloro-	541-73-1|63697-17-6	22.9166666666667	Clc1cccc(Cl)c1
+methane, oxybis chloro-	nan	0.708333333333333	
+2,3-dimethylnaphthalene	581-40-8	0.708333333333333	Cc1cc2ccccc2cc1C
+benzene, iodo-	51209-48-4|591-50-4	7.08333333333333	Ic1ccccc1
+2-hexanone	30637-87-7|591-78-6	2.29166666666667	CCCCC(C)=O
+acetic acid, 2-propenyl ester	29467-34-3|591-87-7	2.29166666666667	C=CCOC(C)=O
+1,4-pentadiene	591-93-5	0.208333333333333	C=CCC=C
+formic acid, butyl ester	592-84-7	2.29166666666667	CCCCOC=O
+benzene, pentachloro-	608-93-5	229.166666666667	Clc1cc(Cl)c(Cl)c(Cl)c1Cl
+1-propanamine, n-nitroso-n-propyl-	621-64-7	0.208333333333333	CCCN(CCC)N=O
+3-butenoic acid	28391-17-5|625-38-7	0.708333333333333	C=CCC(=O)O
+1,4-cyclohexadiene	628-41-1	0.208333333333333	C1=CCC=CC1
+acetic acid, pentyl ester	628-63-7|828-63-7	2.29166666666667	CCCCCOC(C)=O
+benzene, 1,2,3,4-tetrachloro-	13280-72-3|634-66-2|63697-20-1	70.8333333333333	Clc1ccc(Cl)c(Cl)c1Cl
+benzene, 1,2,3,5-tetrachloro-	634-90-2|63697-21-2	70.8333333333333	Clc1cc(Cl)c(Cl)c(Cl)c1
+1-hexyne	26856-30-4|28827-85-2|693-02-7	0.208333333333333	C#CCCCC
+carbamothioic acid, dipropyl-, s-ethyl ester	759-94-4	0.708333333333333	CCCN(CCC)C(=O)SCC
+1-ethylnaphthalene	1127-76-0|27138-19-8|29793-40-6	0.708333333333333	CCc1cccc2ccccc12
+carbofuran	1563-66-2	0.208333333333333	CN=C(O)Oc1cccc2c1OC(C)(C)C2
+trifluralin	1582-09-8|71281-30-6	7.08333333333333	CCCN(CCC)c1c([N+](=O)[O-])cc(C(F)(F)F)cc1[N+](=O)[O-]
+propane, 2-methoxy-2-methyl-	1219795-06-8|1634-04-4	0.708333333333333	COC(C)(C)C
+2,3,7,8-TCDD	1746-01-6|56795-67-6	7.08333333333333	Clc1cc2c(cc1Cl)Oc1cc(Cl)c(Cl)cc1O2
+atrazine	102029-43-6|1912-24-9	0.208333333333333	CCN=c1nc(Cl)[nH]c(=NC(C)C)[nH]1
+dicamba	1918-00-9|62610-39-3|89300-29-8	2.29166666666667	COc1c(Cl)ccc(Cl)c1C(=O)O
+decachlorobiphenyl	nan	2291.66666666667	Clc1c(Cl)c(Cl)c(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c(Cl)c1Cl
+3 chlorobiphenyl	nan	7.08333333333333	Clc1cccc(-c2ccccc2)c1
+diallate	17708-57-5|2303-16-4	0.708333333333333	CC(C)N(C(=O)SCC(Cl)=CCl)C(C)C
+triallate	2303-17-5	7.08333333333333	CC(C)N(C(=O)SCC(Cl)=C(Cl)Cl)C(C)C
+2-methoxytetrachlorophenol	2539-17-5|97331-56-1	7.08333333333333	COc1c(O)c(Cl)c(Cl)c(Cl)c1Cl
+octachlorodibenzo-p-dioxin	3268-87-9	22.9166666666667	Clc1c(Cl)c(Cl)c2c(c1Cl)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+o,p' DDE	3424-82-6	7.08333333333333	ClC(Cl)=C(c1ccc(Cl)cc1)c1ccccc1Cl
+2,8-dichlorodibenzofuran	5409-83-6	7.08333333333333	Clc1ccc2oc3ccc(Cl)cc3c2c1
+benzene, 1-chloro-4-phenoxy-	55398-86-2|7005-72-3	0.708333333333333	Clc1ccc(Oc2ccccc2)cc1
+mecoprop	7085-19-0|93-65-2	0.708333333333333	Cc1cc(Cl)ccc1OC(C)C(=O)O
+toxaphene	1852481-29-8|8001-35-2	7.08333333333333	C=C1C(CCl)(CCl)C2(Cl)C(Cl)C(Cl)C1(Cl)C2(Cl)Cl
+benomyl	17804-35-2	0.208333333333333	CCCCN=C(O)n1c(N=C(O)OC)nc2ccccc21
+2,3,4-trichlorobiphenyl	nan	22.9166666666667	Clc1ccc(-c2ccccc2)c(Cl)c1Cl
+2,3,3',4',5'-pentachlorobiphenyl	nan	70.8333333333333	Clc1cc(-c2cccc(Cl)c2Cl)cc(Cl)c1Cl
+2,2' dichloro 4 methylbiphenyl	nan	7.08333333333333	Cc1ccc(-c2ccccc2Cl)c(Cl)c1
+3,3',4,4',5,5'-hexachlorobiphenyl	nan	229.166666666667	Clc1cc(-c2cc(Cl)c(Cl)c(Cl)c2)cc(Cl)c1Cl
+2,2',3,3',4,5,6-heptachlorobiphenyl	nan	229.166666666667	Clc1cccc(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c1Cl
+1,2,3,4-tetrachlorodibenzo-p-dioxin	30746-58-8	7.08333333333333	Clc1c(Cl)c(Cl)c2c(c1Cl)Oc1ccccc1O2
+isopropalin	33820-53-0	0.708333333333333	CCCN(CCC)c1c([N+](=O)[O-])cc(C(C)C)cc1[N+](=O)[O-]
+2,7-dichlorodibenzo-p-dioxin	33857-26-0	7.08333333333333	Clc1ccc2c(c1)Oc1ccc(Cl)cc1O2
+1,2,3,4,6,7,8-heptchlorodibenzo-p-dioxin	nan	22.9166666666667	Clc1cc2c(c(Cl)c1Cl)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+2,8-dichlorodibenzo-p-dioxin	38964-22-6	7.08333333333333	Clc1ccc2c(c1)Oc1cc(Cl)ccc1O2
+octachlorodibenzofuran	39001-02-0	22.9166666666667	Clc1c(Cl)c(Cl)c2c(oc3c(Cl)c(Cl)c(Cl)c(Cl)c32)c1Cl
+2,7-dichlorodibenzo-p-dioxin	33857-26-0	7.08333333333333	Clc1ccc2c(c1)Oc1ccc(Cl)cc1O2
+1,2,4-trichlorodibenzo-p-dioxin	39227-58-2	7.08333333333333	Clc1cc(Cl)c2c(c1Cl)Oc1ccccc1O2
+1,2,3,4,7-pentachlorodibenzo-p-dioxin	39227-61-7	22.9166666666667	Clc1ccc2c(c1)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+2,3,7,8-TCDF	51207-31-9	7.08333333333333	Clc1cc2oc3cc(Cl)c(Cl)cc3c2cc1Cl
+metolachlor	51218-45-2|82535-90-8	7.08333333333333	CCc1cccc(C)c1N(C(=O)CCl)C(C)COC
+2,2',3,3',4,5,5',6,6'-nonachlorobiphenyl	nan	708.333333333333	Clc1cc(Cl)c(Cl)c(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c1Cl
+PCB 28*	nan	10.625	
+PCB 101*	nan	36.875	
+PCB 180*	nan	110.625	
+? HCH*	nan	120.0	
+p-cresol*	nan	0.25	
+Hypo-A*	nan	7.0	
+Hypo-B*	nan	365.0	
+Hypo-C*	nan	0.17	
+Mirex	143-50-0|2385-85-5	7.08333333333333	ClC1(Cl)C2(Cl)C3(Cl)C4(Cl)C(Cl)(Cl)C5(Cl)C3(Cl)C1(Cl)C5(Cl)C24Cl
+2,4-dichlorophenoxybutyricacid	94-82-6	2.29166666666667	O=C(O)CCCOc1ccc(Cl)cc1Cl
+dimethylphthalate (dmp)	nan	7.08333333333333	
+mecoprop	7085-19-0|93-65-2	0.708333333333333	Cc1cc(Cl)ccc1OC(C)C(=O)O
+benzene, 1,2,4,5-tetramethyl-	15220-27-6|95-93-2	0.708333333333333	Cc1cc(C)c(C)cc1C
+iso-propyl-4-methyl-benzene	nan	0.708333333333333	Cc1ccc(C(C)C)cc1
+parathion	56-38-2	0.708333333333333	CCOP(=S)(OCC)Oc1ccc([N+](=O)[O-])cc1
+triallate	2303-17-5	7.08333333333333	CC(C)N(C(=O)SCC(Cl)=C(Cl)Cl)C(C)C
+diallate	17708-57-5|2303-16-4	0.708333333333333	CC(C)N(C(=O)SCC(Cl)=CCl)C(C)C
+malathion	121-75-5	0.708333333333333	CCOC(=O)CC(SP(=S)(OC)OC)C(=O)OCC
+decane	116372-01-1|124-18-5|63335-87-5	0.708333333333333	CCCCCCCCCC
+Heptachlor	76-44-8	2.29166666666667	ClC1=C(Cl)C2(Cl)C3C(Cl)C=CC3C1(Cl)C2(Cl)Cl
+chlordane	12789-03-6|33442-85-2|5103-71-9|5103-74-2	2.29166666666667	ClC1=C(Cl)C2(Cl)C3C(Cl)C(Cl)CC3C1(Cl)C2(Cl)Cl
+naphthalene	31807-65-5|91-20-3	0.708333333333333	c1ccc2ccccc2c1
+toxaphene	1852481-29-8|8001-35-2	7.08333333333333	C=C1C(CCl)(CCl)C2(Cl)C(Cl)C(Cl)C1(Cl)C2(Cl)Cl
+2-naphthalenamine	612-52-2|91-59-8	0.208333333333333	Nc1ccc2ccccc2c1
+1-naphthalenamine	134-32-7|25168-10-9	0.208333333333333	Nc1cccc2ccccc12
+naphthalene, 1-methyl-	1321-94-4|90-12-0	0.708333333333333	Cc1cccc2ccccc12
+propoxur	114-26-1	0.208333333333333	CN=C(O)Oc1ccccc1OC(C)C
+octachlorodibenzofuran	39001-02-0	22.9166666666667	Clc1c(Cl)c(Cl)c2c(oc3c(Cl)c(Cl)c(Cl)c(Cl)c32)c1Cl
+octachlorodibenzo-p-dioxin	3268-87-9	22.9166666666667	Clc1c(Cl)c(Cl)c2c(c1Cl)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+Acenapthene	83-32-9	2.29166666666667	c1cc2c3c(cccc3c1)CC2
+3,3'-dichlorobenzidine	86349-58-8|91-94-1	0.208333333333333	Nc1ccc(-c2ccc(N)c(Cl)c2)cc1Cl
+diphenylnitrosamine	382165-80-2|86-30-6	0.208333333333333	O=NN(c1ccccc1)c1ccccc1
+benzene, 1,1'-oxybis-	101-84-8|32576-61-7	0.708333333333333	c1ccc(Oc2ccccc2)cc1
+diphenylamine	122-39-4|25656-57-9	0.208333333333333	c1ccc(Nc2ccccc2)cc1
+Carbaryl	27636-33-5|3197-92-0|63-25-2	2.29166666666667	CN=C(O)Oc1cccc2ccccc12
+1-ethylnaphthalene	1127-76-0|27138-19-8|29793-40-6	0.708333333333333	CCc1cccc2ccccc12
+2,3-dimethylnaphthalene	581-40-8	0.708333333333333	Cc1cc2ccccc2cc1C
+1,1'-biphenyl -4,4'-diamine	nan	0.208333333333333	Nc1ccc(-c2ccc(N)cc2)cc1
+diethylphthalate (dep)	nan	7.08333333333333	
+carbofuran	1563-66-2	0.208333333333333	CN=C(O)Oc1cccc2c1OC(C)(C)C2
+diazinon	333-41-5	22.9166666666667	CCOP(=S)(OCC)Oc1cc(C)nc(C(C)C)n1
+dodecane	112-40-3|93685-81-5	0.708333333333333	CCCCCCCCCCCC
+PCB-202	2136-99-4	708.333333333333	Clc1cc(Cl)c(Cl)c(-c2c(Cl)c(Cl)cc(Cl)c2Cl)c1Cl
+2,3,4,7,8-Pentachlorodibenzofuran	57117-31-4	22.9166666666667	Clc1cc2oc3c(Cl)c(Cl)c(Cl)cc3c2cc1Cl
+1,2,3,4,7-pentachlorodibenzo-p-dioxin	39227-61-7	22.9166666666667	Clc1ccc2c(c1)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+PCB-171	52663-71-5	229.166666666667	Clc1ccc(-c2c(Cl)cc(Cl)c(Cl)c2Cl)c(Cl)c1Cl
+2,3,7,8-TCDF	51207-31-9	7.08333333333333	Clc1cc2oc3cc(Cl)c(Cl)cc3c2cc1Cl
+1,2,3,7-Tetrachlorodibenzo-P-dioxin	67028-18-6	7.08333333333333	Clc1ccc2c(c1)Oc1cc(Cl)c(Cl)c(Cl)c1O2
+2,3,7,8-TCDD	1746-01-6|56795-67-6	7.08333333333333	Clc1cc2c(cc1Cl)Oc1cc(Cl)c(Cl)cc1O2
+1,2,3,4-tetrachlorodibenzo-p-dioxin	30746-58-8	7.08333333333333	Clc1c(Cl)c(Cl)c2c(c1Cl)Oc1ccccc1O2
+PCB-128	11096-82-5|38380-07-3	229.166666666667	Clc1ccc(-c2ccc(Cl)c(Cl)c2Cl)c(Cl)c1Cl
+1,2,4-trichlorodibenzo-p-dioxin	39227-58-2	7.08333333333333	Clc1cc(Cl)c2c(c1Cl)Oc1ccccc1O2
+PCB-87	38380-02-8	70.8333333333333	Clc1ccc(Cl)c(-c2ccc(Cl)c(Cl)c2Cl)c1
+2,8-dichlorodibenzofuran	5409-83-6	7.08333333333333	Clc1ccc2oc3ccc(Cl)cc3c2c1
+2,7-dichlorodibenzo-p-dioxin	33857-26-0	7.08333333333333	Clc1ccc2c(c1)Oc1ccc(Cl)cc1O2
+2,8-dichlorodibenzo-p-dioxin	38964-22-6	7.08333333333333	Clc1ccc2c(c1)Oc1cc(Cl)ccc1O2
+PCB-47	nan	70.8333333333333	
+PCB-40	nan	70.8333333333333	
+PCB-33	nan	22.9166666666667	
+PCB-29	nan	22.9166666666667	
+PCB-18	nan	22.9166666666667	
+PCB-30	nan	22.9166666666667	
+1-Chlorodibenzodioxin	35656-51-0|39227-53-7	7.08333333333333	Clc1cccc2c1Oc1ccccc1O2
+2-Chlorodibenzodioxin	nan	7.08333333333333	Clc1ccc2c(c1)Oc1ccccc1O2
+PCB-7	nan	7.08333333333333	
+PCB-9	nan	7.08333333333333	
+PCB-11	nan	7.08333333333333	
+PCB-15	nan	7.08333333333333	
+PCB-4	nan	7.08333333333333	
+aldrin	309-00-2	0.208333333333333	ClC1=C(Cl)[C@]2(Cl)[C@H]3[C@H]([C@@H]4C=C[C@H]3C4)[C@@]1(Cl)C2(Cl)Cl
+dieldrin	60-57-1|605-72-1	2.29166666666667	ClC1=C(Cl)[C@]2(Cl)[C@@H]3[C@@H]4C[C@@H]([C@H]5O[C@@H]45)[C@@H]3[C@@]1(Cl)C2(Cl)Cl
+dibenzofuran	132-64-9	2.29166666666667	c1ccc2c(c1)oc1ccccc12
+3-Chlorobiphenyl	11104-28-2|2051-61-8	7.08333333333333	Clc1cccc(-c2ccccc2)c1
+PCB-1	nan	7.08333333333333	
+4-chlorophenyl phenyl ether	55398-86-2|7005-72-3	0.708333333333333	Clc1ccc(Oc2ccccc2)cc1
+1,2,3,4,6,7,8-heptchlorodibenzo-p-dioxin	nan	22.9166666666667	Clc1cc2c(c(Cl)c1Cl)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+PCB-206	40186-72-9|53742-07-7	708.333333333333	Clc1cc(-c2c(Cl)c(Cl)c(Cl)c(Cl)c2Cl)c(Cl)c(Cl)c1Cl
+9h-fluorene	86-73-7	2.29166666666667	c1ccc2c(c1)Cc1ccccc1-2
+methanone, diphenyl-	119-61-9	22.9166666666667	O=C(c1ccccc1)c1ccccc1
+trifluralin	1582-09-8|71281-30-6	7.08333333333333	CCCN(CCC)c1c([N+](=O)[O-])cc(C(F)(F)F)cc1[N+](=O)[O-]
+anthracene	120-12-7|54261-80-2	2.29166666666667	c1ccc2cc3ccccc3cc2c1
+phenanthrene	85-01-8	2.29166666666667	c1ccc2c(c1)ccc1ccccc12
+benomyl	17804-35-2	0.208333333333333	CCCCN=C(O)n1c(N=C(O)OC)nc2ccccc21
+p,p'-dde	68679-99-2|72-55-9	7.08333333333333	ClC(Cl)=C(c1ccc(Cl)cc1)c1ccc(Cl)cc1
+metolachlor	51218-45-2|82535-90-8	7.08333333333333	CCc1cccc(C)c1N(C(=O)CCl)C(C)COC
+isopropalin	33820-53-0	0.708333333333333	CCCN(CCC)c1c([N+](=O)[O-])cc(C(C)C)cc1[N+](=O)[O-]
+fluoranthene	206-44-0|76774-50-0	7.08333333333333	c1ccc2c(c1)-c1cccc3cccc-2c13
+pyrene	129-00-0|1346601-04-4|41496-25-7	7.08333333333333	c1cc2ccc3cccc4ccc(c1)c2c34
+methoxychlor	1644449-82-0|72-43-5	0.708333333333333	COc1ccc(C(c2ccc(OC)cc2)C(Cl)(Cl)Cl)cc1
+1,2-benzenedicarboxylic acid, dibutyl ester, dibutylphthalate	nan	2.29166666666667	CCCCOC(=O)c1ccccc1C(=O)OCCCC.CCCCOC(=O)c1ccccc1C(=O)OCCCC
+chrysene	218-01-9|65777-08-4	7.08333333333333	c1ccc2c(c1)ccc1c3ccccc3ccc21
+butyl benzyl phthalate	85-68-7	2.29166666666667	CCCCOC(=O)c1ccccc1C(=O)OCc1ccccc1
+benzo(k)fluoranthene	207-08-9	7.08333333333333	c1ccc2cc3c(cc2c1)-c1cccc2cccc-3c12
+perylene	198-55-0|69736-15-8	7.08333333333333	c1cc2cccc3c4cccc5cccc(c(c1)c23)c54
+benzo[ghi]perylene	191-24-2	7.08333333333333	c1cc2ccc3ccc4ccc5cccc6c(c1)c2c3c4c56
+dibenz(a,h)anthracene	53-70-3	7.08333333333333	c1ccc2c(c1)ccc1cc3c(ccc4ccccc43)cc12
+ethane, hexachloro-	67-72-1	708.333333333333	ClC(Cl)(Cl)C(Cl)(Cl)Cl
+ethane, 1,1,2,2-tetrachloro-	79-34-5	708.333333333333	ClC(Cl)C(Cl)Cl
+chloroethene(vinylchloride)	nan	2.29166666666667	
+acetic acid, chloro-	79-11-8	22.9166666666667	O=C(O)CCl
+ethane, 1,2-dichloro-	107-06-2|25323-30-2|52399-93-6	70.8333333333333	ClCCCl
+methane, oxybis chloro-	nan	0.708333333333333	
+acetaldehyde	75-07-0	0.208333333333333	CC=O
+acetic acid	64-19-7|77671-22-8	2.29166666666667	CC(=O)O
+formic acid, methyl ester	107-31-3	2.29166666666667	COC=O
+chloroethane	25052-55-5|75-00-3	70.8333333333333	CCCl
+methane, chloromethoxy-	107-30-2	0.708333333333333	COCCl
+acetamide	60-35-5|74330-92-0	0.708333333333333	CC(=N)O
+ethanethioamide	62-55-5	0.708333333333333	CC(=N)S
+methanamine, n-methyl-n-nitroso-	62-75-9	0.208333333333333	CN(C)N=O
+ethanol	42845-45-4|64-17-5|8000-16-6	2.29166666666667	CCO
+methane, oxybis-	115-10-6|157621-61-9	0.708333333333333	COC
+1,2-ethanediol	107-21-1	2.29166666666667	OCCO
+ethanamine	75-04-7	0.708333333333333	CCN
+methanamine, n-methyl-	124-40-3|20786-94-1	0.208333333333333	CNC
+ethanol, 2-amino-	12220-07-4|12220-09-6|141-43-5	0.208333333333333	NCCO
+trichloroethylene	123919-09-5|79-01-6	7.08333333333333	ClC=C(Cl)Cl
+ethane, pentachloro-	76-01-7	708.333333333333	ClC(Cl)C(Cl)(Cl)Cl
+2-propenenitrile	107-13-1|63908-52-1	2.29166666666667	C=CC#N
+propanoic acid, 2,2-dichloro-	75-99-0	22.9166666666667	CC(Cl)(Cl)C(=O)O
+2-propenal	107-02-8|81788-96-7	0.208333333333333	C=CC=O
+2-propenoic acid	55927-87-2|79-10-7|9063-87-0	0.708333333333333	C=CC(=O)O
+propane, 1,2,3-trichloro-	96-18-4	22.9166666666667	ClCC(Cl)CCl
+propanenitrile	107-12-0	70.8333333333333	CCC#N
+propane, 1,2-dichloro-	78-87-5	22.9166666666667	CC(Cl)CCl
+2-propanone	67-64-1	70.8333333333333	CC(C)=O
+formic acid, ethyl ester	109-94-4	2.29166666666667	CCOC=O
+acetic acid, methyl ester	79-20-9	2.29166666666667	COC(C)=O
+1-propanol	142583-61-7|62309-51-7|71-23-8	2.29166666666667	CCCO
+2-propanol	1344575-38-7|67-63-0|8003-15-4	2.29166666666667	CC(C)O
+1-butanol	1219794-84-9|35296-72-1|6167-45-9|64118-16-7|71-36-3	2.29166666666667	CCCCO
+ethane, 1,1'-oxybis-	60-29-7|667919-88-2	0.708333333333333	CCOCC
+1-propanol, 2-methyl-	78-83-1	2.29166666666667	CC(C)CO
+2-propanol, 2-methyl-	25-65-0|75-65-0	7.08333333333333	CC(C)(C)O
+1-butanamine	109-73-9	0.708333333333333	CCCCN
+ethanol, 2,2'-iminobis-	111-42-2	0.208333333333333	OCCNCCO
+furan	110-00-9|25067-54-3	0.708333333333333	c1ccoc1
+thiophene	107760-19-0|110-02-1|25233-34-5|51325-05-4	2.29166666666667	c1ccsc1
+1,3-butadiene, 2-chloro-	126-99-8	2.29166666666667	C=CC(=C)Cl
+1,3-butadiene	106-99-0|130983-70-9|1983-06-8|25339-57-5|26952-74-9	0.208333333333333	C=CC=C
+3-butenoic acid	28391-17-5|625-38-7	0.708333333333333	C=CCC(=O)O
+vinyl acetate	108-05-4|93196-02-2	2.29166666666667	C=COC(C)=O
+2-chloroethyl vinyl ether	110-75-8|29160-08-5	0.708333333333333	C=COCCCl
+bis(2-chloroethyl)ether(1	nan	0.708333333333333	
+butanal	123-72-8|27789-14-6	0.208333333333333	CCCC=O
+furan, tetrahydro-	109-99-9|24979-97-3	0.708333333333333	C1CCOC1
+2-butanone	78-93-3	7.08333333333333	CCC(C)=O
+butanoic acid	107-92-6	2.29166666666667	CCCC(=O)O
+1,4-dioxane	123-91-1|28552-22-9	2.29166666666667	C1COCCO1
+acetic acid ethyl ester	141-78-6	2.29166666666667	CCOC(C)=O
+cyclopentane	287-92-3	0.708333333333333	C1CCCC1
+1-pentene	109-67-1|25587-78-4	0.208333333333333	C=CCCC
+bis(2-chloroethoxy)methane	111-91-1	0.708333333333333	ClCCOCOCCCl
+2-pentanone	107-87-9	2.29166666666667	CCCC(C)=O
+3-pentanone	96-22-0	2.29166666666667	CCC(=O)CC
+formic acid, butyl ester	592-84-7	2.29166666666667	CCCCOC=O
+propyl acetate	109-60-4	2.29166666666667	CCCOC(C)=O
+pentane	102056-77-9|107949-95-1|109-66-0	0.708333333333333	CCCCC
+1-pentanol	148587-12-6|30899-19-5|71-41-0	2.29166666666667	CCCCCO
+propane, 2-methoxy-2-methyl-	1219795-06-8|1634-04-4	0.708333333333333	COC(C)(C)C
+pyridine	110-86-1|29761-81-7	22.9166666666667	c1ccncc1
+cyclopentene	10016-46-3|142-29-0|29300-20-7	0.208333333333333	C1=CCCC1
+1,4-pentadiene	591-93-5	0.208333333333333	C=CCC=C
+acetic acid, 2-propenyl ester	29467-34-3|591-87-7	2.29166666666667	C=CCOC(C)=O
+methyl methacrylate	114512-63-9|143476-91-9|51391-19-6|80-62-6|9065-11-6|97555-82-3	0.708333333333333	C=C(C)C(=O)OC
+cyclohexene	110-83-8|25012-94-6	0.208333333333333	C1=CCCCC1
+1-hexyne	26856-30-4|28827-85-2|693-02-7	0.208333333333333	C#CCCCC
+cyclohexanone	108-94-1|9075-99-4	2.29166666666667	O=C1CCCCC1
+cyclohexane	110-82-7|12217-02-6	0.708333333333333	C1CCCCC1
+methylcyclopentane	5310-57-6|96-37-7	0.708333333333333	CC1CCCC1
+Thiram	137-26-8	7.08333333333333	CN(C)C(=S)SSC(=S)N(C)C
+2-hexanone	30637-87-7|591-78-6	2.29166666666667	CCCCC(C)=O
+2-pentanone, 4-methyl-	108-10-1	2.29166666666667	CC(=O)CC(C)C
+cyclohexanol	108-93-0	2.29166666666667	OC1CCCCC1
+hexanoic acid	142-62-1|56279-38-0	2.29166666666667	CCCCCC(=O)O
+butyl acetate	123-86-4	2.29166666666667	CCCCOC(C)=O
+cyclohexanamine	108-91-8|157973-60-9	0.208333333333333	NC1CCCCC1
+hexane	110-54-3|478799-92-7|50981-41-4|92112-69-1	0.708333333333333	CCCCCC
+1-propanamine, n-nitroso-n-propyl-	621-64-7	0.208333333333333	CCCN(CCC)N=O
+1-hexanol	111-27-3|25917-35-5	2.29166666666667	CCCCCCO
+propyl ether	111-43-3	0.708333333333333	CCCOCCC
+benzene, 1,2,3,4-tetrachloro-	13280-72-3|634-66-2|63697-20-1	70.8333333333333	Clc1ccc(Cl)c(Cl)c1Cl
+benzene, 1,2,4,5-tetrachloro-	12408-10-5|63697-22-3|95-94-3	70.8333333333333	Clc1cc(Cl)c(Cl)cc1Cl
+benzene, 1,2,3,5-tetrachloro-	634-90-2|63697-21-2	70.8333333333333	Clc1cc(Cl)c(Cl)c(Cl)c1
+2,3,4,5-tetrachlorophenol	25167-83-3|4901-51-3	22.9166666666667	Oc1cc(Cl)c(Cl)c(Cl)c1Cl
+2,3,5,6-tetrachlorophenol	935-95-5	22.9166666666667	Oc1c(Cl)c(Cl)cc(Cl)c1Cl
+2,3,4,6-tetrachlorophenol	25167-83-3|58-90-2	22.9166666666667	Oc1c(Cl)cc(Cl)c(Cl)c1Cl
+benzene, 1,2,4-trichloro-	104810-41-5|120-82-1|63697-18-7	22.9166666666667	Clc1ccc(Cl)c(Cl)c1
+benzene, 1,3,5-trichloro-	108-70-3|63697-19-8	22.9166666666667	Clc1cc(Cl)cc(Cl)c1
+1,2,3-trichlorobenzene	12002-48-1|51703-47-0|87-61-6	22.9166666666667	Clc1cccc(Cl)c1Cl
+2,3,4-trichlorophenol	15950-66-0|25167-82-2	7.08333333333333	Oc1ccc(Cl)c(Cl)c1Cl
+phenol, 2,4,6-trichloro-	88-06-2	7.08333333333333	Oc1c(Cl)cc(Cl)cc1Cl
+phenol, 2,4,5-trichloro-	95-95-4	7.08333333333333	Oc1cc(Cl)c(Cl)cc1Cl
+benzene, 1,4-dichloro-	106-46-7|55232-43-4	22.9166666666667	Clc1ccc(Cl)cc1
+benzene, 1,3-dichloro-	541-73-1|63697-17-6	22.9166666666667	Clc1cccc(Cl)c1
+benzene, 1,2-dichloro-	95-50-1	22.9166666666667	Clc1ccccc1Cl
+phenol, 2,4-dichloro-	120-83-2|3317-66-6	2.29166666666667	Oc1ccc(Cl)cc1Cl
+2,6-dichlorophenol	25511-62-0|87-65-0	2.29166666666667	Oc1c(Cl)cccc1Cl
+benzene, bromo-	108-86-1|52753-63-6	7.08333333333333	Brc1ccccc1
+chlorobenzene	108-90-7|50717-45-8	7.08333333333333	Clc1ccccc1
+4-chlorophenol	106-48-9	2.29166666666667	Oc1ccc(Cl)cc1
+benzene, fluoro-	462-06-6	0.708333333333333	Fc1ccccc1
+benzene, iodo-	51209-48-4|591-50-4	7.08333333333333	Ic1ccccc1
+benzene, nitro-	98-95-3	0.208333333333333	O=[N+]([O-])c1ccccc1
+phenol, 4-nitro-	100-02-7	2.29166666666667	O=[N+]([O-])c1ccc(O)cc1
+phenol, 2-nitro-	25154-55-6|78813-12-4|88-75-5	2.29166666666667	O=[N+]([O-])c1ccccc1O
+benzene	25053-22-9|26181-88-4|3355-34-8|54682-86-9|62485-97-6|71-43-2	0.708333333333333	c1ccccc1
+lindane	119911-69-2|319-84-6|319-85-7|319-86-8|55963-79-6|58-89-9|608-73-1|6108-10-7|6108-11-8|6108-12-9|6108-13-0	7.08333333333333	ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl
+benzenamine, 4-chloro-	106-47-8	0.208333333333333	Nc1ccc(Cl)cc1
+2-chloroaniline	27134-26-5|95-51-2	2.29166666666667	Nc1ccccc1Cl
+phenol	108-95-2|17442-59-0|27073-41-2|63496-48-0|73607-76-8	0.708333333333333	Oc1ccccc1
+1,2-benzenediol	120-80-9|12385-08-9|26982-53-6	0.708333333333333	Oc1ccccc1O
+pyridine, 4-methyl-	108-89-4|69046-49-7|92075-35-9	22.9166666666667	Cc1ccncc1
+pyridine, 3-methyl-	108-99-6	22.9166666666667	Cc1cccnc1
+aniline	136260-71-4|62-53-3	0.208333333333333	Nc1ccccc1
+1,4-cyclohexadiene	628-41-1	0.208333333333333	C1=CCC=CC1
+benzene, pentachloro-	608-93-5	229.166666666667	Clc1cc(Cl)c(Cl)c(Cl)c1Cl
+pentachlorophenol	87-86-5	22.9166666666667	Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl
+simazine	122-34-9	2.29166666666667	CCN=c1nc(Cl)[nH]c(=NCC)[nH]1
+cyclohexane, methyl-	108-87-2	0.708333333333333	CC1CCCCC1
+aldicarb	116-06-3	0.208333333333333	CN=C(O)ON=CC(C)(C)SC
+2-heptanone	110-43-0	2.29166666666667	CCCCCC(C)=O
+pentyl acetate	628-63-7|828-63-7	2.29166666666667	CCCCCOC(C)=O
+2-methoxytetrachlorophenol	2539-17-5|97331-56-1	7.08333333333333	COc1c(O)c(Cl)c(Cl)c(Cl)c1Cl
+benzoic acid, 2-chloro-	118-91-2|26264-09-5	7.08333333333333	O=C(O)c1ccccc1Cl
+2,4-dinitrotoluene	121-14-2|1326-41-6|84029-42-5	0.708333333333333	Cc1ccc([N+](=O)[O-])cc1[N+](=O)[O-]
+phenol, 2-methyl-4,6-dinitro-	534-52-1	7.08333333333333	Cc1cc([N+](=O)[O-])cc([N+](=O)[O-])c1O
+benzoic acid	14322-82-8|65-85-0	2.29166666666667	O=C(O)c1ccccc1
+salicylic acid	29656-58-4|69-72-7|8052-31-1	2.29166666666667	O=C(O)c1ccccc1O
+benzamide	55-21-0|55738-52-8	0.708333333333333	N=C(O)c1ccccc1
+4-nitrotoluene	99-99-0	0.708333333333333	Cc1ccc([N+](=O)[O-])cc1
+2-nitrotoluene	1321-12-6|88-72-2	0.708333333333333	Cc1ccccc1[N+](=O)[O-]
+toluene	108-88-3|25013-04-1	0.708333333333333	Cc1ccccc1
+o-cresol	95-48-7	0.208333333333333	Cc1ccccc1O
+methoxybenzene	100-66-3	0.708333333333333	COc1ccccc1
+benzyl alcohol	100-51-6|185532-71-2|66072-40-0	2.29166666666667	OCc1ccccc1
+phenol, 2-methoxy-	90-05-1|9009-62-5	0.708333333333333	COc1ccccc1O
+benzenamine, 2-methyl-	121536-13-8|68408-22-0|95-53-4	0.208333333333333	Cc1ccccc1N
+Chlorothalonil	1897-32-1|1897-45-6	7.08333333333333	N#Cc1c(Cl)c(Cl)c(Cl)c(C#N)c1Cl
+ethylbenzene	100-41-4|20302-26-5	0.708333333333333	CCc1ccccc1
+p-xylene	106-42-3|136777-61-2	0.708333333333333	Cc1ccc(C)cc1
+m-xylene	108-38-3	0.708333333333333	Cc1cccc(C)c1
+o-xylene	95-47-6	0.708333333333333	Cc1ccccc1C
+parathion methyl	298-00-0	0.708333333333333	COP(=S)(OC)Oc1ccc([N+](=O)[O-])cc1
+phenol, 2,4-dimethyl-	105-67-9	0.708333333333333	Cc1ccc(O)c(C)c1
+2,6-xylidine	87-62-7	0.208333333333333	Cc1cccc(C)c1N
+benzenamine, n,n-dimethyl-	101357-19-1|121-69-7|86362-18-7	0.208333333333333	CN(C)c1ccccc1
+atrazine	102029-43-6|1912-24-9	0.208333333333333	CCN=c1nc(Cl)[nH]c(=NC(C)C)[nH]1
+cyclooctane	292-64-8	0.708333333333333	C1CCCCCCC1
+1-octene	111-66-0|26746-84-9	0.208333333333333	C=CCCCCCC
+octane	111-65-9|31372-91-5|9065-92-3	0.708333333333333	CCCCCCCC
+1-octanol	111-87-5|220713-26-8|29063-28-3	2.29166666666667	CCCCCCCCO
+2,4,5-trichlorophenoxyacetic acid	35915-18-5|93-76-5	2.29166666666667	O=C(O)COc1cc(Cl)c(Cl)cc1Cl
+dicamba	1918-00-9|62610-39-3|89300-29-8	2.29166666666667	COc1c(Cl)ccc(Cl)c1C(=O)O
+acetic acid, (2,4-dichlorophenoxy)-	64296-19-1|94-75-7	0.708333333333333	O=C(O)COc1ccc(Cl)cc1Cl
+1,2-benzenedicarboxylic acid	254110-94-6|57142-78-6|88-99-3	2.29166666666667	O=C(O)c1ccccc1C(=O)O
+styrene	100-42-5|12770-88-6|25086-18-4|6911-81-5|98444-30-5	0.208333333333333	C=Cc1ccccc1
+oxirane, phenyl-	192506-02-8|25189-69-9|96-09-3	0.708333333333333	c1ccc(C2CO2)cc1
+acetophenone	98-86-2	22.9166666666667	CC(=O)c1ccccc1
+benzoic acid, 2-methyl-	118-90-1|25567-10-6|442197-98-0	2.29166666666667	Cc1ccccc1C(=O)O
+phenylacetic acid	103-82-2|17303-65-0|51146-16-8	2.29166666666667	O=C(O)Cc1ccccc1
+indan	496-11-7|56573-11-6	0.708333333333333	c1ccc2c(c1)CCC2
+diuron	330-54-1	0.708333333333333	CN(C)C(O)=Nc1ccc(Cl)c(Cl)c1
+linuron	330-55-2|56645-87-5	0.708333333333333	CON(C)C(O)=Nc1ccc(Cl)c(Cl)c1
+Chloropyrifos	2921-88-2	0.708333333333333	CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl
+benzene, propyl-	103-65-1	0.708333333333333	CCCc1ccccc1
+benzene, 1,2,4-trimethyl-	95-36-3|95-63-6	0.708333333333333	Cc1ccc(C)c(C)c1
+benzene, 1,3,5-trimethyl-	108-67-8|19121-63-2	0.708333333333333	Cc1cc(C)cc(C)c1
+benzene, 1,2,3-trimethyl-	25551-13-7|526-73-8	0.708333333333333	Cc1cccc(C)c1C
+iso-propylbenzene	nan	0.708333333333333	CC(C)c1ccccc1
+carbamothioic acid, dipropyl-, s-ethyl ester	759-94-4	0.708333333333333	CCCN(CCC)C(=O)SCC
+quinoline	15793-82-5|15793-83-6|15793-84-7|15793-85-8|15793-86-9|15793-87-0|31177-31-8|54978-41-5|91-22-5	2.29166666666667	c1ccc2ncccc2c1
+Captan	133-06-2	0.708333333333333	O=C1C2CC=CCC2C(=O)N1SC(Cl)(Cl)Cl
+trichlorofluoromethane	75-69-4	708.333333333333	FC(Cl)(Cl)Cl
+Chloropicrin	76-06-2	7.08333333333333	O=[N+]([O-])C(Cl)(Cl)Cl
+methane, bromochloro-	13590-47-1|74-97-5	22.9166666666667	ClCBr
+methane, dichloro-	75-09-2	70.8333333333333	ClCCl
+formic acid	64-18-6|82069-14-5	7.08333333333333	O=CO
+methanol	170082-17-4|67-56-1	7.08333333333333	CO
+tribromomethane	4471-18-5|75-25-2	70.8333333333333	BrC(Br)Br
+methane, bromodichloro-	75-27-4	22.9166666666667	ClC(Cl)Br
+methane, trichloro-	67-66-3	70.8333333333333	ClC(Cl)Cl
+decachlorobiphenyl(pcb209)	nan	2291.66666666667	
+1,1'-biphenyl(pcb0)	nan	2.29166666666667	
+pcb180	35065-29-3	110.625	Clc1cc(Cl)c(-c2cc(Cl)c(Cl)c(Cl)c2Cl)cc1Cl
+pcb-155	56558-19-1	229.166666666667	Oc1cc(Cl)c(-c2c(Cl)cc(Cl)cc2Cl)c(Cl)c1O
+pcb-153(2,2',4,4',5,5'-hexachlorobiphenyl)	nan	229.166666666667	
+pcb101	37680-73-2	36.875	Clc1ccc(Cl)c(-c2cc(Cl)c(Cl)cc2Cl)c1
+pcb-52(2,2',5,5'-tetrachlorobiphenyl)	nan	70.8333333333333	
+pcb-77(3,3',4,4'-tetrachlorobiphenyl)	nan	70.8333333333333	
+2,3,4-trichlorobiphenyl	nan	22.9166666666667	Clc1ccc(-c2ccccc2)c(Cl)c1Cl
+pcb28	7012-37-5	10.625	Clc1ccc(-c2ccc(Cl)cc2Cl)cc1
+1,4,5-trimethylnapthalene	nan	0.708333333333333	
+o,p'dde	nan	7.08333333333333	
+p, p' - DDT	nan	7.08333333333333	
+benzaanthracene	nan	7.08333333333333	
+benzoapyrene	nan	7.08333333333333	
+di-(2-ethylhexyl)-phthalate(dehp)	nan	2.29166666666667	
+tetrachloroethylene	127-18-4|25135-99-3	22.9166666666667	ClC(Cl)=C(Cl)Cl
+propane,2,2'-oxybis1-chloro-	nan	0.708333333333333	
+benzyldehyde	nan	0.208333333333333	
+benzobthiophene	nan	7.08333333333333	
+tetrachlorometane	nan	708.333333333333	
+1,2,3,4,7,8-Hexachlorodibenzofuran	55684-94-1|70648-26-9	22.9166666666667	Clc1cc2oc3c(Cl)c(Cl)c(Cl)c(Cl)c3c2cc1Cl
+1,2,3,4,7,8-Hexachlorodibenzo-P-dioxin	34465-46-8|39227-28-6	22.9166666666667	Clc1cc2c(cc1Cl)Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1O2
+1,3,6,8-Tetrachlorodibenzo-P-dioxin	33423-92-6	7.08333333333333	Clc1cc(Cl)c2c(c1)Oc1c(Cl)cc(Cl)cc1O2
+2,3,3',4',5'-pentachlorobiphenyl	76842-07-4	70.8333333333333	Clc1cc(-c2cccc(Cl)c2Cl)cc(Cl)c1Cl
+bis(2-chloroisopropyl)ether	39638-32-9	0.708333333333333	CC(C)(Cl)OC(C)(C)Cl
+2,3,5-trichlorophenol	933-78-8	7.08333333333333	Oc1cc(Cl)cc(Cl)c1Cl
+p-cresol	106-44-5|2876-02-0	0.25	Cc1ccc(O)cc1

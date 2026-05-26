@@ -1,0 +1,106 @@
+[2026-04-30 11:27:14] INFO     air_hsbd — 
+======================================================================
+  Interval-Aware SVR — AIR / hsbd
+======================================================================
+[2026-04-30 11:27:14] INFO     air_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+[2026-04-30 11:27:14] INFO     air_hsbd — Raw dataset: 308 rows
+[2026-04-30 11:27:14] INFO     air_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/interval_table_air.csv
+[2026-04-30 11:27:14] INFO     air_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/t_half_meta_air.csv
+[2026-04-30 11:27:14] INFO     air_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:27:31] INFO     air_hsbd — 5-fold CV on training set: R²=0.7571 (±0.0885)  RMSE(log10)=0.4202  RMSE(days-geom)=2.63×
+[2026-04-30 11:27:31] INFO     air_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:27:31] INFO     air_hsbd —   [test]  Interval coverage probability : 0.192 (14/73)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [test]  Mean interval loss            : 0.5557 log10 days  (~3.59 days geom. equiv.)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [test]  Class accuracy                : 0.192
+[2026-04-30 11:27:31] INFO     air_hsbd —   [test]  Spearman rho                  : 0.851  (p=0.0000)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [test]  Kendall tau                   : 0.711  (p=0.0000)
+[2026-04-30 11:27:31] INFO     air_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:27:31] INFO     air_hsbd —   [train] Interval coverage probability : 0.228 (50/219)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [train] Mean interval loss            : 0.5767 log10 days  (~3.77 days geom. equiv.)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [train] Class accuracy                : 0.228
+[2026-04-30 11:27:31] INFO     air_hsbd —   [train] Spearman rho                  : 0.983  (p=0.0000)
+[2026-04-30 11:27:31] INFO     air_hsbd —   [train] Kendall tau                   : 0.911  (p=0.0000)
+[2026-04-30 11:27:31] INFO     air_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:27:33] INFO     air_hsbd — PCA dimensionality: 41 components ≥95%, 66 components ≥99% (of 212 total).
+[2026-04-30 11:27:33] INFO     air_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:27:33] INFO     air_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.219 (16/73)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5523 log10 days  (~3.57 days geom. equiv.)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.219
+[2026-04-30 11:27:33] INFO     air_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.864  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.728  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd — Strategy A  top-SVR (importance>0): n=150  coverage=0.219  MIL=0.5523  rho=0.864
+[2026-04-30 11:27:33] INFO     air_hsbd —   [B  top-X (N=150)] Interval coverage probability : 0.219 (16/73)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [B  top-X (N=150)] Mean interval loss            : 0.5523 log10 days  (~3.57 days geom. equiv.)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [B  top-X (N=150)] Class accuracy                : 0.219
+[2026-04-30 11:27:33] INFO     air_hsbd —   [B  top-X (N=150)] Spearman rho                  : 0.864  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [B  top-X (N=150)] Kendall tau                   : 0.728  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd — Strategy B  top-X (N=150): n=150  coverage=0.219  MIL=0.5523  rho=0.864
+[2026-04-30 11:27:33] INFO     air_hsbd —   [C  top-N pca99 (N=66)] Interval coverage probability : 0.233 (17/73)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [C  top-N pca99 (N=66)] Mean interval loss            : 0.5384 log10 days  (~3.45 days geom. equiv.)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [C  top-N pca99 (N=66)] Class accuracy                : 0.233
+[2026-04-30 11:27:33] INFO     air_hsbd —   [C  top-N pca99 (N=66)] Spearman rho                  : 0.846  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd —   [C  top-N pca99 (N=66)] Kendall tau                   : 0.712  (p=0.0000)
+[2026-04-30 11:27:33] INFO     air_hsbd — Strategy C  top-N pca99 (N=66): n=66  coverage=0.233  MIL=0.5384  rho=0.846
+[2026-04-30 11:28:00] INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.205 (15/73)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5466 log10 days  (~3.52 days geom. equiv.)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.205
+[2026-04-30 11:28:00] INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.850  (p=0.0000)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.709  (p=0.0000)
+[2026-04-30 11:28:00] INFO     air_hsbd — Winner: C  top-N pca99 (N=66)  (n=66, coverage=0.233, rho=0.846)
+[2026-04-30 11:28:00] INFO     air_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:28:00] INFO     air_hsbd — 5-fold CV on training set: R²=0.7688 (±0.0765)  RMSE(log10)=0.4088  RMSE(days-geom)=2.56×
+[2026-04-30 11:28:00] INFO     air_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:28:00] INFO     air_hsbd —   [final] Interval coverage probability : 0.233 (17/73)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [final] Mean interval loss            : 0.5384 log10 days  (~3.45 days geom. equiv.)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [final] Class accuracy                : 0.233
+[2026-04-30 11:28:00] INFO     air_hsbd —   [final] Spearman rho                  : 0.846  (p=0.0000)
+[2026-04-30 11:28:00] INFO     air_hsbd —   [final] Kendall tau                   : 0.712  (p=0.0000)
+[2026-04-30 11:28:00] INFO     air_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800.joblib
+[2026-04-30 11:28:00] INFO     air_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800.json
+[2026-04-30 11:28:00] INFO     air_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:28:00] INFO     air_hsbd — Learning curve val R² (final): 0.6965 ± 0.1379
+[2026-04-30 11:28:00] INFO     air_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714
+[2026-04-30 11:28:00] INFO     air_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:28:01] INFO     air_hsbd — PCA dimensionality: 29 components ≥95%, 42 components ≥99% (of 66 total).
+[2026-04-30 11:28:01] INFO     air_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:28:01] INFO     air_hsbd — PCA coverage: 94.5%
+[2026-04-30 11:28:01] INFO     air_hsbd — AD-outside test compounds: 56
+[2026-04-30 11:28:01] INFO     air_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/training_split_air.csv
+[2026-04-30 11:28:01] INFO     air_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800_ad.npz
+[2026-04-30 11:28:01] INFO     air_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/ad_membership_air.csv
+[2026-04-30 11:28:01] INFO     air_hsbd — Model JSON patched with artefact paths.
+[2026-04-30 11:28:01] INFO     air_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:28:01] INFO     air_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714

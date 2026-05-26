@@ -1,0 +1,82 @@
+{
+  "MACCS_139": {
+    "importance": 0.00486250735384588,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SlogP_VSA10": {
+    "importance": 0.005514082061394745,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_108": {
+    "importance": 0.005677557702795458,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SlogP_VSA11": {
+    "importance": 0.005923494935154256,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_074": {
+    "importance": 0.006240053934261788,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_aniline": {
+    "importance": 0.006543268494457808,
+    "interpretation": "Molecular descriptor"
+  },
+  "HallKierAlpha": {
+    "importance": 0.006746149600909546,
+    "interpretation": "Molecular descriptor"
+  },
+  "EState_VSA2": {
+    "importance": 0.007289120961940459,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_NH1": {
+    "importance": 0.007386992454378363,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_aryl_methyl": {
+    "importance": 0.007886619298873862,
+    "interpretation": "Molecular descriptor"
+  },
+  "BCUT2D_MWHI": {
+    "importance": 0.00825859636888033,
+    "interpretation": "Molecular descriptor"
+  },
+  "NOCount": {
+    "importance": 0.008309445822377862,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_062": {
+    "importance": 0.009041259021433528,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "BalabanJ": {
+    "importance": 0.009613156995097408,
+    "interpretation": "Balaban connectivity index"
+  },
+  "SlogP_VSA5": {
+    "importance": 0.010236326292920418,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_107": {
+    "importance": 0.012680866465279647,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "PEOE_VSA6": {
+    "importance": 0.01796849502726258,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_ketone": {
+    "importance": 0.02027654410241008,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_119": {
+    "importance": 0.041187803561149046,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SMR_VSA6": {
+    "importance": 0.05253089888936892,
+    "interpretation": "Molecular descriptor"
+  }
+}

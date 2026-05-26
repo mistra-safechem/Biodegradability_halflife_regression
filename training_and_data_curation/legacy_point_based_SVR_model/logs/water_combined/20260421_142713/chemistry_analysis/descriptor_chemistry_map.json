@@ -1,0 +1,70 @@
+{
+  "fr_NH1": {
+    "importance": 0.003069265433320617,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_ketone": {
+    "importance": 0.0032911761015476217,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_024": {
+    "importance": 0.0033503977017614595,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "Kappa3": {
+    "importance": 0.0035303596294403326,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_021": {
+    "importance": 0.003584682137388834,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_037": {
+    "importance": 0.0038604434282516475,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_065": {
+    "importance": 0.0042300393963789155,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState2": {
+    "importance": 0.004308702704361772,
+    "interpretation": "Molecular descriptor"
+  },
+  "BertzCT": {
+    "importance": 0.004600580702807455,
+    "interpretation": "Bertz complexity index"
+  },
+  "MaxEStateIndex": {
+    "importance": 0.00462051577869344,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_101": {
+    "importance": 0.0046562604535024255,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState5": {
+    "importance": 0.005138683714010278,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_oxime": {
+    "importance": 0.00517827878360883,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_COO": {
+    "importance": 0.0060586352723148995,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_050": {
+    "importance": 0.006545883825236387,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_079": {
+    "importance": 0.010976383397335004,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_136": {
+    "importance": 0.023624497289309283,
+    "interpretation": "Structural fingerprint bit"
+  }
+}

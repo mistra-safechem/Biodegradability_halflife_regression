@@ -1,0 +1,206 @@
+[2026-04-21 14:40:54] SVR Model and Analysis
+============================================================
+[2026-04-21 14:40:54]   Preprocessor class
+============================================================
+[2026-04-21 14:40:54] Dataset X and y shapes before preprocessing: X=414, y=414
+[2026-04-21 14:40:54] Columns to drop: ['None']
+[2026-04-21 14:40:54] name: AirData
+[2026-04-21 14:40:54] remove_outliers: True
+[2026-04-21 14:40:54] Dataset X and y shapes after preprocessing: X=387, y_log=387
+============================================================
+[2026-04-21 14:40:54]   Model section
+============================================================
+[2026-04-21 14:40:54] Performing 5-fold cross-validation
+[2026-04-21 14:41:31] Best hyperparameters from grid search: {'C': 10, 'epsilon': 0.01, 'gamma': 'scale', 'kernel': 'rbf'}
+[2026-04-21 14:41:31] 
+5-Fold Cross-Validation Results:
+[2026-04-21 14:41:31]   R² (CV): 0.6610 (+/- 0.0733)
+[2026-04-21 14:41:31]   MSE (CV): 0.2403 (+/- 0.0529)
+[2026-04-21 14:41:31]   MAE (CV): 0.3101 (+/- 0.0375)
+[2026-04-21 14:41:31] 
+============================================================
+[2026-04-21 14:41:31] FINAL RESULTS SUMMARY
+[2026-04-21 14:41:31] ============================================================
+[2026-04-21 14:41:31] Test size: 0.25
+[2026-04-21 14:41:31] SVR hyperparameters: {'C': 10, 'epsilon': 0.01, 'gamma': 'scale', 'kernel': 'rbf'}
+[2026-04-21 14:41:31] 
+Cross-validation performance (5 folds):
+[2026-04-21 14:41:31]   R² (CV): 0.6610 (+/- 0.0733)
+[2026-04-21 14:41:31] 
+Held-out test set performance:
+[2026-04-21 14:41:31] {'R2': 0.522138364015658, 'MAE': 259.3177233949874, 'MSE': 463248.0306975128, 'RMSE': 680.6232663504186, 'Explained Variance': 0.5350182360641996}
+[2026-04-21 14:41:31] ============================================================
+============================================================
+[2026-04-21 14:41:31]   Model Analysis
+============================================================
+[2026-04-21 14:41:37] Feature importance plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/feature_importance_sediment.png
+[2026-04-21 14:41:37] Residuals vs Predicted: no significant monotonic trend (rho=-0.08, p=0.463)
+[2026-04-21 14:41:37] Residuals vs Predicted plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_pred_sediment.png
+[2026-04-21 14:41:37] Q-Q plot of residuals saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/qqplot_residuals_sediment.png
+[2026-04-21 14:41:37] Residual histogram plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residual_hist_sediment.png
+[2026-04-21 14:41:37]   SlogP_VSA7: no significant monotonic trend (rho=0.20, p=0.052); homoscedastic (Levene p=0.125)
+[2026-04-21 14:41:37]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_SlogP_VSA7_sediment.png
+[2026-04-21 14:41:37]   fr_ArN: no significant monotonic trend (rho=0.15, p=0.130); homoscedastic (Levene p=0.097)
+[2026-04-21 14:41:37]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_ArN_sediment.png
+[2026-04-21 14:41:37]   MinPartialCharge: no significant monotonic trend (rho=0.13, p=0.194); homoscedastic (Levene p=0.097)
+[2026-04-21 14:41:37]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_MinPartialCharge_sediment.png
+[2026-04-21 14:41:37]   fr_aldehyde: no significant monotonic trend (rho=-0.09, p=0.394); homoscedastic (Levene p=nan)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_aldehyde_sediment.png
+[2026-04-21 14:41:38]   BCUT2D_MWHI: no significant monotonic trend (rho=0.14, p=0.172); homoscedastic (Levene p=0.068)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_BCUT2D_MWHI_sediment.png
+[2026-04-21 14:41:38]   fr_furan: no significant monotonic trend (rho=0.12, p=0.226); homoscedastic (Levene p=nan)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_furan_sediment.png
+[2026-04-21 14:41:38]   fr_ketone: no significant monotonic trend (rho=-0.14, p=0.162); homoscedastic (Levene p=0.765)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_ketone_sediment.png
+[2026-04-21 14:41:38]   PEOE_VSA1: no significant monotonic trend (rho=-0.19, p=0.060); heteroscedastic (Levene p=0.014)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_PEOE_VSA1_sediment.png
+[2026-04-21 14:41:38]   fr_Al_OH: no significant monotonic trend (rho=0.06, p=0.533); homoscedastic (Levene p=0.338)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_Al_OH_sediment.png
+[2026-04-21 14:41:38]   BCUT2D_MRHI: no significant monotonic trend (rho=-0.03, p=0.742); homoscedastic (Levene p=0.284)
+[2026-04-21 14:41:38]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_BCUT2D_MRHI_sediment.png
+[2026-04-21 14:41:38] 
+[2026-04-21 14:41:38] Feature Reduction Recommendations (top-10 permutation features):
+[2026-04-21 14:41:38] ----------------------------------------------------------------------
+[2026-04-21 14:41:38]   SlogP_VSA7: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   fr_ArN: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   MinPartialCharge: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   fr_aldehyde: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   BCUT2D_MWHI: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   fr_furan: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   fr_ketone: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   PEOE_VSA1: HETEROSCEDASTIC (Levene p=0.014) — error variance changes across feature range; consider robust scaling or binning.
+[2026-04-21 14:41:38]   fr_Al_OH: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38]   BCUT2D_MRHI: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:41:38] 
+[2026-04-21 14:41:38] 
+[2026-04-21 14:41:38] PCA dimensionality estimate: 48 components explain ≥95% variance (out of 243 features).
+[2026-04-21 14:41:38] PCA dimensionality estimate: 79 components explain ≥99% variance (out of 243 features).
+============================================================
+[2026-04-21 14:41:38]   Feature Reduction — Strategy Comparison
+============================================================
+[2026-04-21 14:41:38] Baseline (full feature set, 243 features): R²=0.6466  RMSE=0.4729  MAE=0.3225
+[2026-04-21 14:41:38] ----------------------------------------------------------------------
+[2026-04-21 14:41:38] Strategy A  top-SVR (importance>0):
+  Features selected (132): ['SlogP_VSA7', 'fr_ArN', 'MinPartialCharge', 'fr_aldehyde', 'BCUT2D_MWHI', 'fr_furan', 'fr_ketone', 'PEOE_VSA1', 'fr_Al_OH', 'BCUT2D_MRHI', 'NumHDonors', 'fr_thiophene', 'EState_VSA4', 'MolLogP', 'fr_unbrch_alkane', 'MinEStateIndex', 'BalabanJ', 'fr_Al_COO', 'fr_Ar_OH', 'PEOE_VSA2', 'PEOE_VSA6', 'BCUT2D_MWLOW', 'SlogP_VSA4', 'fr_allylic_oxid', 'PEOE_VSA7', 'TPSA', 'SMR_VSA1', 'EState_VSA10', 'NumHAcceptors', 'VSA_EState7', 'EState_VSA5', 'qed', 'EState_VSA9', 'fr_alkyl_halide', 'fr_Imine', 'BCUT2D_MRLOW', 'Kappa3', 'fr_C_O_noCOO', 'PEOE_VSA13', 'fr_bicyclic', 'SMR_VSA3', 'fr_urea', 'NumSaturatedCarbocycles', 'fr_nitro_arom_nonortho', 'fr_nitro', 'PEOE_VSA9', 'VSA_EState2', 'NOCount', 'Kappa2', 'NumAliphaticCarbocycles', 'Chi3v', 'SlogP_VSA12', 'PEOE_VSA5', 'NumRotatableBonds', 'MACCS_134', 'Chi1v', 'fr_ester', 'NHOHCount', 'SlogP_VSA8', 'SMR_VSA5', 'MACCS_062', 'MACCS_103', 'BCUT2D_LOGPHI', 'RingCount', 'fr_C_O', 'SMR_VSA4', 'fr_COO', 'NumAliphaticRings', 'PEOE_VSA3', 'MACCS_107', 'fr_methoxy', 'EState_VSA1', 'PEOE_VSA8', 'PEOE_VSA14', 'MACCS_101', 'fr_Ar_NH', 'VSA_EState5', 'BCUT2D_CHGHI', 'MaxEStateIndex', 'EState_VSA3', 'MolWt', 'MACCS_046', 'MACCS_087', 'NumValenceElectrons', 'MACCS_164', 'SMR_VSA7', 'MACCS_089', 'MACCS_109', 'MACCS_130', 'SMR_VSA2', 'MACCS_080', 'MACCS_071', 'BCUT2D_CHGLO', 'SlogP_VSA5', 'SMR_VSA10', 'fr_NH1', 'MACCS_146', 'MACCS_099', 'MACCS_162', 'MACCS_063', 'MACCS_102', 'VSA_EState9', 'MACCS_159', 'MACCS_029', 'MACCS_148', 'MACCS_074', 'Ipc', 'MACCS_140', 'MACCS_073', 'MACCS_131', 'VSA_EState1', 'MACCS_024', 'MACCS_067', 'MACCS_082', 'MACCS_017', 'MACCS_077', 'NumHeteroatoms', 'MACCS_042', 'MACCS_119', 'MACCS_093', 'MACCS_091', 'MACCS_116', 'MACCS_095', 'MACCS_023', 'MACCS_097', 'MACCS_078', 'MACCS_136', 'MACCS_104', 'MACCS_115', 'MACCS_072', 'MACCS_054', 'MACCS_049']
+  R²=0.7187 (Δ+0.0721)  RMSE=0.4219 (Δ-0.0510)  MAE=0.2860 (Δ-0.0365)
+[2026-04-21 14:41:38] Strategy B  top-X (N=132):
+  Features selected (132): ['SlogP_VSA7', 'fr_ArN', 'MinPartialCharge', 'fr_aldehyde', 'BCUT2D_MWHI', 'fr_furan', 'fr_ketone', 'PEOE_VSA1', 'fr_Al_OH', 'BCUT2D_MRHI', 'NumHDonors', 'fr_thiophene', 'EState_VSA4', 'MolLogP', 'fr_unbrch_alkane', 'MinEStateIndex', 'BalabanJ', 'fr_Al_COO', 'fr_Ar_OH', 'PEOE_VSA2', 'PEOE_VSA6', 'BCUT2D_MWLOW', 'SlogP_VSA4', 'fr_allylic_oxid', 'PEOE_VSA7', 'TPSA', 'SMR_VSA1', 'EState_VSA10', 'NumHAcceptors', 'VSA_EState7', 'EState_VSA5', 'qed', 'EState_VSA9', 'fr_alkyl_halide', 'fr_Imine', 'BCUT2D_MRLOW', 'Kappa3', 'fr_C_O_noCOO', 'PEOE_VSA13', 'fr_bicyclic', 'SMR_VSA3', 'fr_urea', 'NumSaturatedCarbocycles', 'fr_nitro_arom_nonortho', 'fr_nitro', 'PEOE_VSA9', 'VSA_EState2', 'NOCount', 'Kappa2', 'NumAliphaticCarbocycles', 'Chi3v', 'SlogP_VSA12', 'PEOE_VSA5', 'NumRotatableBonds', 'MACCS_134', 'Chi1v', 'fr_ester', 'NHOHCount', 'SlogP_VSA8', 'SMR_VSA5', 'MACCS_062', 'MACCS_103', 'BCUT2D_LOGPHI', 'RingCount', 'fr_C_O', 'SMR_VSA4', 'fr_COO', 'NumAliphaticRings', 'PEOE_VSA3', 'MACCS_107', 'fr_methoxy', 'EState_VSA1', 'PEOE_VSA8', 'PEOE_VSA14', 'MACCS_101', 'fr_Ar_NH', 'VSA_EState5', 'BCUT2D_CHGHI', 'MaxEStateIndex', 'EState_VSA3', 'MolWt', 'MACCS_046', 'MACCS_087', 'NumValenceElectrons', 'MACCS_164', 'SMR_VSA7', 'MACCS_089', 'MACCS_109', 'MACCS_130', 'SMR_VSA2', 'MACCS_080', 'MACCS_071', 'BCUT2D_CHGLO', 'SlogP_VSA5', 'SMR_VSA10', 'fr_NH1', 'MACCS_146', 'MACCS_099', 'MACCS_162', 'MACCS_063', 'MACCS_102', 'VSA_EState9', 'MACCS_159', 'MACCS_029', 'MACCS_148', 'MACCS_074', 'Ipc', 'MACCS_140', 'MACCS_073', 'MACCS_131', 'VSA_EState1', 'MACCS_024', 'MACCS_067', 'MACCS_082', 'MACCS_017', 'MACCS_077', 'NumHeteroatoms', 'MACCS_042', 'MACCS_119', 'MACCS_093', 'MACCS_091', 'MACCS_116', 'MACCS_095', 'MACCS_023', 'MACCS_097', 'MACCS_078', 'MACCS_136', 'MACCS_104', 'MACCS_115', 'MACCS_072', 'MACCS_054', 'MACCS_049']
+  R²=0.7187 (Δ+0.0721)  RMSE=0.4219 (Δ-0.0510)  MAE=0.2860 (Δ-0.0365)
+[2026-04-21 14:41:38] Strategy C  top-N pca99 (N=79):
+  Features selected (79): ['SlogP_VSA7', 'fr_ArN', 'MinPartialCharge', 'fr_aldehyde', 'BCUT2D_MWHI', 'fr_furan', 'fr_ketone', 'PEOE_VSA1', 'fr_Al_OH', 'BCUT2D_MRHI', 'NumHDonors', 'fr_thiophene', 'EState_VSA4', 'MolLogP', 'fr_unbrch_alkane', 'MinEStateIndex', 'BalabanJ', 'fr_Al_COO', 'fr_Ar_OH', 'PEOE_VSA2', 'PEOE_VSA6', 'BCUT2D_MWLOW', 'SlogP_VSA4', 'fr_allylic_oxid', 'PEOE_VSA7', 'TPSA', 'SMR_VSA1', 'EState_VSA10', 'NumHAcceptors', 'VSA_EState7', 'EState_VSA5', 'qed', 'EState_VSA9', 'fr_alkyl_halide', 'fr_Imine', 'BCUT2D_MRLOW', 'Kappa3', 'fr_C_O_noCOO', 'PEOE_VSA13', 'fr_bicyclic', 'SMR_VSA3', 'fr_urea', 'NumSaturatedCarbocycles', 'fr_nitro_arom_nonortho', 'fr_nitro', 'PEOE_VSA9', 'VSA_EState2', 'NOCount', 'Kappa2', 'NumAliphaticCarbocycles', 'Chi3v', 'SlogP_VSA12', 'PEOE_VSA5', 'NumRotatableBonds', 'MACCS_134', 'Chi1v', 'fr_ester', 'NHOHCount', 'SlogP_VSA8', 'SMR_VSA5', 'MACCS_062', 'MACCS_103', 'BCUT2D_LOGPHI', 'RingCount', 'fr_C_O', 'SMR_VSA4', 'fr_COO', 'NumAliphaticRings', 'PEOE_VSA3', 'MACCS_107', 'fr_methoxy', 'EState_VSA1', 'PEOE_VSA8', 'PEOE_VSA14', 'MACCS_101', 'fr_Ar_NH', 'VSA_EState5', 'BCUT2D_CHGHI', 'MaxEStateIndex']
+  R²=0.7312 (Δ+0.0845)  RMSE=0.4124 (Δ-0.0604)  MAE=0.2772 (Δ-0.0453)
+[2026-04-21 14:41:38] 
+[2026-04-21 14:41:38] Strategy D  RFE (LinearSVR selector → RBF SVR evaluator):
+[2026-04-21 14:42:32]   RFE selector: LinearSVR, n_features_to_select=132
+  Features selected (132): ['MinEStateIndex', 'MinAbsEStateIndex', 'MolWt', 'MaxPartialCharge', 'MinPartialCharge', 'BCUT2D_MWHI', 'BCUT2D_MWLOW', 'BCUT2D_CHGLO', 'BCUT2D_LOGPLOW', 'BCUT2D_MRHI', 'BCUT2D_MRLOW', 'BalabanJ', 'Chi1v', 'HallKierAlpha', 'Ipc', 'Kappa2', 'PEOE_VSA1', 'PEOE_VSA10', 'PEOE_VSA11', 'PEOE_VSA13', 'PEOE_VSA14', 'PEOE_VSA2', 'PEOE_VSA6', 'PEOE_VSA7', 'SMR_VSA10', 'SMR_VSA2', 'SMR_VSA5', 'SMR_VSA7', 'SlogP_VSA1', 'SlogP_VSA12', 'SlogP_VSA6', 'SlogP_VSA7', 'SlogP_VSA8', 'EState_VSA1', 'EState_VSA10', 'EState_VSA9', 'VSA_EState1', 'VSA_EState3', 'VSA_EState7', 'VSA_EState8', 'VSA_EState9', 'NHOHCount', 'NOCount', 'NumAliphaticCarbocycles', 'NumAliphaticHeterocycles', 'NumAromaticHeterocycles', 'NumHDonors', 'NumHeteroatoms', 'fr_Al_COO', 'fr_Al_OH', 'fr_ArN', 'fr_Ar_COO', 'fr_Ar_N', 'fr_Ar_NH', 'fr_Ar_OH', 'fr_COO', 'fr_aldehyde', 'fr_allylic_oxid', 'fr_azo', 'fr_bicyclic', 'fr_ester', 'fr_ether', 'fr_furan', 'fr_ketone', 'fr_nitro', 'fr_pyridine', 'fr_thiophene', 'fr_unbrch_alkane', 'MACCS_017', 'MACCS_021', 'MACCS_029', 'MACCS_032', 'MACCS_034', 'MACCS_036', 'MACCS_037', 'MACCS_042', 'MACCS_043', 'MACCS_046', 'MACCS_048', 'MACCS_049', 'MACCS_050', 'MACCS_052', 'MACCS_053', 'MACCS_065', 'MACCS_066', 'MACCS_071', 'MACCS_073', 'MACCS_076', 'MACCS_079', 'MACCS_080', 'MACCS_081', 'MACCS_083', 'MACCS_085', 'MACCS_086', 'MACCS_092', 'MACCS_093', 'MACCS_094', 'MACCS_095', 'MACCS_100', 'MACCS_101', 'MACCS_106', 'MACCS_107', 'MACCS_109', 'MACCS_111', 'MACCS_112', 'MACCS_113', 'MACCS_122', 'MACCS_125', 'MACCS_126', 'MACCS_128', 'MACCS_130', 'MACCS_131', 'MACCS_133', 'MACCS_134', 'MACCS_136', 'MACCS_137', 'MACCS_138', 'MACCS_141', 'MACCS_146', 'MACCS_148', 'MACCS_149', 'MACCS_151', 'MACCS_153', 'MACCS_154', 'MACCS_155', 'MACCS_156', 'MACCS_157', 'MACCS_159', 'MACCS_160', 'MACCS_161', 'MACCS_162', 'MACCS_165']
+  R²=0.7027 (Δ+0.0561)  RMSE=0.4337 (Δ-0.0391)  MAE=0.2891 (Δ-0.0334)
+[2026-04-21 14:42:32] 
+[2026-04-21 14:42:32] Summary (sorted by R², descending):
+[2026-04-21 14:42:32]   Strategy                            N feats       R²     RMSE      MAE
+[2026-04-21 14:42:32]   Baseline (all features)                 243   0.6466   0.4729   0.3225
+[2026-04-21 14:42:32]   C  top-N pca99 (N=79)                    79   0.7312   0.4124   0.2772
+[2026-04-21 14:42:32]   A  top-SVR (importance>0)               132   0.7187   0.4219   0.2860
+[2026-04-21 14:42:32]   B  top-X (N=132)                        132   0.7187   0.4219   0.2860
+[2026-04-21 14:42:32]   D  RFE (LinearSVR→RBF)                  132   0.7027   0.4337   0.2891
+[2026-04-21 14:42:32] 
+[2026-04-21 14:42:32] Winner: C  top-N pca99 (N=79)  (N=79, R²=0.7312, RMSE=0.4124, MAE=0.2772)
+============================================================
+[2026-04-21 14:42:32]   Feature Reduction — Final Model
+============================================================
+[2026-04-21 14:42:32] 
+5-Fold Cross-Validation Results:
+[2026-04-21 14:42:32]   R² (CV): 0.6021 (+/- 0.0656)
+[2026-04-21 14:42:32]   MSE (CV): 0.2820 (+/- 0.0479)
+[2026-04-21 14:42:32]   MAE (CV): 0.3329 (+/- 0.0355)
+[2026-04-21 14:42:32] Final model CV (5-fold on training set, reduced features):
+  R² (CV): 0.6021 (+/- 0.0656)
+  RMSE (log10, CV): 0.5311 (+/- 0.2188)
+  MAE (CV): 0.3329
+[2026-04-21 14:42:32] Final model test set:
+  RMSE (log10): 0.4124  MAE (log10): 0.2772
+  RMSE (days):  589.85   MAE (days):  193.23
+[2026-04-21 14:42:32] Model saved to /Users/a/dev/WP3biodegradability/t_half/models/SVR_sediment_combined_20260421_144232.joblib
+[2026-04-21 14:42:32] Parameters saved to /Users/a/dev/WP3biodegradability/t_half/models/SVR_sediment_combined_20260421_144232.json
+[2026-04-21 14:42:32] 
+Learning Curve Analysis
+[2026-04-21 14:42:32] Training sizes evaluated: [30, 61, 92, 123, 154, 185, 216, 247, 278, 309]
+[2026-04-21 14:42:32] Final performance with 309 training samples:
+[2026-04-21 14:42:32]   Training R²: 0.9799 (+/- 0.0051)
+[2026-04-21 14:42:32]   Validation R²: 0.5098 (+/- 0.4157)
+[2026-04-21 14:42:32] Interpretation: Curves are still improving - more data may help
+[2026-04-21 14:42:32] Learning curve plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/learning_curve_sediment.png
+[2026-04-21 14:42:32] Overfitting gap plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/overfitting_gap_sediment.png
+[2026-04-21 14:42:32] True vs Predicted plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/true_vs_pred_sediment.png
+[2026-04-21 14:42:32] True vs Predicted (≤100) plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/true_vs_pred_100_sediment.png
+[2026-04-21 14:42:33] Feature importance plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/feature_importance_sediment_reduced.png
+[2026-04-21 14:42:33] Residuals vs Predicted: no significant monotonic trend (rho=-0.04, p=0.674)
+[2026-04-21 14:42:33] Residuals vs Predicted plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_pred_sediment_reduced.png
+[2026-04-21 14:42:33] Q-Q plot of residuals saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/qqplot_residuals_sediment_reduced.png
+[2026-04-21 14:42:33] Residual histogram plot saved to /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residual_hist_sediment_reduced.png
+[2026-04-21 14:42:33]   SMR_VSA4: no significant monotonic trend (rho=0.24, p=0.019); homoscedastic (Levene p=0.638)
+[2026-04-21 14:42:33]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_SMR_VSA4_sediment_reduced.png
+[2026-04-21 14:42:33]   NumHAcceptors: no significant monotonic trend (rho=-0.15, p=0.131); heteroscedastic (Levene p=0.003)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_NumHAcceptors_sediment_reduced.png
+[2026-04-21 14:42:34]   PEOE_VSA3: no significant monotonic trend (rho=0.14, p=0.175); homoscedastic (Levene p=0.657)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_PEOE_VSA3_sediment_reduced.png
+[2026-04-21 14:42:34]   TPSA: no significant monotonic trend (rho=-0.14, p=0.187); heteroscedastic (Levene p=0.001)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_TPSA_sediment_reduced.png
+[2026-04-21 14:42:34]   VSA_EState2: no significant monotonic trend (rho=-0.12, p=0.243); homoscedastic (Levene p=0.880)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_VSA_EState2_sediment_reduced.png
+[2026-04-21 14:42:34]   fr_ketone: no significant monotonic trend (rho=-0.18, p=0.075); homoscedastic (Levene p=0.699)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_ketone_sediment_reduced.png
+[2026-04-21 14:42:34]   SlogP_VSA7: no significant monotonic trend (rho=0.09, p=0.387); homoscedastic (Levene p=0.742)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_SlogP_VSA7_sediment_reduced.png
+[2026-04-21 14:42:34]   MinPartialCharge: no significant monotonic trend (rho=0.18, p=0.075); heteroscedastic (Levene p=0.010)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_MinPartialCharge_sediment_reduced.png
+[2026-04-21 14:42:34]   fr_aldehyde: no significant monotonic trend (rho=-0.07, p=0.478); homoscedastic (Levene p=nan)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_aldehyde_sediment_reduced.png
+[2026-04-21 14:42:34]   fr_Imine: no significant monotonic trend (rho=-0.08, p=0.414); homoscedastic (Levene p=nan)
+[2026-04-21 14:42:34]   Plot saved: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/residuals/residuals_vs_fr_Imine_sediment_reduced.png
+[2026-04-21 14:42:34] 
+[2026-04-21 14:42:34] Feature Reduction Recommendations (top-10 permutation features):
+[2026-04-21 14:42:34] ----------------------------------------------------------------------
+[2026-04-21 14:42:34]   SMR_VSA4: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   NumHAcceptors: HETEROSCEDASTIC (Levene p=0.003) — error variance changes across feature range; consider robust scaling or binning.
+[2026-04-21 14:42:34]   PEOE_VSA3: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   TPSA: HETEROSCEDASTIC (Levene p=0.001) — error variance changes across feature range; consider robust scaling or binning.
+[2026-04-21 14:42:34]   VSA_EState2: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   fr_ketone: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   SlogP_VSA7: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   MinPartialCharge: HETEROSCEDASTIC (Levene p=0.010) — error variance changes across feature range; consider robust scaling or binning.
+[2026-04-21 14:42:34]   fr_aldehyde: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34]   fr_Imine: OK — no systematic trend or heteroscedasticity detected; retain as-is.
+[2026-04-21 14:42:34] 
+[2026-04-21 14:42:34] 
+[2026-04-21 14:42:34] PCA dimensionality estimate: 34 components explain ≥95% variance (out of 79 features).
+[2026-04-21 14:42:34] PCA dimensionality estimate: 49 components explain ≥99% variance (out of 79 features).
+[2026-04-21 14:42:34] Test coverage inside training bounding box: 99.0%
+[2026-04-21 14:42:34] PCA explained variance: PC1=0.156, PC2=0.138
+============================================================
+[2026-04-21 14:42:34]   Applicability Domain Analysis
+============================================================
+[2026-04-21 14:42:34] h* threshold : 0.8172
+[2026-04-21 14:42:34] Train inside AD : 95.5%
+[2026-04-21 14:42:34] Test  inside AD : 58.8%
+[2026-04-21 14:42:34] AD-outside test compounds (n=40)
+[2026-04-21 14:42:34] Butina clusters: 38, singletons: 36 (90.0%)
+============================================================
+[2026-04-21 14:42:34]   Chemical Structure Analysis (Sections 1-4)
+============================================================
+[2026-04-21 14:42:34] Section 1: Scaffold Analysis
+[2026-04-21 14:42:34]   Total scaffolds: 28
+[2026-04-21 14:42:34]   Singletons: 20
+[2026-04-21 14:42:34]   Top scaffold coverage: 28.9%
+[2026-04-21 14:42:34]   Dominance flag: False
+[2026-04-21 14:42:34]   Scaffolds for 90% coverage: 19
+[2026-04-21 14:42:34] Section 2: Substituent Analysis
+[2026-04-21 14:42:34]   Error: No R-groups identified
+[2026-04-21 14:42:34] Section 3: Fragment Analysis
+[2026-04-21 14:42:34]   Total fragments: 179
+[2026-04-21 14:42:34]   Unique fragments: 118
+[2026-04-21 14:42:34]   Outlier fragments: 0
+[2026-04-21 14:42:34] Section 4: Chemistry Consistency Check
+[2026-04-21 14:42:34]   Descriptor map entries: 9
+[2026-04-21 14:42:34]   Motifs analyzed: 6
+[2026-04-21 14:42:34]   Scaffold-driven AD violations: True
+[2026-04-21 14:42:34] Chemistry analysis complete. Output: /Users/a/dev/WP3biodegradability/t_half/logs/sediment_combined/20260421_144054/chemistry_analysis

@@ -1,0 +1,2 @@
+fragment_smiles,in_high_activity,in_outliers
+ClC1=C(Cl)C2(Cl)C3C(Cl)C=CC3C1(Cl)C2(Cl)Cl,False,True

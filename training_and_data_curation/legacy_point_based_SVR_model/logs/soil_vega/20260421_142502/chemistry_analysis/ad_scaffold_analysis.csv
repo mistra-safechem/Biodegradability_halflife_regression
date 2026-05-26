@@ -1,0 +1,14 @@
+scaffold_smiles,n_samples,n_outside_ad,pct_outside_ad
+C1=CCC=CC1,1,1,100.0
+c1ccc(Oc2ccccc2)cc1,1,1,100.0
+c1ccc2ncccc2c1,1,1,100.0
+O=C(OCc1ccccc1)c1ccccc1,1,1,100.0
+c1ccc2c(c1)oc1ccccc12,2,2,100.0
+c1ccc(Nc2ccccc2)cc1,1,1,100.0
+c1ccc(Cc2ccccc2)cc1,1,1,100.0
+,13,12,92.3
+c1ccccc1,20,10,50.0
+c1ccc2c(c1)Oc1ccccc1O2,6,2,33.3
+c1ccc(-c2ccccc2)cc1,5,0,0.0
+c1ccc2ccccc2c1,1,0,0.0
+C1CCCCC1,1,0,0.0

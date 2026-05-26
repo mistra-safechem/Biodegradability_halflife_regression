@@ -1,0 +1,66 @@
+{
+  "Kappa2": {
+    "importance": 0.002931659894584887,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_N_O": {
+    "importance": 0.003479348218346495,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_139": {
+    "importance": 0.0036083743272168956,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_hdrzone": {
+    "importance": 0.003909782001282491,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_lactone": {
+    "importance": 0.00391767586896114,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA10": {
+    "importance": 0.004008705498060922,
+    "interpretation": "Molecular descriptor"
+  },
+  "EState_VSA9": {
+    "importance": 0.0043325046055995575,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA8": {
+    "importance": 0.0043724926895350015,
+    "interpretation": "Molecular descriptor"
+  },
+  "Chi2v": {
+    "importance": 0.004397439103344614,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_104": {
+    "importance": 0.004406051141850059,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "PEOE_VSA3": {
+    "importance": 0.004432636018769887,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_ArN": {
+    "importance": 0.005728579417577051,
+    "interpretation": "Molecular descriptor"
+  },
+  "RingCount": {
+    "importance": 0.006211632703400999,
+    "interpretation": "Total ring count"
+  },
+  "MACCS_067": {
+    "importance": 0.006464500610622881,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SlogP_VSA8": {
+    "importance": 0.006643073167140684,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_109": {
+    "importance": 0.01174250281311861,
+    "interpretation": "Structural fingerprint bit"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "MACCS_074": {
+    "importance": 0.003720908833219902,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "Chi0n": {
+    "importance": 0.0037547646017682622,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_122": {
+    "importance": 0.003886096155735119,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "BalabanJ": {
+    "importance": 0.004112089580239675,
+    "interpretation": "Balaban connectivity index"
+  },
+  "MACCS_103": {
+    "importance": 0.00421220810234395,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "Kappa3": {
+    "importance": 0.004320288540674658,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_120": {
+    "importance": 0.004844427028659293,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SMR_VSA3": {
+    "importance": 0.004982946697553889,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_098": {
+    "importance": 0.005333266195463876,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_057": {
+    "importance": 0.006240602091190603,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_129": {
+    "importance": 0.006371344993237526,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_112": {
+    "importance": 0.007047612740222356,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState2": {
+    "importance": 0.007056688257565965,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_072": {
+    "importance": 0.008816548859641029,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState7": {
+    "importance": 0.009927391964474402,
+    "interpretation": "Molecular descriptor"
+  },
+  "SlogP_VSA2": {
+    "importance": 0.011274814775728633,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_bicyclic": {
+    "importance": 0.012960476514701502,
+    "interpretation": "Molecular descriptor"
+  }
+}

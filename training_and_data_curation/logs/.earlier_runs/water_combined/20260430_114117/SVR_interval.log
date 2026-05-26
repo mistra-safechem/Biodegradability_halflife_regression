@@ -1,0 +1,106 @@
+[2026-04-30 11:41:17] INFO     water_combined — 
+======================================================================
+  Interval-Aware SVR — WATER / combined
+======================================================================
+[2026-04-30 11:41:17] INFO     water_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+[2026-04-30 11:41:17] INFO     water_combined — Raw dataset: 743 rows
+[2026-04-30 11:41:17] INFO     water_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/interval_table_water.csv
+[2026-04-30 11:41:17] INFO     water_combined — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/t_half_meta_water.csv
+[2026-04-30 11:41:17] INFO     water_combined — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:44:05] INFO     water_combined — 5-fold CV on training set: R²=0.5500 (±0.0710)  RMSE(log10)=0.5795  RMSE(days-geom)=3.80×
+[2026-04-30 11:44:05] INFO     water_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:44:05] INFO     water_combined —   [test]  Interval coverage probability : 0.206 (36/175)
+[2026-04-30 11:44:05] INFO     water_combined —   [test]  Mean interval loss            : 0.5358 log10 days  (~3.43 days geom. equiv.)
+[2026-04-30 11:44:05] INFO     water_combined —   [test]  Class accuracy                : 0.206
+[2026-04-30 11:44:05] INFO     water_combined —   [test]  Spearman rho                  : 0.657  (p=0.0000)
+[2026-04-30 11:44:05] INFO     water_combined —   [test]  Kendall tau                   : 0.491  (p=0.0000)
+[2026-04-30 11:44:05] INFO     water_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:44:05] INFO     water_combined —   [train] Interval coverage probability : 0.207 (108/522)
+[2026-04-30 11:44:05] INFO     water_combined —   [train] Mean interval loss            : 0.5511 log10 days  (~3.56 days geom. equiv.)
+[2026-04-30 11:44:05] INFO     water_combined —   [train] Class accuracy                : 0.207
+[2026-04-30 11:44:05] INFO     water_combined —   [train] Spearman rho                  : 0.878  (p=0.0000)
+[2026-04-30 11:44:05] INFO     water_combined —   [train] Kendall tau                   : 0.735  (p=0.0000)
+[2026-04-30 11:44:05] INFO     water_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:44:19] INFO     water_combined — PCA dimensionality: 53 components ≥95%, 89 components ≥99% (of 250 total).
+[2026-04-30 11:44:19] INFO     water_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:44:19] INFO     water_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.200 (35/175)
+[2026-04-30 11:44:19] INFO     water_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+[2026-04-30 11:44:19] INFO     water_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.200
+[2026-04-30 11:44:19] INFO     water_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.664  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.495  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined — Strategy A  top-SVR (importance>0): n=114  coverage=0.200  MIL=0.5297  rho=0.664
+[2026-04-30 11:44:19] INFO     water_combined —   [B  top-X (N=114)] Interval coverage probability : 0.200 (35/175)
+[2026-04-30 11:44:19] INFO     water_combined —   [B  top-X (N=114)] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+[2026-04-30 11:44:19] INFO     water_combined —   [B  top-X (N=114)] Class accuracy                : 0.200
+[2026-04-30 11:44:19] INFO     water_combined —   [B  top-X (N=114)] Spearman rho                  : 0.664  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined —   [B  top-X (N=114)] Kendall tau                   : 0.495  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined — Strategy B  top-X (N=114): n=114  coverage=0.200  MIL=0.5297  rho=0.664
+[2026-04-30 11:44:19] INFO     water_combined —   [C  top-N pca99 (N=89)] Interval coverage probability : 0.194 (34/175)
+[2026-04-30 11:44:19] INFO     water_combined —   [C  top-N pca99 (N=89)] Mean interval loss            : 0.5254 log10 days  (~3.35 days geom. equiv.)
+[2026-04-30 11:44:19] INFO     water_combined —   [C  top-N pca99 (N=89)] Class accuracy                : 0.194
+[2026-04-30 11:44:19] INFO     water_combined —   [C  top-N pca99 (N=89)] Spearman rho                  : 0.668  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined —   [C  top-N pca99 (N=89)] Kendall tau                   : 0.500  (p=0.0000)
+[2026-04-30 11:44:19] INFO     water_combined — Strategy C  top-N pca99 (N=89): n=89  coverage=0.194  MIL=0.5254  rho=0.668
+[2026-04-30 11:45:31] INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.189 (33/175)
+[2026-04-30 11:45:31] INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5324 log10 days  (~3.41 days geom. equiv.)
+[2026-04-30 11:45:31] INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.189
+[2026-04-30 11:45:31] INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.631  (p=0.0000)
+[2026-04-30 11:45:31] INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.470  (p=0.0000)
+[2026-04-30 11:45:31] INFO     water_combined — Winner: A  top-SVR (importance>0)  (n=114, coverage=0.200, rho=0.664)
+[2026-04-30 11:45:31] INFO     water_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:45:31] INFO     water_combined — 5-fold CV on training set: R²=0.5277 (±0.0567)  RMSE(log10)=0.5924  RMSE(days-geom)=3.91×
+[2026-04-30 11:45:31] INFO     water_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:45:31] INFO     water_combined —   [final] Interval coverage probability : 0.200 (35/175)
+[2026-04-30 11:45:31] INFO     water_combined —   [final] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+[2026-04-30 11:45:31] INFO     water_combined —   [final] Class accuracy                : 0.200
+[2026-04-30 11:45:31] INFO     water_combined —   [final] Spearman rho                  : 0.664  (p=0.0000)
+[2026-04-30 11:45:31] INFO     water_combined —   [final] Kendall tau                   : 0.495  (p=0.0000)
+[2026-04-30 11:45:31] INFO     water_combined — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531.joblib
+[2026-04-30 11:45:31] INFO     water_combined — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531.json
+[2026-04-30 11:45:31] INFO     water_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:45:31] INFO     water_combined — Learning curve val R² (final): 0.3667 ± 0.2267
+[2026-04-30 11:45:31] INFO     water_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117
+[2026-04-30 11:45:31] INFO     water_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:45:36] INFO     water_combined — PCA dimensionality: 39 components ≥95%, 58 components ≥99% (of 114 total).
+[2026-04-30 11:45:36] INFO     water_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:45:36] INFO     water_combined — PCA coverage: 99.4%
+[2026-04-30 11:45:37] INFO     water_combined — AD-outside test compounds: 140
+[2026-04-30 11:45:37] INFO     water_combined — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/training_split_water.csv
+[2026-04-30 11:45:37] INFO     water_combined — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531_ad.npz
+[2026-04-30 11:45:37] INFO     water_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/ad_membership_water.csv
+[2026-04-30 11:45:37] INFO     water_combined — Model JSON patched with artefact paths.
+[2026-04-30 11:45:37] INFO     water_combined — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:45:37] INFO     water_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117

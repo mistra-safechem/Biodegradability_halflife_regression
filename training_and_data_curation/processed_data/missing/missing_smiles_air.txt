@@ -1,0 +1,50 @@
+p, p' - DDT
+benzo a pyrene
+tetrachlorometane
+benz a anthracene
+p,p' - DDE
+benzo b thiophene
+propane, 2,2'-oxybis 1-chloro-
+ethane, 1,1'-oxybis 2-chloro-
+ethane, 1,1'- methylenebis(oxy) bis 2-chloro-
+methane, oxybis chloro-
+PCB 28*
+PCB 101*
+PCB 180*
+? HCH*
+p-cresol*
+Hypo-A*
+Hypo-B*
+Hypo-C*
+dimethylphthalate (dmp)
+diethylphthalate (dep)
+PCB-47
+PCB-40
+PCB-33
+PCB-29
+PCB-18
+PCB-30
+PCB-7
+PCB-9
+PCB-11
+PCB-15
+PCB-4
+PCB-1
+chloroethene(vinylchloride)
+methane, oxybis chloro-
+bis(2-chloroethyl)ether(1
+decachlorobiphenyl(pcb209)
+1,1'-biphenyl(pcb0)
+pcb-153(2,2',4,4',5,5'-hexachlorobiphenyl)
+pcb-52(2,2',5,5'-tetrachlorobiphenyl)
+pcb-77(3,3',4,4'-tetrachlorobiphenyl)
+1,4,5-trimethylnapthalene
+o,p'dde
+p, p' - DDT
+benzaanthracene
+benzoapyrene
+di-(2-ethylhexyl)-phthalate(dehp)
+propane,2,2'-oxybis1-chloro-
+benzyldehyde
+benzobthiophene
+tetrachlorometane

@@ -1,0 +1,34 @@
+{
+  "MACCS_080": {
+    "importance": 0.002721429366295039,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "PEOE_VSA1": {
+    "importance": 0.004041880280607868,
+    "interpretation": "Molecular descriptor"
+  },
+  "EState_VSA10": {
+    "importance": 0.004649009216339839,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA4": {
+    "importance": 0.004843697309485734,
+    "interpretation": "Molecular descriptor"
+  },
+  "FractionCSP3": {
+    "importance": 0.005143310607856827,
+    "interpretation": "3D character (sp3 fraction)"
+  },
+  "PEOE_VSA6": {
+    "importance": 0.005188321553258204,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_128": {
+    "importance": 0.005313027558287292,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "RingCount": {
+    "importance": 0.008928840347649228,
+    "interpretation": "Total ring count"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "MACCS_073": {
+    "importance": 0.0020102723851308955,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_Imine": {
+    "importance": 0.002026287378366065,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_Ar_N": {
+    "importance": 0.0021893981219321735,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_133": {
+    "importance": 0.002236103799721512,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_125": {
+    "importance": 0.0022932901962830154,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_nitro_arom_nonortho": {
+    "importance": 0.002296529140041603,
+    "interpretation": "Molecular descriptor"
+  },
+  "VSA_EState6": {
+    "importance": 0.0023615111630362782,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_148": {
+    "importance": 0.0023892833040604854,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "NumAromaticHeterocycles": {
+    "importance": 0.0026901404641125116,
+    "interpretation": "Molecular descriptor"
+  },
+  "Kappa2": {
+    "importance": 0.0029303385202844034,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_112": {
+    "importance": 0.003140888645758555,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_136": {
+    "importance": 0.003359945856500923,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MinEStateIndex": {
+    "importance": 0.003552368229935854,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_075": {
+    "importance": 0.0035801235291259004,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_121": {
+    "importance": 0.0036148609999565153,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "MACCS_091": {
+    "importance": 0.004269447696388251,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SMR_VSA4": {
+    "importance": 0.005278730333610426,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_028": {
+    "importance": 0.005483611765014096,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SMR_VSA6": {
+    "importance": 0.006011301508062261,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_036": {
+    "importance": 0.007500340839739661,
+    "interpretation": "Structural fingerprint bit"
+  }
+}

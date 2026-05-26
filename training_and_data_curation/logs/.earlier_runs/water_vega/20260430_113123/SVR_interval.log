@@ -1,0 +1,106 @@
+[2026-04-30 11:31:23] INFO     water_vega — 
+======================================================================
+  Interval-Aware SVR — WATER / vega
+======================================================================
+[2026-04-30 11:31:23] INFO     water_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+[2026-04-30 11:31:23] INFO     water_vega — Raw dataset: 223 rows
+[2026-04-30 11:31:23] INFO     water_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/interval_table_water.csv
+[2026-04-30 11:31:23] INFO     water_vega — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/t_half_meta_water.csv
+[2026-04-30 11:31:23] INFO     water_vega — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:31:28] INFO     water_vega — 5-fold CV on training set: R²=0.7414 (±0.0513)  RMSE(log10)=0.4206  RMSE(days-geom)=2.63×
+[2026-04-30 11:31:28] INFO     water_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:31:28] INFO     water_vega —   [test]  Interval coverage probability : 0.623 (33/53)
+[2026-04-30 11:31:28] INFO     water_vega —   [test]  Mean interval loss            : 0.1490 log10 days  (~1.41 days geom. equiv.)
+[2026-04-30 11:31:28] INFO     water_vega —   [test]  Class accuracy                : 0.623
+[2026-04-30 11:31:28] INFO     water_vega —   [test]  Spearman rho                  : 0.847  (p=0.0000)
+[2026-04-30 11:31:28] INFO     water_vega —   [test]  Kendall tau                   : 0.734  (p=0.0000)
+[2026-04-30 11:31:28] INFO     water_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:31:28] INFO     water_vega —   [train] Interval coverage probability : 0.778 (123/158)
+[2026-04-30 11:31:28] INFO     water_vega —   [train] Mean interval loss            : 0.0577 log10 days  (~1.14 days geom. equiv.)
+[2026-04-30 11:31:28] INFO     water_vega —   [train] Class accuracy                : 0.778
+[2026-04-30 11:31:28] INFO     water_vega —   [train] Spearman rho                  : 0.980  (p=0.0000)
+[2026-04-30 11:31:28] INFO     water_vega —   [train] Kendall tau                   : 0.906  (p=0.0000)
+[2026-04-30 11:31:28] INFO     water_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:31:30] INFO     water_vega — PCA dimensionality: 34 components ≥95%, 56 components ≥99% (of 198 total).
+[2026-04-30 11:31:30] INFO     water_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:31:30] INFO     water_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.491 (26/53)
+[2026-04-30 11:31:30] INFO     water_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.1717 log10 days  (~1.48 days geom. equiv.)
+[2026-04-30 11:31:30] INFO     water_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.491
+[2026-04-30 11:31:30] INFO     water_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.823  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.715  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega — Strategy A  top-SVR (importance>0): n=59  coverage=0.491  MIL=0.1717  rho=0.823
+[2026-04-30 11:31:30] INFO     water_vega —   [B  top-X (N=59)] Interval coverage probability : 0.491 (26/53)
+[2026-04-30 11:31:30] INFO     water_vega —   [B  top-X (N=59)] Mean interval loss            : 0.1717 log10 days  (~1.48 days geom. equiv.)
+[2026-04-30 11:31:30] INFO     water_vega —   [B  top-X (N=59)] Class accuracy                : 0.491
+[2026-04-30 11:31:30] INFO     water_vega —   [B  top-X (N=59)] Spearman rho                  : 0.823  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega —   [B  top-X (N=59)] Kendall tau                   : 0.715  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega — Strategy B  top-X (N=59): n=59  coverage=0.491  MIL=0.1717  rho=0.823
+[2026-04-30 11:31:30] INFO     water_vega —   [C  top-N pca99 (N=56)] Interval coverage probability : 0.509 (27/53)
+[2026-04-30 11:31:30] INFO     water_vega —   [C  top-N pca99 (N=56)] Mean interval loss            : 0.1722 log10 days  (~1.49 days geom. equiv.)
+[2026-04-30 11:31:30] INFO     water_vega —   [C  top-N pca99 (N=56)] Class accuracy                : 0.509
+[2026-04-30 11:31:30] INFO     water_vega —   [C  top-N pca99 (N=56)] Spearman rho                  : 0.826  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega —   [C  top-N pca99 (N=56)] Kendall tau                   : 0.718  (p=0.0000)
+[2026-04-30 11:31:30] INFO     water_vega — Strategy C  top-N pca99 (N=56): n=56  coverage=0.509  MIL=0.1722  rho=0.826
+[2026-04-30 11:32:00] INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.472 (25/53)
+[2026-04-30 11:32:00] INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.2006 log10 days  (~1.59 days geom. equiv.)
+[2026-04-30 11:32:00] INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.472
+[2026-04-30 11:32:00] INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.806  (p=0.0000)
+[2026-04-30 11:32:00] INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.691  (p=0.0000)
+[2026-04-30 11:32:00] INFO     water_vega — Winner: C  top-N pca99 (N=56)  (n=56, coverage=0.509, rho=0.826)
+[2026-04-30 11:32:00] INFO     water_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:32:00] INFO     water_vega — 5-fold CV on training set: R²=0.6718 (±0.0530)  RMSE(log10)=0.4746  RMSE(days-geom)=2.98×
+[2026-04-30 11:32:00] INFO     water_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:32:00] INFO     water_vega —   [final] Interval coverage probability : 0.509 (27/53)
+[2026-04-30 11:32:00] INFO     water_vega —   [final] Mean interval loss            : 0.1722 log10 days  (~1.49 days geom. equiv.)
+[2026-04-30 11:32:00] INFO     water_vega —   [final] Class accuracy                : 0.509
+[2026-04-30 11:32:00] INFO     water_vega —   [final] Spearman rho                  : 0.826  (p=0.0000)
+[2026-04-30 11:32:00] INFO     water_vega —   [final] Kendall tau                   : 0.718  (p=0.0000)
+[2026-04-30 11:32:00] INFO     water_vega — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200.joblib
+[2026-04-30 11:32:00] INFO     water_vega — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200.json
+[2026-04-30 11:32:00] INFO     water_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:32:00] INFO     water_vega — Learning curve val R² (final): -4.6985 ± 4.3880
+[2026-04-30 11:32:00] INFO     water_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123
+[2026-04-30 11:32:00] INFO     water_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:32:01] INFO     water_vega — PCA dimensionality: 22 components ≥95%, 34 components ≥99% (of 56 total).
+[2026-04-30 11:32:01] INFO     water_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:32:01] INFO     water_vega — PCA coverage: 96.2%
+[2026-04-30 11:32:01] INFO     water_vega — AD-outside test compounds: 26
+[2026-04-30 11:32:01] INFO     water_vega — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/training_split_water.csv
+[2026-04-30 11:32:01] INFO     water_vega — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200_ad.npz
+[2026-04-30 11:32:01] INFO     water_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/ad_membership_water.csv
+[2026-04-30 11:32:01] INFO     water_vega — Model JSON patched with artefact paths.
+[2026-04-30 11:32:01] INFO     water_vega — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:32:01] INFO     water_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123

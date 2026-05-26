@@ -1,0 +1,16 @@
+scaffold_smiles,n_samples,n_outside_ad,pct_outside_ad
+c1ccc(Cc2ccccc2)cc1,1,1,100.0
+C1=CC2C3C=CC(C3)C2C1,1,1,100.0
+c1ncncn1,2,2,100.0
+c1ccc2ncccc2c1,1,1,100.0
+,13,5,38.5
+c1ccccc1,16,6,37.5
+c1ccc2c(c1)Oc1ccccc1O2,4,1,25.0
+c1ccc(-c2ccccc2)cc1,8,0,0.0
+c1ccc2c(c1)ccc1c3ccccc3ccc21,1,0,0.0
+c1ccc2c(c1)cc1ccc3cccc4ccc2c1c34,1,0,0.0
+c1ccc2ccccc2c1,1,0,0.0
+c1ccc2cc3c(ccc4ccccc43)cc2c1,1,0,0.0
+c1ccc2c(c1)ccc1ccccc12,1,0,0.0
+C1CCCCC1,1,0,0.0
+c1ccc2c(c1)CCO2,1,0,0.0

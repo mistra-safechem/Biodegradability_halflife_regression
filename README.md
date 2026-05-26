@@ -6,7 +6,7 @@ This repository contains code for interval-based biodegradability half-life regr
 ---
 ## Overview
 Two different subfolders are included in this repository:
-- COMING SOON `training_and_data_curation/`: Contains code and documentation for data curation, descriptor calculation, database building, and model training and analysis.
+- `training_and_data_curation/`: Contains code and documentation for data curation, descriptor calculation, database building, and model training and analysis.
 - `inference`: Contains a standalone package for interval-based inference, which can be used independently of the training pipeline.
 
 ---

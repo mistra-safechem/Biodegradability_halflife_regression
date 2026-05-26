@@ -1,0 +1,106 @@
+[2026-04-30 11:55:55] INFO     sediment_combined — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / combined
+======================================================================
+[2026-04-30 11:55:55] INFO     sediment_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+[2026-04-30 11:55:55] INFO     sediment_combined — Raw dataset: 414 rows
+[2026-04-30 11:55:55] INFO     sediment_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/interval_table_sediment.csv
+[2026-04-30 11:55:55] INFO     sediment_combined — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/t_half_meta_sediment.csv
+[2026-04-30 11:55:55] INFO     sediment_combined — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:56:32] INFO     sediment_combined — 5-fold CV on training set: R²=0.6610 (±0.0733)  RMSE(log10)=0.4902  RMSE(days-geom)=3.09×
+[2026-04-30 11:56:32] INFO     sediment_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:56:32] INFO     sediment_combined —   [test]  Interval coverage probability : 0.237 (23/97)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [test]  Mean interval loss            : 0.5009 log10 days  (~3.17 days geom. equiv.)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [test]  Class accuracy                : 0.237
+[2026-04-30 11:56:32] INFO     sediment_combined —   [test]  Spearman rho                  : 0.800  (p=0.0000)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [test]  Kendall tau                   : 0.629  (p=0.0000)
+[2026-04-30 11:56:32] INFO     sediment_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:56:32] INFO     sediment_combined —   [train] Interval coverage probability : 0.210 (61/290)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [train] Mean interval loss            : 0.5316 log10 days  (~3.40 days geom. equiv.)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [train] Class accuracy                : 0.210
+[2026-04-30 11:56:32] INFO     sediment_combined —   [train] Spearman rho                  : 0.981  (p=0.0000)
+[2026-04-30 11:56:32] INFO     sediment_combined —   [train] Kendall tau                   : 0.908  (p=0.0000)
+[2026-04-30 11:56:32] INFO     sediment_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:56:38] INFO     sediment_combined — PCA dimensionality: 48 components ≥95%, 79 components ≥99% (of 243 total).
+[2026-04-30 11:56:38] INFO     sediment_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:56:38] INFO     sediment_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.206 (20/97)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.4963 log10 days  (~3.14 days geom. equiv.)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.206
+[2026-04-30 11:56:38] INFO     sediment_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.833  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.665  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined — Strategy A  top-SVR (importance>0): n=132  coverage=0.206  MIL=0.4963  rho=0.833
+[2026-04-30 11:56:38] INFO     sediment_combined —   [B  top-X (N=132)] Interval coverage probability : 0.206 (20/97)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [B  top-X (N=132)] Mean interval loss            : 0.4963 log10 days  (~3.14 days geom. equiv.)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [B  top-X (N=132)] Class accuracy                : 0.206
+[2026-04-30 11:56:38] INFO     sediment_combined —   [B  top-X (N=132)] Spearman rho                  : 0.833  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [B  top-X (N=132)] Kendall tau                   : 0.665  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined — Strategy B  top-X (N=132): n=132  coverage=0.206  MIL=0.4963  rho=0.833
+[2026-04-30 11:56:38] INFO     sediment_combined —   [C  top-N pca99 (N=79)] Interval coverage probability : 0.227 (22/97)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [C  top-N pca99 (N=79)] Mean interval loss            : 0.5117 log10 days  (~3.25 days geom. equiv.)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [C  top-N pca99 (N=79)] Class accuracy                : 0.227
+[2026-04-30 11:56:38] INFO     sediment_combined —   [C  top-N pca99 (N=79)] Spearman rho                  : 0.833  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined —   [C  top-N pca99 (N=79)] Kendall tau                   : 0.664  (p=0.0000)
+[2026-04-30 11:56:38] INFO     sediment_combined — Strategy C  top-N pca99 (N=79): n=79  coverage=0.227  MIL=0.5117  rho=0.833
+[2026-04-30 11:57:32] INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.258 (25/97)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5010 log10 days  (~3.17 days geom. equiv.)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.258
+[2026-04-30 11:57:32] INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.848  (p=0.0000)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.685  (p=0.0000)
+[2026-04-30 11:57:32] INFO     sediment_combined — Winner: D  RFE (LinearSVR→RBF)  (n=132, coverage=0.258, rho=0.848)
+[2026-04-30 11:57:32] INFO     sediment_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:57:32] INFO     sediment_combined — 5-fold CV on training set: R²=0.6564 (±0.0827)  RMSE(log10)=0.4924  RMSE(days-geom)=3.11×
+[2026-04-30 11:57:32] INFO     sediment_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:57:32] INFO     sediment_combined —   [final] Interval coverage probability : 0.258 (25/97)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [final] Mean interval loss            : 0.5010 log10 days  (~3.17 days geom. equiv.)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [final] Class accuracy                : 0.258
+[2026-04-30 11:57:32] INFO     sediment_combined —   [final] Spearman rho                  : 0.848  (p=0.0000)
+[2026-04-30 11:57:32] INFO     sediment_combined —   [final] Kendall tau                   : 0.685  (p=0.0000)
+[2026-04-30 11:57:32] INFO     sediment_combined — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732.joblib
+[2026-04-30 11:57:32] INFO     sediment_combined — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732.json
+[2026-04-30 11:57:32] INFO     sediment_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:57:32] INFO     sediment_combined — Learning curve val R² (final): 0.5098 ± 0.4157
+[2026-04-30 11:57:32] INFO     sediment_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555
+[2026-04-30 11:57:32] INFO     sediment_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:57:34] INFO     sediment_combined — PCA dimensionality: 36 components ≥95%, 58 components ≥99% (of 132 total).
+[2026-04-30 11:57:34] INFO     sediment_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:57:34] INFO     sediment_combined — PCA coverage: 100.0%
+[2026-04-30 11:57:35] INFO     sediment_combined — AD-outside test compounds: 72
+[2026-04-30 11:57:35] INFO     sediment_combined — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/training_split_sediment.csv
+[2026-04-30 11:57:35] INFO     sediment_combined — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732_ad.npz
+[2026-04-30 11:57:35] INFO     sediment_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/ad_membership_sediment.csv
+[2026-04-30 11:57:35] INFO     sediment_combined — Model JSON patched with artefact paths.
+[2026-04-30 11:57:35] INFO     sediment_combined — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:57:35] INFO     sediment_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555

@@ -1,0 +1,1109 @@
+############################################################
+# air_hsbd/20260430_112714
+############################################################
+
+INFO     air_hsbd — 
+======================================================================
+  Interval-Aware SVR — AIR / hsbd
+======================================================================
+INFO     air_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+INFO     air_hsbd — Raw dataset: 308 rows
+INFO     air_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/interval_table_air.csv
+INFO     air_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/t_half_meta_air.csv
+INFO     air_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+INFO     air_hsbd — 5-fold CV on training set: R²=0.7571 (±0.0885)  RMSE(log10)=0.4202  RMSE(days-geom)=2.63×
+INFO     air_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     air_hsbd —   [test]  Interval coverage probability : 0.192 (14/73)
+INFO     air_hsbd —   [test]  Mean interval loss            : 0.5557 log10 days  (~3.59 days geom. equiv.)
+INFO     air_hsbd —   [test]  Class accuracy                : 0.192
+INFO     air_hsbd —   [test]  Spearman rho                  : 0.851  (p=0.0000)
+INFO     air_hsbd —   [test]  Kendall tau                   : 0.711  (p=0.0000)
+INFO     air_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     air_hsbd —   [train] Interval coverage probability : 0.228 (50/219)
+INFO     air_hsbd —   [train] Mean interval loss            : 0.5767 log10 days  (~3.77 days geom. equiv.)
+INFO     air_hsbd —   [train] Class accuracy                : 0.228
+INFO     air_hsbd —   [train] Spearman rho                  : 0.983  (p=0.0000)
+INFO     air_hsbd —   [train] Kendall tau                   : 0.911  (p=0.0000)
+INFO     air_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     air_hsbd — PCA dimensionality: 41 components ≥95%, 66 components ≥99% (of 212 total).
+INFO     air_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     air_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.219 (16/73)
+INFO     air_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5523 log10 days  (~3.57 days geom. equiv.)
+INFO     air_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.219
+INFO     air_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.864  (p=0.0000)
+INFO     air_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.728  (p=0.0000)
+INFO     air_hsbd — Strategy A  top-SVR (importance>0): n=150  coverage=0.219  MIL=0.5523  rho=0.864
+INFO     air_hsbd —   [B  top-X (N=150)] Interval coverage probability : 0.219 (16/73)
+INFO     air_hsbd —   [B  top-X (N=150)] Mean interval loss            : 0.5523 log10 days  (~3.57 days geom. equiv.)
+INFO     air_hsbd —   [B  top-X (N=150)] Class accuracy                : 0.219
+INFO     air_hsbd —   [B  top-X (N=150)] Spearman rho                  : 0.864  (p=0.0000)
+INFO     air_hsbd —   [B  top-X (N=150)] Kendall tau                   : 0.728  (p=0.0000)
+INFO     air_hsbd — Strategy B  top-X (N=150): n=150  coverage=0.219  MIL=0.5523  rho=0.864
+INFO     air_hsbd —   [C  top-N pca99 (N=66)] Interval coverage probability : 0.233 (17/73)
+INFO     air_hsbd —   [C  top-N pca99 (N=66)] Mean interval loss            : 0.5384 log10 days  (~3.45 days geom. equiv.)
+INFO     air_hsbd —   [C  top-N pca99 (N=66)] Class accuracy                : 0.233
+INFO     air_hsbd —   [C  top-N pca99 (N=66)] Spearman rho                  : 0.846  (p=0.0000)
+INFO     air_hsbd —   [C  top-N pca99 (N=66)] Kendall tau                   : 0.712  (p=0.0000)
+INFO     air_hsbd — Strategy C  top-N pca99 (N=66): n=66  coverage=0.233  MIL=0.5384  rho=0.846
+INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.205 (15/73)
+INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5466 log10 days  (~3.52 days geom. equiv.)
+INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.205
+INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.850  (p=0.0000)
+INFO     air_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.709  (p=0.0000)
+INFO     air_hsbd — Winner: C  top-N pca99 (N=66)  (n=66, coverage=0.233, rho=0.846)
+INFO     air_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     air_hsbd — 5-fold CV on training set: R²=0.7688 (±0.0765)  RMSE(log10)=0.4088  RMSE(days-geom)=2.56×
+INFO     air_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     air_hsbd —   [final] Interval coverage probability : 0.233 (17/73)
+INFO     air_hsbd —   [final] Mean interval loss            : 0.5384 log10 days  (~3.45 days geom. equiv.)
+INFO     air_hsbd —   [final] Class accuracy                : 0.233
+INFO     air_hsbd —   [final] Spearman rho                  : 0.846  (p=0.0000)
+INFO     air_hsbd —   [final] Kendall tau                   : 0.712  (p=0.0000)
+INFO     air_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800.joblib
+INFO     air_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800.json
+INFO     air_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     air_hsbd — Learning curve val R² (final): 0.6965 ± 0.1379
+INFO     air_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714
+INFO     air_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     air_hsbd — PCA dimensionality: 29 components ≥95%, 42 components ≥99% (of 66 total).
+INFO     air_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     air_hsbd — PCA coverage: 94.5%
+INFO     air_hsbd — AD-outside test compounds: 56
+INFO     air_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/training_split_air.csv
+INFO     air_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_air_hsbd_20260430_112800_ad.npz
+INFO     air_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714/ad_membership_air.csv
+INFO     air_hsbd — Model JSON patched with artefact paths.
+INFO     air_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+INFO     air_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/air_hsbd/20260430_112714
+
+############################################################
+# water_hsbd/20260430_112803
+############################################################
+
+INFO     water_hsbd — 
+======================================================================
+  Interval-Aware SVR — WATER / hsbd
+======================================================================
+INFO     water_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+INFO     water_hsbd — Raw dataset: 673 rows
+INFO     water_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/interval_table_water.csv
+INFO     water_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/t_half_meta_water.csv
+INFO     water_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+INFO     water_hsbd — 5-fold CV on training set: R²=0.4147 (±0.0847)  RMSE(log10)=0.6042  RMSE(days-geom)=4.02×
+INFO     water_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     water_hsbd —   [test]  Interval coverage probability : 0.190 (30/158)
+INFO     water_hsbd —   [test]  Mean interval loss            : 0.5073 log10 days  (~3.22 days geom. equiv.)
+INFO     water_hsbd —   [test]  Class accuracy                : 0.190
+INFO     water_hsbd —   [test]  Spearman rho                  : 0.604  (p=0.0000)
+INFO     water_hsbd —   [test]  Kendall tau                   : 0.444  (p=0.0000)
+INFO     water_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     water_hsbd —   [train] Interval coverage probability : 0.254 (120/472)
+INFO     water_hsbd —   [train] Mean interval loss            : 0.4802 log10 days  (~3.02 days geom. equiv.)
+INFO     water_hsbd —   [train] Class accuracy                : 0.254
+INFO     water_hsbd —   [train] Spearman rho                  : 0.811  (p=0.0000)
+INFO     water_hsbd —   [train] Kendall tau                   : 0.649  (p=0.0000)
+INFO     water_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     water_hsbd — PCA dimensionality: 52 components ≥95%, 87 components ≥99% (of 246 total).
+INFO     water_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     water_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.196 (31/158)
+INFO     water_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5178 log10 days  (~3.29 days geom. equiv.)
+INFO     water_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.196
+INFO     water_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.697  (p=0.0000)
+INFO     water_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.521  (p=0.0000)
+INFO     water_hsbd — Strategy A  top-SVR (importance>0): n=144  coverage=0.196  MIL=0.5178  rho=0.697
+INFO     water_hsbd —   [B  top-X (N=144)] Interval coverage probability : 0.196 (31/158)
+INFO     water_hsbd —   [B  top-X (N=144)] Mean interval loss            : 0.5178 log10 days  (~3.29 days geom. equiv.)
+INFO     water_hsbd —   [B  top-X (N=144)] Class accuracy                : 0.196
+INFO     water_hsbd —   [B  top-X (N=144)] Spearman rho                  : 0.697  (p=0.0000)
+INFO     water_hsbd —   [B  top-X (N=144)] Kendall tau                   : 0.521  (p=0.0000)
+INFO     water_hsbd — Strategy B  top-X (N=144): n=144  coverage=0.196  MIL=0.5178  rho=0.697
+INFO     water_hsbd —   [C  top-N pca99 (N=87)] Interval coverage probability : 0.209 (33/158)
+INFO     water_hsbd —   [C  top-N pca99 (N=87)] Mean interval loss            : 0.5143 log10 days  (~3.27 days geom. equiv.)
+INFO     water_hsbd —   [C  top-N pca99 (N=87)] Class accuracy                : 0.209
+INFO     water_hsbd —   [C  top-N pca99 (N=87)] Spearman rho                  : 0.699  (p=0.0000)
+INFO     water_hsbd —   [C  top-N pca99 (N=87)] Kendall tau                   : 0.525  (p=0.0000)
+INFO     water_hsbd — Strategy C  top-N pca99 (N=87): n=87  coverage=0.209  MIL=0.5143  rho=0.699
+INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.190 (30/158)
+INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5151 log10 days  (~3.27 days geom. equiv.)
+INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.190
+INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.626  (p=0.0000)
+INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.460  (p=0.0000)
+INFO     water_hsbd — Winner: C  top-N pca99 (N=87)  (n=87, coverage=0.209, rho=0.699)
+INFO     water_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     water_hsbd — 5-fold CV on training set: R²=0.4104 (±0.0686)  RMSE(log10)=0.6070  RMSE(days-geom)=4.05×
+INFO     water_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     water_hsbd —   [final] Interval coverage probability : 0.209 (33/158)
+INFO     water_hsbd —   [final] Mean interval loss            : 0.5143 log10 days  (~3.27 days geom. equiv.)
+INFO     water_hsbd —   [final] Class accuracy                : 0.209
+INFO     water_hsbd —   [final] Spearman rho                  : 0.699  (p=0.0000)
+INFO     water_hsbd —   [final] Kendall tau                   : 0.525  (p=0.0000)
+INFO     water_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116.joblib
+INFO     water_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116.json
+INFO     water_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     water_hsbd — Learning curve val R² (final): 0.2572 ± 0.2134
+INFO     water_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803
+INFO     water_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     water_hsbd — PCA dimensionality: 35 components ≥95%, 52 components ≥99% (of 87 total).
+INFO     water_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     water_hsbd — PCA coverage: 99.4%
+INFO     water_hsbd — AD-outside test compounds: 125
+INFO     water_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/training_split_water.csv
+INFO     water_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116_ad.npz
+INFO     water_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/ad_membership_water.csv
+INFO     water_hsbd — Model JSON patched with artefact paths.
+INFO     water_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+INFO     water_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803
+
+############################################################
+# water_vega/20260430_113123
+############################################################
+
+INFO     water_vega — 
+======================================================================
+  Interval-Aware SVR — WATER / vega
+======================================================================
+INFO     water_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+INFO     water_vega — Raw dataset: 223 rows
+INFO     water_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/interval_table_water.csv
+INFO     water_vega — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/t_half_meta_water.csv
+INFO     water_vega — 
+======================================================================
+  Model Training
+======================================================================
+INFO     water_vega — 5-fold CV on training set: R²=0.7414 (±0.0513)  RMSE(log10)=0.4206  RMSE(days-geom)=2.63×
+INFO     water_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     water_vega —   [test]  Interval coverage probability : 0.623 (33/53)
+INFO     water_vega —   [test]  Mean interval loss            : 0.1490 log10 days  (~1.41 days geom. equiv.)
+INFO     water_vega —   [test]  Class accuracy                : 0.623
+INFO     water_vega —   [test]  Spearman rho                  : 0.847  (p=0.0000)
+INFO     water_vega —   [test]  Kendall tau                   : 0.734  (p=0.0000)
+INFO     water_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     water_vega —   [train] Interval coverage probability : 0.778 (123/158)
+INFO     water_vega —   [train] Mean interval loss            : 0.0577 log10 days  (~1.14 days geom. equiv.)
+INFO     water_vega —   [train] Class accuracy                : 0.778
+INFO     water_vega —   [train] Spearman rho                  : 0.980  (p=0.0000)
+INFO     water_vega —   [train] Kendall tau                   : 0.906  (p=0.0000)
+INFO     water_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     water_vega — PCA dimensionality: 34 components ≥95%, 56 components ≥99% (of 198 total).
+INFO     water_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     water_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.491 (26/53)
+INFO     water_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.1717 log10 days  (~1.48 days geom. equiv.)
+INFO     water_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.491
+INFO     water_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.823  (p=0.0000)
+INFO     water_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.715  (p=0.0000)
+INFO     water_vega — Strategy A  top-SVR (importance>0): n=59  coverage=0.491  MIL=0.1717  rho=0.823
+INFO     water_vega —   [B  top-X (N=59)] Interval coverage probability : 0.491 (26/53)
+INFO     water_vega —   [B  top-X (N=59)] Mean interval loss            : 0.1717 log10 days  (~1.48 days geom. equiv.)
+INFO     water_vega —   [B  top-X (N=59)] Class accuracy                : 0.491
+INFO     water_vega —   [B  top-X (N=59)] Spearman rho                  : 0.823  (p=0.0000)
+INFO     water_vega —   [B  top-X (N=59)] Kendall tau                   : 0.715  (p=0.0000)
+INFO     water_vega — Strategy B  top-X (N=59): n=59  coverage=0.491  MIL=0.1717  rho=0.823
+INFO     water_vega —   [C  top-N pca99 (N=56)] Interval coverage probability : 0.509 (27/53)
+INFO     water_vega —   [C  top-N pca99 (N=56)] Mean interval loss            : 0.1722 log10 days  (~1.49 days geom. equiv.)
+INFO     water_vega —   [C  top-N pca99 (N=56)] Class accuracy                : 0.509
+INFO     water_vega —   [C  top-N pca99 (N=56)] Spearman rho                  : 0.826  (p=0.0000)
+INFO     water_vega —   [C  top-N pca99 (N=56)] Kendall tau                   : 0.718  (p=0.0000)
+INFO     water_vega — Strategy C  top-N pca99 (N=56): n=56  coverage=0.509  MIL=0.1722  rho=0.826
+INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.472 (25/53)
+INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.2006 log10 days  (~1.59 days geom. equiv.)
+INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.472
+INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.806  (p=0.0000)
+INFO     water_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.691  (p=0.0000)
+INFO     water_vega — Winner: C  top-N pca99 (N=56)  (n=56, coverage=0.509, rho=0.826)
+INFO     water_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     water_vega — 5-fold CV on training set: R²=0.6718 (±0.0530)  RMSE(log10)=0.4746  RMSE(days-geom)=2.98×
+INFO     water_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     water_vega —   [final] Interval coverage probability : 0.509 (27/53)
+INFO     water_vega —   [final] Mean interval loss            : 0.1722 log10 days  (~1.49 days geom. equiv.)
+INFO     water_vega —   [final] Class accuracy                : 0.509
+INFO     water_vega —   [final] Spearman rho                  : 0.826  (p=0.0000)
+INFO     water_vega —   [final] Kendall tau                   : 0.718  (p=0.0000)
+INFO     water_vega — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200.joblib
+INFO     water_vega — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200.json
+INFO     water_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     water_vega — Learning curve val R² (final): -4.6985 ± 4.3880
+INFO     water_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123
+INFO     water_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     water_vega — PCA dimensionality: 22 components ≥95%, 34 components ≥99% (of 56 total).
+INFO     water_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     water_vega — PCA coverage: 96.2%
+INFO     water_vega — AD-outside test compounds: 26
+INFO     water_vega — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/training_split_water.csv
+INFO     water_vega — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_vega_20260430_113200_ad.npz
+INFO     water_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123/ad_membership_water.csv
+INFO     water_vega — Model JSON patched with artefact paths.
+INFO     water_vega — 
+======================================================================
+  Run complete
+======================================================================
+INFO     water_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_vega/20260430_113123
+
+############################################################
+# soil_hsbd/20260430_113203
+############################################################
+
+INFO     soil_hsbd — 
+======================================================================
+  Interval-Aware SVR — SOIL / hsbd
+======================================================================
+INFO     soil_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+INFO     soil_hsbd — Raw dataset: 672 rows
+INFO     soil_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203/interval_table_soil.csv
+INFO     soil_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203/t_half_meta_soil.csv
+INFO     soil_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+INFO     soil_hsbd — 5-fold CV on training set: R²=0.4837 (±0.0593)  RMSE(log10)=0.6226  RMSE(days-geom)=4.19×
+INFO     soil_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     soil_hsbd —   [test]  Interval coverage probability : 0.204 (32/157)
+INFO     soil_hsbd —   [test]  Mean interval loss            : 0.6093 log10 days  (~4.07 days geom. equiv.)
+INFO     soil_hsbd —   [test]  Class accuracy                : 0.204
+INFO     soil_hsbd —   [test]  Spearman rho                  : 0.533  (p=0.0000)
+INFO     soil_hsbd —   [test]  Kendall tau                   : 0.398  (p=0.0000)
+INFO     soil_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     soil_hsbd —   [train] Interval coverage probability : 0.221 (104/471)
+INFO     soil_hsbd —   [train] Mean interval loss            : 0.5202 log10 days  (~3.31 days geom. equiv.)
+INFO     soil_hsbd —   [train] Class accuracy                : 0.221
+INFO     soil_hsbd —   [train] Spearman rho                  : 0.868  (p=0.0000)
+INFO     soil_hsbd —   [train] Kendall tau                   : 0.732  (p=0.0000)
+INFO     soil_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     soil_hsbd — PCA dimensionality: 71 components ≥95%, 119 components ≥99% (of 281 total).
+INFO     soil_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     soil_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.185 (29/157)
+INFO     soil_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5961 log10 days  (~3.95 days geom. equiv.)
+INFO     soil_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.185
+INFO     soil_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.672  (p=0.0000)
+INFO     soil_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.502  (p=0.0000)
+INFO     soil_hsbd — Strategy A  top-SVR (importance>0): n=147  coverage=0.185  MIL=0.5961  rho=0.672
+INFO     soil_hsbd —   [B  top-X (N=147)] Interval coverage probability : 0.185 (29/157)
+INFO     soil_hsbd —   [B  top-X (N=147)] Mean interval loss            : 0.5961 log10 days  (~3.95 days geom. equiv.)
+INFO     soil_hsbd —   [B  top-X (N=147)] Class accuracy                : 0.185
+INFO     soil_hsbd —   [B  top-X (N=147)] Spearman rho                  : 0.672  (p=0.0000)
+INFO     soil_hsbd —   [B  top-X (N=147)] Kendall tau                   : 0.502  (p=0.0000)
+INFO     soil_hsbd — Strategy B  top-X (N=147): n=147  coverage=0.185  MIL=0.5961  rho=0.672
+INFO     soil_hsbd —   [C  top-N pca99 (N=119)] Interval coverage probability : 0.178 (28/157)
+INFO     soil_hsbd —   [C  top-N pca99 (N=119)] Mean interval loss            : 0.5979 log10 days  (~3.96 days geom. equiv.)
+INFO     soil_hsbd —   [C  top-N pca99 (N=119)] Class accuracy                : 0.178
+INFO     soil_hsbd —   [C  top-N pca99 (N=119)] Spearman rho                  : 0.661  (p=0.0000)
+INFO     soil_hsbd —   [C  top-N pca99 (N=119)] Kendall tau                   : 0.492  (p=0.0000)
+INFO     soil_hsbd — Strategy C  top-N pca99 (N=119): n=119  coverage=0.178  MIL=0.5979  rho=0.661
+INFO     soil_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.217 (34/157)
+INFO     soil_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.6025 log10 days  (~4.00 days geom. equiv.)
+INFO     soil_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.217
+INFO     soil_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.531  (p=0.0000)
+INFO     soil_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.394  (p=0.0000)
+INFO     soil_hsbd — Winner: D  RFE (LinearSVR→RBF)  (n=147, coverage=0.217, rho=0.531)
+INFO     soil_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     soil_hsbd — 5-fold CV on training set: R²=0.4882 (±0.0492)  RMSE(log10)=0.6193  RMSE(days-geom)=4.16×
+INFO     soil_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     soil_hsbd —   [final] Interval coverage probability : 0.217 (34/157)
+INFO     soil_hsbd —   [final] Mean interval loss            : 0.6025 log10 days  (~4.00 days geom. equiv.)
+INFO     soil_hsbd —   [final] Class accuracy                : 0.217
+INFO     soil_hsbd —   [final] Spearman rho                  : 0.531  (p=0.0000)
+INFO     soil_hsbd —   [final] Kendall tau                   : 0.394  (p=0.0000)
+INFO     soil_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_hsbd_20260430_113859.joblib
+INFO     soil_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_hsbd_20260430_113859.json
+INFO     soil_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     soil_hsbd — Learning curve val R² (final): 0.4157 ± 0.1981
+INFO     soil_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203
+INFO     soil_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     soil_hsbd — PCA dimensionality: 49 components ≥95%, 84 components ≥99% (of 147 total).
+INFO     soil_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     soil_hsbd — PCA coverage: 100.0%
+INFO     soil_hsbd — AD-outside test compounds: 123
+INFO     soil_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203/training_split_soil.csv
+INFO     soil_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_hsbd_20260430_113859_ad.npz
+INFO     soil_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203/ad_membership_soil.csv
+INFO     soil_hsbd — Model JSON patched with artefact paths.
+INFO     soil_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+INFO     soil_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/soil_hsbd/20260430_113203
+
+############################################################
+# soil_vega/20260430_113908
+############################################################
+
+INFO     soil_vega — 
+======================================================================
+  Interval-Aware SVR — SOIL / vega
+======================================================================
+INFO     soil_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+INFO     soil_vega — Raw dataset: 226 rows
+INFO     soil_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/interval_table_soil.csv
+INFO     soil_vega — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/t_half_meta_soil.csv
+INFO     soil_vega — 
+======================================================================
+  Model Training
+======================================================================
+INFO     soil_vega — 5-fold CV on training set: R²=0.8024 (±0.1176)  RMSE(log10)=0.3432  RMSE(days-geom)=2.20×
+INFO     soil_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     soil_vega —   [test]  Interval coverage probability : 0.222 (12/54)
+INFO     soil_vega —   [test]  Mean interval loss            : 0.5123 log10 days  (~3.25 days geom. equiv.)
+INFO     soil_vega —   [test]  Class accuracy                : 0.222
+INFO     soil_vega —   [test]  Spearman rho                  : 0.868  (p=0.0000)
+INFO     soil_vega —   [test]  Kendall tau                   : 0.746  (p=0.0000)
+INFO     soil_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     soil_vega —   [train] Interval coverage probability : 0.212 (34/160)
+INFO     soil_vega —   [train] Mean interval loss            : 0.5074 log10 days  (~3.22 days geom. equiv.)
+INFO     soil_vega —   [train] Class accuracy                : 0.212
+INFO     soil_vega —   [train] Spearman rho                  : 0.982  (p=0.0000)
+INFO     soil_vega —   [train] Kendall tau                   : 0.912  (p=0.0000)
+INFO     soil_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     soil_vega — PCA dimensionality: 34 components ≥95%, 55 components ≥99% (of 199 total).
+INFO     soil_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     soil_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.259 (14/54)
+INFO     soil_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5128 log10 days  (~3.26 days geom. equiv.)
+INFO     soil_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.259
+INFO     soil_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.917  (p=0.0000)
+INFO     soil_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.794  (p=0.0000)
+INFO     soil_vega — Strategy A  top-SVR (importance>0): n=129  coverage=0.259  MIL=0.5128  rho=0.917
+INFO     soil_vega —   [B  top-X (N=129)] Interval coverage probability : 0.259 (14/54)
+INFO     soil_vega —   [B  top-X (N=129)] Mean interval loss            : 0.5128 log10 days  (~3.26 days geom. equiv.)
+INFO     soil_vega —   [B  top-X (N=129)] Class accuracy                : 0.259
+INFO     soil_vega —   [B  top-X (N=129)] Spearman rho                  : 0.917  (p=0.0000)
+INFO     soil_vega —   [B  top-X (N=129)] Kendall tau                   : 0.794  (p=0.0000)
+INFO     soil_vega — Strategy B  top-X (N=129): n=129  coverage=0.259  MIL=0.5128  rho=0.917
+INFO     soil_vega —   [C  top-N pca99 (N=55)] Interval coverage probability : 0.278 (15/54)
+INFO     soil_vega —   [C  top-N pca99 (N=55)] Mean interval loss            : 0.5086 log10 days  (~3.23 days geom. equiv.)
+INFO     soil_vega —   [C  top-N pca99 (N=55)] Class accuracy                : 0.278
+INFO     soil_vega —   [C  top-N pca99 (N=55)] Spearman rho                  : 0.921  (p=0.0000)
+INFO     soil_vega —   [C  top-N pca99 (N=55)] Kendall tau                   : 0.802  (p=0.0000)
+INFO     soil_vega — Strategy C  top-N pca99 (N=55): n=55  coverage=0.278  MIL=0.5086  rho=0.921
+INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.222 (12/54)
+INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5217 log10 days  (~3.32 days geom. equiv.)
+INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.222
+INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.845  (p=0.0000)
+INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.719  (p=0.0000)
+INFO     soil_vega — Winner: C  top-N pca99 (N=55)  (n=55, coverage=0.278, rho=0.921)
+INFO     soil_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     soil_vega — 5-fold CV on training set: R²=0.8063 (±0.1184)  RMSE(log10)=0.3399  RMSE(days-geom)=2.19×
+INFO     soil_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     soil_vega —   [final] Interval coverage probability : 0.278 (15/54)
+INFO     soil_vega —   [final] Mean interval loss            : 0.5086 log10 days  (~3.23 days geom. equiv.)
+INFO     soil_vega —   [final] Class accuracy                : 0.278
+INFO     soil_vega —   [final] Spearman rho                  : 0.921  (p=0.0000)
+INFO     soil_vega —   [final] Kendall tau                   : 0.802  (p=0.0000)
+INFO     soil_vega — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935.joblib
+INFO     soil_vega — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935.json
+INFO     soil_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     soil_vega — Learning curve val R² (final): 0.6666 ± 0.1444
+INFO     soil_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908
+INFO     soil_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     soil_vega — PCA dimensionality: 21 components ≥95%, 33 components ≥99% (of 55 total).
+INFO     soil_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     soil_vega — PCA coverage: 96.3%
+INFO     soil_vega — AD-outside test compounds: 39
+INFO     soil_vega — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/training_split_soil.csv
+INFO     soil_vega — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935_ad.npz
+INFO     soil_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/ad_membership_soil.csv
+INFO     soil_vega — Model JSON patched with artefact paths.
+INFO     soil_vega — 
+======================================================================
+  Run complete
+======================================================================
+INFO     soil_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908
+
+############################################################
+# sediment_hsbd/20260430_113938
+############################################################
+
+INFO     sediment_hsbd — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / hsbd
+======================================================================
+INFO     sediment_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+INFO     sediment_hsbd — Raw dataset: 347 rows
+INFO     sediment_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938/interval_table_sediment.csv
+INFO     sediment_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938/t_half_meta_sediment.csv
+INFO     sediment_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+INFO     sediment_hsbd — 5-fold CV on training set: R²=0.5278 (±0.0646)  RMSE(log10)=0.5491  RMSE(days-geom)=3.54×
+INFO     sediment_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     sediment_hsbd —   [test]  Interval coverage probability : 0.235 (19/81)
+INFO     sediment_hsbd —   [test]  Mean interval loss            : 0.4893 log10 days  (~3.09 days geom. equiv.)
+INFO     sediment_hsbd —   [test]  Class accuracy                : 0.235
+INFO     sediment_hsbd —   [test]  Spearman rho                  : 0.821  (p=0.0000)
+INFO     sediment_hsbd —   [test]  Kendall tau                   : 0.661  (p=0.0000)
+INFO     sediment_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     sediment_hsbd —   [train] Interval coverage probability : 0.235 (57/243)
+INFO     sediment_hsbd —   [train] Mean interval loss            : 0.4587 log10 days  (~2.88 days geom. equiv.)
+INFO     sediment_hsbd —   [train] Class accuracy                : 0.235
+INFO     sediment_hsbd —   [train] Spearman rho                  : 0.978  (p=0.0000)
+INFO     sediment_hsbd —   [train] Kendall tau                   : 0.896  (p=0.0000)
+INFO     sediment_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     sediment_hsbd — PCA dimensionality: 47 components ≥95%, 78 components ≥99% (of 246 total).
+INFO     sediment_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.198 (16/81)
+INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.4929 log10 days  (~3.11 days geom. equiv.)
+INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.198
+INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.840  (p=0.0000)
+INFO     sediment_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.677  (p=0.0000)
+INFO     sediment_hsbd — Strategy A  top-SVR (importance>0): n=158  coverage=0.198  MIL=0.4929  rho=0.840
+INFO     sediment_hsbd —   [B  top-X (N=158)] Interval coverage probability : 0.198 (16/81)
+INFO     sediment_hsbd —   [B  top-X (N=158)] Mean interval loss            : 0.4929 log10 days  (~3.11 days geom. equiv.)
+INFO     sediment_hsbd —   [B  top-X (N=158)] Class accuracy                : 0.198
+INFO     sediment_hsbd —   [B  top-X (N=158)] Spearman rho                  : 0.840  (p=0.0000)
+INFO     sediment_hsbd —   [B  top-X (N=158)] Kendall tau                   : 0.677  (p=0.0000)
+INFO     sediment_hsbd — Strategy B  top-X (N=158): n=158  coverage=0.198  MIL=0.4929  rho=0.840
+INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Interval coverage probability : 0.198 (16/81)
+INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Mean interval loss            : 0.5158 log10 days  (~3.28 days geom. equiv.)
+INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Class accuracy                : 0.198
+INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Spearman rho                  : 0.834  (p=0.0000)
+INFO     sediment_hsbd —   [C  top-N pca99 (N=78)] Kendall tau                   : 0.671  (p=0.0000)
+INFO     sediment_hsbd — Strategy C  top-N pca99 (N=78): n=78  coverage=0.198  MIL=0.5158  rho=0.834
+INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.235 (19/81)
+INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5154 log10 days  (~3.28 days geom. equiv.)
+INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.235
+INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.808  (p=0.0000)
+INFO     sediment_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.648  (p=0.0000)
+INFO     sediment_hsbd — Winner: D  RFE (LinearSVR→RBF)  (n=158, coverage=0.235, rho=0.808)
+INFO     sediment_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     sediment_hsbd — 5-fold CV on training set: R²=0.5142 (±0.0674)  RMSE(log10)=0.5550  RMSE(days-geom)=3.59×
+INFO     sediment_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     sediment_hsbd —   [final] Interval coverage probability : 0.235 (19/81)
+INFO     sediment_hsbd —   [final] Mean interval loss            : 0.5154 log10 days  (~3.28 days geom. equiv.)
+INFO     sediment_hsbd —   [final] Class accuracy                : 0.235
+INFO     sediment_hsbd —   [final] Spearman rho                  : 0.808  (p=0.0000)
+INFO     sediment_hsbd —   [final] Kendall tau                   : 0.648  (p=0.0000)
+INFO     sediment_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_hsbd_20260430_114041.joblib
+INFO     sediment_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_hsbd_20260430_114041.json
+INFO     sediment_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     sediment_hsbd — Learning curve val R² (final): 0.2157 ± 0.4628
+INFO     sediment_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938
+INFO     sediment_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     sediment_hsbd — PCA dimensionality: 40 components ≥95%, 66 components ≥99% (of 158 total).
+INFO     sediment_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     sediment_hsbd — PCA coverage: 97.5%
+INFO     sediment_hsbd — AD-outside test compounds: 62
+INFO     sediment_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938/training_split_sediment.csv
+INFO     sediment_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_hsbd_20260430_114041_ad.npz
+INFO     sediment_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938/ad_membership_sediment.csv
+INFO     sediment_hsbd — Model JSON patched with artefact paths.
+INFO     sediment_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+INFO     sediment_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_hsbd/20260430_113938
+
+############################################################
+# sediment_vega/20260430_114046
+############################################################
+
+INFO     sediment_vega — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / vega
+======================================================================
+INFO     sediment_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+INFO     sediment_vega — Raw dataset: 221 rows
+INFO     sediment_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046/interval_table_sediment.csv
+INFO     sediment_vega — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046/t_half_meta_sediment.csv
+INFO     sediment_vega — 
+======================================================================
+  Model Training
+======================================================================
+INFO     sediment_vega — 5-fold CV on training set: R²=0.7948 (±0.0550)  RMSE(log10)=0.3235  RMSE(days-geom)=2.11×
+INFO     sediment_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     sediment_vega —   [test]  Interval coverage probability : 0.698 (37/53)
+INFO     sediment_vega —   [test]  Mean interval loss            : 0.0786 log10 days  (~1.20 days geom. equiv.)
+INFO     sediment_vega —   [test]  Class accuracy                : 0.698
+INFO     sediment_vega —   [test]  Spearman rho                  : 0.903  (p=0.0000)
+INFO     sediment_vega —   [test]  Kendall tau                   : 0.798  (p=0.0000)
+INFO     sediment_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     sediment_vega —   [train] Interval coverage probability : 0.809 (127/157)
+INFO     sediment_vega —   [train] Mean interval loss            : 0.0401 log10 days  (~1.10 days geom. equiv.)
+INFO     sediment_vega —   [train] Class accuracy                : 0.809
+INFO     sediment_vega —   [train] Spearman rho                  : 0.968  (p=0.0000)
+INFO     sediment_vega —   [train] Kendall tau                   : 0.879  (p=0.0000)
+INFO     sediment_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     sediment_vega — PCA dimensionality: 34 components ≥95%, 55 components ≥99% (of 188 total).
+INFO     sediment_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     sediment_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.736 (39/53)
+INFO     sediment_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+INFO     sediment_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.736
+INFO     sediment_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.921  (p=0.0000)
+INFO     sediment_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.822  (p=0.0000)
+INFO     sediment_vega — Strategy A  top-SVR (importance>0): n=131  coverage=0.736  MIL=0.0697  rho=0.921
+INFO     sediment_vega —   [B  top-X (N=131)] Interval coverage probability : 0.736 (39/53)
+INFO     sediment_vega —   [B  top-X (N=131)] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+INFO     sediment_vega —   [B  top-X (N=131)] Class accuracy                : 0.736
+INFO     sediment_vega —   [B  top-X (N=131)] Spearman rho                  : 0.921  (p=0.0000)
+INFO     sediment_vega —   [B  top-X (N=131)] Kendall tau                   : 0.822  (p=0.0000)
+INFO     sediment_vega — Strategy B  top-X (N=131): n=131  coverage=0.736  MIL=0.0697  rho=0.921
+INFO     sediment_vega —   [C  top-N pca99 (N=55)] Interval coverage probability : 0.660 (35/53)
+INFO     sediment_vega —   [C  top-N pca99 (N=55)] Mean interval loss            : 0.0787 log10 days  (~1.20 days geom. equiv.)
+INFO     sediment_vega —   [C  top-N pca99 (N=55)] Class accuracy                : 0.660
+INFO     sediment_vega —   [C  top-N pca99 (N=55)] Spearman rho                  : 0.910  (p=0.0000)
+INFO     sediment_vega —   [C  top-N pca99 (N=55)] Kendall tau                   : 0.807  (p=0.0000)
+INFO     sediment_vega — Strategy C  top-N pca99 (N=55): n=55  coverage=0.660  MIL=0.0787  rho=0.910
+INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.660 (35/53)
+INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.0832 log10 days  (~1.21 days geom. equiv.)
+INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.660
+INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.898  (p=0.0000)
+INFO     sediment_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.791  (p=0.0000)
+INFO     sediment_vega — Winner: A  top-SVR (importance>0)  (n=131, coverage=0.736, rho=0.921)
+INFO     sediment_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     sediment_vega — 5-fold CV on training set: R²=0.7903 (±0.0556)  RMSE(log10)=0.3268  RMSE(days-geom)=2.12×
+INFO     sediment_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     sediment_vega —   [final] Interval coverage probability : 0.736 (39/53)
+INFO     sediment_vega —   [final] Mean interval loss            : 0.0697 log10 days  (~1.17 days geom. equiv.)
+INFO     sediment_vega —   [final] Class accuracy                : 0.736
+INFO     sediment_vega —   [final] Spearman rho                  : 0.921  (p=0.0000)
+INFO     sediment_vega —   [final] Kendall tau                   : 0.822  (p=0.0000)
+INFO     sediment_vega — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_vega_20260430_114113.joblib
+INFO     sediment_vega — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_vega_20260430_114113.json
+INFO     sediment_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     sediment_vega — Learning curve val R² (final): -6.0939 ± 6.3270
+INFO     sediment_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046
+INFO     sediment_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     sediment_vega — PCA dimensionality: 30 components ≥95%, 48 components ≥99% (of 131 total).
+INFO     sediment_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     sediment_vega — PCA coverage: 98.1%
+INFO     sediment_vega — AD-outside test compounds: 14
+INFO     sediment_vega — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046/training_split_sediment.csv
+INFO     sediment_vega — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_vega_20260430_114113_ad.npz
+INFO     sediment_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046/ad_membership_sediment.csv
+INFO     sediment_vega — Model JSON patched with artefact paths.
+INFO     sediment_vega — 
+======================================================================
+  Run complete
+======================================================================
+INFO     sediment_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_vega/20260430_114046
+
+############################################################
+# water_combined/20260430_114117
+############################################################
+
+INFO     water_combined — 
+======================================================================
+  Interval-Aware SVR — WATER / combined
+======================================================================
+INFO     water_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+INFO     water_combined — Raw dataset: 743 rows
+INFO     water_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/interval_table_water.csv
+INFO     water_combined — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/t_half_meta_water.csv
+INFO     water_combined — 
+======================================================================
+  Model Training
+======================================================================
+INFO     water_combined — 5-fold CV on training set: R²=0.5500 (±0.0710)  RMSE(log10)=0.5795  RMSE(days-geom)=3.80×
+INFO     water_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     water_combined —   [test]  Interval coverage probability : 0.206 (36/175)
+INFO     water_combined —   [test]  Mean interval loss            : 0.5358 log10 days  (~3.43 days geom. equiv.)
+INFO     water_combined —   [test]  Class accuracy                : 0.206
+INFO     water_combined —   [test]  Spearman rho                  : 0.657  (p=0.0000)
+INFO     water_combined —   [test]  Kendall tau                   : 0.491  (p=0.0000)
+INFO     water_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     water_combined —   [train] Interval coverage probability : 0.207 (108/522)
+INFO     water_combined —   [train] Mean interval loss            : 0.5511 log10 days  (~3.56 days geom. equiv.)
+INFO     water_combined —   [train] Class accuracy                : 0.207
+INFO     water_combined —   [train] Spearman rho                  : 0.878  (p=0.0000)
+INFO     water_combined —   [train] Kendall tau                   : 0.735  (p=0.0000)
+INFO     water_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     water_combined — PCA dimensionality: 53 components ≥95%, 89 components ≥99% (of 250 total).
+INFO     water_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     water_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.200 (35/175)
+INFO     water_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+INFO     water_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.200
+INFO     water_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.664  (p=0.0000)
+INFO     water_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.495  (p=0.0000)
+INFO     water_combined — Strategy A  top-SVR (importance>0): n=114  coverage=0.200  MIL=0.5297  rho=0.664
+INFO     water_combined —   [B  top-X (N=114)] Interval coverage probability : 0.200 (35/175)
+INFO     water_combined —   [B  top-X (N=114)] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+INFO     water_combined —   [B  top-X (N=114)] Class accuracy                : 0.200
+INFO     water_combined —   [B  top-X (N=114)] Spearman rho                  : 0.664  (p=0.0000)
+INFO     water_combined —   [B  top-X (N=114)] Kendall tau                   : 0.495  (p=0.0000)
+INFO     water_combined — Strategy B  top-X (N=114): n=114  coverage=0.200  MIL=0.5297  rho=0.664
+INFO     water_combined —   [C  top-N pca99 (N=89)] Interval coverage probability : 0.194 (34/175)
+INFO     water_combined —   [C  top-N pca99 (N=89)] Mean interval loss            : 0.5254 log10 days  (~3.35 days geom. equiv.)
+INFO     water_combined —   [C  top-N pca99 (N=89)] Class accuracy                : 0.194
+INFO     water_combined —   [C  top-N pca99 (N=89)] Spearman rho                  : 0.668  (p=0.0000)
+INFO     water_combined —   [C  top-N pca99 (N=89)] Kendall tau                   : 0.500  (p=0.0000)
+INFO     water_combined — Strategy C  top-N pca99 (N=89): n=89  coverage=0.194  MIL=0.5254  rho=0.668
+INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.189 (33/175)
+INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5324 log10 days  (~3.41 days geom. equiv.)
+INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.189
+INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.631  (p=0.0000)
+INFO     water_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.470  (p=0.0000)
+INFO     water_combined — Winner: A  top-SVR (importance>0)  (n=114, coverage=0.200, rho=0.664)
+INFO     water_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     water_combined — 5-fold CV on training set: R²=0.5277 (±0.0567)  RMSE(log10)=0.5924  RMSE(days-geom)=3.91×
+INFO     water_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     water_combined —   [final] Interval coverage probability : 0.200 (35/175)
+INFO     water_combined —   [final] Mean interval loss            : 0.5297 log10 days  (~3.39 days geom. equiv.)
+INFO     water_combined —   [final] Class accuracy                : 0.200
+INFO     water_combined —   [final] Spearman rho                  : 0.664  (p=0.0000)
+INFO     water_combined —   [final] Kendall tau                   : 0.495  (p=0.0000)
+INFO     water_combined — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531.joblib
+INFO     water_combined — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531.json
+INFO     water_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     water_combined — Learning curve val R² (final): 0.3667 ± 0.2267
+INFO     water_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117
+INFO     water_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     water_combined — PCA dimensionality: 39 components ≥95%, 58 components ≥99% (of 114 total).
+INFO     water_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     water_combined — PCA coverage: 99.4%
+INFO     water_combined — AD-outside test compounds: 140
+INFO     water_combined — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/training_split_water.csv
+INFO     water_combined — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_combined_20260430_114531_ad.npz
+INFO     water_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117/ad_membership_water.csv
+INFO     water_combined — Model JSON patched with artefact paths.
+INFO     water_combined — 
+======================================================================
+  Run complete
+======================================================================
+INFO     water_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_combined/20260430_114117
+
+############################################################
+# soil_combined/20260430_114540
+############################################################
+
+INFO     soil_combined — 
+======================================================================
+  Interval-Aware SVR — SOIL / combined
+======================================================================
+INFO     soil_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+INFO     soil_combined — Raw dataset: 743 rows
+INFO     soil_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540/interval_table_soil.csv
+INFO     soil_combined — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540/t_half_meta_soil.csv
+INFO     soil_combined — 
+======================================================================
+  Model Training
+======================================================================
+INFO     soil_combined — 5-fold CV on training set: R²=0.5028 (±0.0808)  RMSE(log10)=0.6264  RMSE(days-geom)=4.23×
+INFO     soil_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     soil_combined —   [test]  Interval coverage probability : 0.184 (32/174)
+INFO     soil_combined —   [test]  Mean interval loss            : 0.5594 log10 days  (~3.63 days geom. equiv.)
+INFO     soil_combined —   [test]  Class accuracy                : 0.184
+INFO     soil_combined —   [test]  Spearman rho                  : 0.639  (p=0.0000)
+INFO     soil_combined —   [test]  Kendall tau                   : 0.478  (p=0.0000)
+INFO     soil_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     soil_combined —   [train] Interval coverage probability : 0.199 (104/522)
+INFO     soil_combined —   [train] Mean interval loss            : 0.6260 log10 days  (~4.23 days geom. equiv.)
+INFO     soil_combined —   [train] Class accuracy                : 0.199
+INFO     soil_combined —   [train] Spearman rho                  : 0.862  (p=0.0000)
+INFO     soil_combined —   [train] Kendall tau                   : 0.724  (p=0.0000)
+INFO     soil_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     soil_combined — PCA dimensionality: 70 components ≥95%, 118 components ≥99% (of 281 total).
+INFO     soil_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     soil_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.201 (35/174)
+INFO     soil_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5614 log10 days  (~3.64 days geom. equiv.)
+INFO     soil_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.201
+INFO     soil_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.704  (p=0.0000)
+INFO     soil_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.528  (p=0.0000)
+INFO     soil_combined — Strategy A  top-SVR (importance>0): n=176  coverage=0.201  MIL=0.5614  rho=0.704
+INFO     soil_combined —   [B  top-X (N=176)] Interval coverage probability : 0.201 (35/174)
+INFO     soil_combined —   [B  top-X (N=176)] Mean interval loss            : 0.5614 log10 days  (~3.64 days geom. equiv.)
+INFO     soil_combined —   [B  top-X (N=176)] Class accuracy                : 0.201
+INFO     soil_combined —   [B  top-X (N=176)] Spearman rho                  : 0.704  (p=0.0000)
+INFO     soil_combined —   [B  top-X (N=176)] Kendall tau                   : 0.528  (p=0.0000)
+INFO     soil_combined — Strategy B  top-X (N=176): n=176  coverage=0.201  MIL=0.5614  rho=0.704
+INFO     soil_combined —   [C  top-N pca99 (N=118)] Interval coverage probability : 0.201 (35/174)
+INFO     soil_combined —   [C  top-N pca99 (N=118)] Mean interval loss            : 0.5720 log10 days  (~3.73 days geom. equiv.)
+INFO     soil_combined —   [C  top-N pca99 (N=118)] Class accuracy                : 0.201
+INFO     soil_combined —   [C  top-N pca99 (N=118)] Spearman rho                  : 0.709  (p=0.0000)
+INFO     soil_combined —   [C  top-N pca99 (N=118)] Kendall tau                   : 0.527  (p=0.0000)
+INFO     soil_combined — Strategy C  top-N pca99 (N=118): n=118  coverage=0.201  MIL=0.5720  rho=0.709
+INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.167 (29/174)
+INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5645 log10 days  (~3.67 days geom. equiv.)
+INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.167
+INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.619  (p=0.0000)
+INFO     soil_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.462  (p=0.0000)
+INFO     soil_combined — Winner: C  top-N pca99 (N=118)  (n=118, coverage=0.201, rho=0.709)
+INFO     soil_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     soil_combined — 5-fold CV on training set: R²=0.4776 (±0.0758)  RMSE(log10)=0.6418  RMSE(days-geom)=4.38×
+INFO     soil_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     soil_combined —   [final] Interval coverage probability : 0.201 (35/174)
+INFO     soil_combined —   [final] Mean interval loss            : 0.5720 log10 days  (~3.73 days geom. equiv.)
+INFO     soil_combined —   [final] Class accuracy                : 0.201
+INFO     soil_combined —   [final] Spearman rho                  : 0.709  (p=0.0000)
+INFO     soil_combined —   [final] Kendall tau                   : 0.527  (p=0.0000)
+INFO     soil_combined — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_combined_20260430_115543.joblib
+INFO     soil_combined — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_combined_20260430_115543.json
+INFO     soil_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     soil_combined — Learning curve val R² (final): 0.4226 ± 0.1989
+INFO     soil_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540
+INFO     soil_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     soil_combined — PCA dimensionality: 48 components ≥95%, 71 components ≥99% (of 118 total).
+INFO     soil_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     soil_combined — PCA coverage: 98.3%
+INFO     soil_combined — AD-outside test compounds: 139
+INFO     soil_combined — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540/training_split_soil.csv
+INFO     soil_combined — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_combined_20260430_115543_ad.npz
+INFO     soil_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540/ad_membership_soil.csv
+INFO     soil_combined — Model JSON patched with artefact paths.
+INFO     soil_combined — 
+======================================================================
+  Run complete
+======================================================================
+INFO     soil_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/soil_combined/20260430_114540
+
+############################################################
+# sediment_combined/20260430_115555
+############################################################
+
+INFO     sediment_combined — 
+======================================================================
+  Interval-Aware SVR — SEDIMENT / combined
+======================================================================
+INFO     sediment_combined — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/combined_t_half_vega_hsbd_soil_water_sediment.db
+INFO     sediment_combined — Raw dataset: 414 rows
+INFO     sediment_combined — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/interval_table_sediment.csv
+INFO     sediment_combined — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/t_half_meta_sediment.csv
+INFO     sediment_combined — 
+======================================================================
+  Model Training
+======================================================================
+INFO     sediment_combined — 5-fold CV on training set: R²=0.6610 (±0.0733)  RMSE(log10)=0.4902  RMSE(days-geom)=3.09×
+INFO     sediment_combined — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+INFO     sediment_combined —   [test]  Interval coverage probability : 0.237 (23/97)
+INFO     sediment_combined —   [test]  Mean interval loss            : 0.5009 log10 days  (~3.17 days geom. equiv.)
+INFO     sediment_combined —   [test]  Class accuracy                : 0.237
+INFO     sediment_combined —   [test]  Spearman rho                  : 0.800  (p=0.0000)
+INFO     sediment_combined —   [test]  Kendall tau                   : 0.629  (p=0.0000)
+INFO     sediment_combined — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+INFO     sediment_combined —   [train] Interval coverage probability : 0.210 (61/290)
+INFO     sediment_combined —   [train] Mean interval loss            : 0.5316 log10 days  (~3.40 days geom. equiv.)
+INFO     sediment_combined —   [train] Class accuracy                : 0.210
+INFO     sediment_combined —   [train] Spearman rho                  : 0.981  (p=0.0000)
+INFO     sediment_combined —   [train] Kendall tau                   : 0.908  (p=0.0000)
+INFO     sediment_combined — 
+======================================================================
+  Feature Analysis
+======================================================================
+INFO     sediment_combined — PCA dimensionality: 48 components ≥95%, 79 components ≥99% (of 243 total).
+INFO     sediment_combined — 
+======================================================================
+  Feature Reduction
+======================================================================
+INFO     sediment_combined —   [A  top-SVR (importance>0)] Interval coverage probability : 0.206 (20/97)
+INFO     sediment_combined —   [A  top-SVR (importance>0)] Mean interval loss            : 0.4963 log10 days  (~3.14 days geom. equiv.)
+INFO     sediment_combined —   [A  top-SVR (importance>0)] Class accuracy                : 0.206
+INFO     sediment_combined —   [A  top-SVR (importance>0)] Spearman rho                  : 0.833  (p=0.0000)
+INFO     sediment_combined —   [A  top-SVR (importance>0)] Kendall tau                   : 0.665  (p=0.0000)
+INFO     sediment_combined — Strategy A  top-SVR (importance>0): n=132  coverage=0.206  MIL=0.4963  rho=0.833
+INFO     sediment_combined —   [B  top-X (N=132)] Interval coverage probability : 0.206 (20/97)
+INFO     sediment_combined —   [B  top-X (N=132)] Mean interval loss            : 0.4963 log10 days  (~3.14 days geom. equiv.)
+INFO     sediment_combined —   [B  top-X (N=132)] Class accuracy                : 0.206
+INFO     sediment_combined —   [B  top-X (N=132)] Spearman rho                  : 0.833  (p=0.0000)
+INFO     sediment_combined —   [B  top-X (N=132)] Kendall tau                   : 0.665  (p=0.0000)
+INFO     sediment_combined — Strategy B  top-X (N=132): n=132  coverage=0.206  MIL=0.4963  rho=0.833
+INFO     sediment_combined —   [C  top-N pca99 (N=79)] Interval coverage probability : 0.227 (22/97)
+INFO     sediment_combined —   [C  top-N pca99 (N=79)] Mean interval loss            : 0.5117 log10 days  (~3.25 days geom. equiv.)
+INFO     sediment_combined —   [C  top-N pca99 (N=79)] Class accuracy                : 0.227
+INFO     sediment_combined —   [C  top-N pca99 (N=79)] Spearman rho                  : 0.833  (p=0.0000)
+INFO     sediment_combined —   [C  top-N pca99 (N=79)] Kendall tau                   : 0.664  (p=0.0000)
+INFO     sediment_combined — Strategy C  top-N pca99 (N=79): n=79  coverage=0.227  MIL=0.5117  rho=0.833
+INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.258 (25/97)
+INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5010 log10 days  (~3.17 days geom. equiv.)
+INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.258
+INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.848  (p=0.0000)
+INFO     sediment_combined —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.685  (p=0.0000)
+INFO     sediment_combined — Winner: D  RFE (LinearSVR→RBF)  (n=132, coverage=0.258, rho=0.848)
+INFO     sediment_combined — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+INFO     sediment_combined — 5-fold CV on training set: R²=0.6564 (±0.0827)  RMSE(log10)=0.4924  RMSE(days-geom)=3.11×
+INFO     sediment_combined — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+INFO     sediment_combined —   [final] Interval coverage probability : 0.258 (25/97)
+INFO     sediment_combined —   [final] Mean interval loss            : 0.5010 log10 days  (~3.17 days geom. equiv.)
+INFO     sediment_combined —   [final] Class accuracy                : 0.258
+INFO     sediment_combined —   [final] Spearman rho                  : 0.848  (p=0.0000)
+INFO     sediment_combined —   [final] Kendall tau                   : 0.685  (p=0.0000)
+INFO     sediment_combined — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732.joblib
+INFO     sediment_combined — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732.json
+INFO     sediment_combined — 
+======================================================================
+  Learning Curve
+======================================================================
+INFO     sediment_combined — Learning curve val R² (final): 0.5098 ± 0.4157
+INFO     sediment_combined — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555
+INFO     sediment_combined — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+INFO     sediment_combined — PCA dimensionality: 36 components ≥95%, 58 components ≥99% (of 132 total).
+INFO     sediment_combined — 
+======================================================================
+  Applicability Domain
+======================================================================
+INFO     sediment_combined — PCA coverage: 100.0%
+INFO     sediment_combined — AD-outside test compounds: 72
+INFO     sediment_combined — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/training_split_sediment.csv
+INFO     sediment_combined — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_sediment_combined_20260430_115732_ad.npz
+INFO     sediment_combined — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555/ad_membership_sediment.csv
+INFO     sediment_combined — Model JSON patched with artefact paths.
+INFO     sediment_combined — 
+======================================================================
+  Run complete
+======================================================================
+INFO     sediment_combined — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/sediment_combined/20260430_115555

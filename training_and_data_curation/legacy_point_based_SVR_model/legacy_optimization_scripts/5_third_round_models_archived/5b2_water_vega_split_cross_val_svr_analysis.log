@@ -1,0 +1,17 @@
+[2026-02-18 12:48:41] WaterData, outlier removal: False
+============================================================
+[2026-02-18 12:48:41]   Preprocessing
+============================================================
+[2026-02-18 12:48:41] Number of samples: 223, Number of features: 375
+[2026-02-18 12:48:41] After dropping NaNs: 223 samples remain.
+[2026-02-18 12:48:41] Outlier removal not applied.
+[2026-02-18 12:48:41] After scaling: 223 samples, 375 features.
+[2026-02-18 12:48:41] After scaling and decorrelation: 223 samples, 249 features.
+============================================================
+[2026-02-18 12:48:41]   Model section
+============================================================
+[2026-02-18 12:48:41] After removing constant features: 223 samples, 249 features.
+[2026-02-18 12:49:04] Best results at test size: 0.25
+[2026-02-18 12:49:04] SVR parameters for best test size: {'C': 10, 'epsilon': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}
+[2026-02-18 12:49:04] SVR metrics for best test size (0.25):
+{'R2': 0.8996207464890948, 'MAE': 46.386195568656035, 'MSE': 19023.25718635572, 'RMSE': 137.9248244021203, 'Explained Variance': 0.9011766971362059}

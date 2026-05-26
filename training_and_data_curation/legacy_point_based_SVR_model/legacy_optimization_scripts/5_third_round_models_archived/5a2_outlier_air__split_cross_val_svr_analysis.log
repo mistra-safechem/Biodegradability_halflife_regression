@@ -1,0 +1,17 @@
+[2026-02-18 12:26:37] AirData, outlier removal: True
+============================================================
+[2026-02-18 12:26:37]   Preprocessing
+============================================================
+[2026-02-18 12:26:37] Number of samples: 523, Number of features: 375
+[2026-02-18 12:26:37] After dropping NaNs: 523 samples remain.
+[2026-02-18 12:26:37] Outlier detection: 497 samples, 375 features.
+[2026-02-18 12:26:37] After scaling: 497 samples, 375 features.
+[2026-02-18 12:26:37] After scaling and decorrelation: 497 samples, 233 features.
+============================================================
+[2026-02-18 12:26:37]   Model section
+============================================================
+[2026-02-18 12:26:37] After removing constant features: 497 samples, 233 features.
+[2026-02-18 12:33:02] Best results at test size: 0.25
+[2026-02-18 12:33:02] SVR parameters for best test size: {'C': 10, 'epsilon': 0.01, 'gamma': 'scale', 'kernel': 'rbf'}
+[2026-02-18 12:33:02] SVR metrics for best test size (0.25):
+{'R2': 0.9891403227871333, 'MAE': 3.181001432554617, 'MSE': 87.3388771262267, 'RMSE': 9.345527118693022, 'Explained Variance': 0.9891900242977443}

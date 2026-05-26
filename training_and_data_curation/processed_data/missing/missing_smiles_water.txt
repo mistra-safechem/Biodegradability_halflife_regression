@@ -1,0 +1,55 @@
+NAPHTHENIC ACIDS
+TRALKOXYDIM
+XYLENES
+p, p' - DDT
+benzo a pyrene
+tetrachlorometane
+benz a anthracene
+p,p' - DDE
+benzo b thiophene
+propane, 2,2'-oxybis 1-chloro-
+ethane, 1,1'-oxybis 2-chloro-
+ethane, 1,1'- methylenebis(oxy) bis 2-chloro-
+methane, oxybis chloro-
+PCB 28*
+PCB 101*
+PCB 180*
+? HCH*
+p-cresol*
+Hypo-A*
+Hypo-B*
+Hypo-C*
+2,2,5-trimemethylhexane
+indane (residuum trimethylalkane)
+2,2,dimethyloctane
+C1-Naphthalenes
+C2-Naphthalenes
+1,2,3,4-tetrahydro-1-4-dimethylnaphthalene
+C3-Naphthalenes
+C1-Dibenzothiophenes
+C4-Naphthalenes
+C1-Fluorenes
+C2-Dibenzothiophenes
+C2-Fluorenes
+C1-Phenanthrenes/Anthracenes
+C3-Dibenzothiophenes
+C3-Fluorenes
+C2-Phenanthrenes/Anthracenes
+C4-Dibenzothiophenes
+C3-Phenanthrenes/Anthracenes
+C1-Fluoranthenes/Pyrenes
+C4-Phenanthrenes/Anthracenes
+C2-Fluoranthenes/Pyrenes
+perhydro-terphenyl (tricyclohexyl)
+2,3 Dimethy-5(4methylpentyl) naphthalene
+terahydro chrysene
+1-methyl-7-(1methylethyl)-hydrophenanthrene
+perhydro-terphenyl (tricyclohexyl) {MRD-08-158}
+9-n butylphenanthrene
+dodecahdyro chrysene
+C3-Fluoranthenes/Pyrenes
+C1-Chrysenes
+5?(H)-androstane
+C2-Chrysenes
+C3-Chrysenes
+n-tritriacontrane

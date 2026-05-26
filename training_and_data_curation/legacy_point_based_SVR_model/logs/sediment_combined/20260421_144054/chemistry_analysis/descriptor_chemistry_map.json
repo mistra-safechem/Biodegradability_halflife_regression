@@ -1,0 +1,38 @@
+{
+  "EState_VSA9": {
+    "importance": 0.0030480115697541334,
+    "interpretation": "Molecular descriptor"
+  },
+  "BalabanJ": {
+    "importance": 0.0031653384366877617,
+    "interpretation": "Balaban connectivity index"
+  },
+  "fr_ArN": {
+    "importance": 0.0034195499781586453,
+    "interpretation": "Molecular descriptor"
+  },
+  "SMR_VSA4": {
+    "importance": 0.0041188208959199776,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_unbrch_alkane": {
+    "importance": 0.004664099977568168,
+    "interpretation": "Molecular descriptor"
+  },
+  "SMR_VSA1": {
+    "importance": 0.005205256135885042,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_Al_OH": {
+    "importance": 0.005719879961563775,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA1": {
+    "importance": 0.006566446659356717,
+    "interpretation": "Molecular descriptor"
+  },
+  "SlogP_VSA8": {
+    "importance": 0.008807559209917456,
+    "interpretation": "Molecular descriptor"
+  }
+}

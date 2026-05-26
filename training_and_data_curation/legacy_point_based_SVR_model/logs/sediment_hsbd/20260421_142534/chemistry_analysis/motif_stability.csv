@@ -1,0 +1,4 @@
+scaffold_smiles,n_samples,prediction_std,prediction_variance,mean_absolute_error,stable
+c1ccccc1,25,123.424,15233.379,172.465,True
+,28,127.099,16154.23,73.002,True
+c1ccc(-c2ccccc2)cc1,4,1519.552,2309037.145,927.484,False

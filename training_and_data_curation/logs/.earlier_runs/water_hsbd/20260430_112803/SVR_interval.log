@@ -1,0 +1,106 @@
+[2026-04-30 11:28:03] INFO     water_hsbd — 
+======================================================================
+  Interval-Aware SVR — WATER / hsbd
+======================================================================
+[2026-04-30 11:28:03] INFO     water_hsbd — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/hsbd_t_half_all.db
+[2026-04-30 11:28:03] INFO     water_hsbd — Raw dataset: 673 rows
+[2026-04-30 11:28:04] INFO     water_hsbd — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/interval_table_water.csv
+[2026-04-30 11:28:04] INFO     water_hsbd — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/t_half_meta_water.csv
+[2026-04-30 11:28:04] INFO     water_hsbd — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:30:09] INFO     water_hsbd — 5-fold CV on training set: R²=0.4147 (±0.0847)  RMSE(log10)=0.6042  RMSE(days-geom)=4.02×
+[2026-04-30 11:30:09] INFO     water_hsbd — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:30:09] INFO     water_hsbd —   [test]  Interval coverage probability : 0.190 (30/158)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [test]  Mean interval loss            : 0.5073 log10 days  (~3.22 days geom. equiv.)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [test]  Class accuracy                : 0.190
+[2026-04-30 11:30:09] INFO     water_hsbd —   [test]  Spearman rho                  : 0.604  (p=0.0000)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [test]  Kendall tau                   : 0.444  (p=0.0000)
+[2026-04-30 11:30:09] INFO     water_hsbd — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:30:09] INFO     water_hsbd —   [train] Interval coverage probability : 0.254 (120/472)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [train] Mean interval loss            : 0.4802 log10 days  (~3.02 days geom. equiv.)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [train] Class accuracy                : 0.254
+[2026-04-30 11:30:09] INFO     water_hsbd —   [train] Spearman rho                  : 0.811  (p=0.0000)
+[2026-04-30 11:30:09] INFO     water_hsbd —   [train] Kendall tau                   : 0.649  (p=0.0000)
+[2026-04-30 11:30:09] INFO     water_hsbd — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:30:18] INFO     water_hsbd — PCA dimensionality: 52 components ≥95%, 87 components ≥99% (of 246 total).
+[2026-04-30 11:30:18] INFO     water_hsbd — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:30:18] INFO     water_hsbd —   [A  top-SVR (importance>0)] Interval coverage probability : 0.196 (31/158)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5178 log10 days  (~3.29 days geom. equiv.)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [A  top-SVR (importance>0)] Class accuracy                : 0.196
+[2026-04-30 11:30:18] INFO     water_hsbd —   [A  top-SVR (importance>0)] Spearman rho                  : 0.697  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [A  top-SVR (importance>0)] Kendall tau                   : 0.521  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd — Strategy A  top-SVR (importance>0): n=144  coverage=0.196  MIL=0.5178  rho=0.697
+[2026-04-30 11:30:18] INFO     water_hsbd —   [B  top-X (N=144)] Interval coverage probability : 0.196 (31/158)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [B  top-X (N=144)] Mean interval loss            : 0.5178 log10 days  (~3.29 days geom. equiv.)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [B  top-X (N=144)] Class accuracy                : 0.196
+[2026-04-30 11:30:18] INFO     water_hsbd —   [B  top-X (N=144)] Spearman rho                  : 0.697  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [B  top-X (N=144)] Kendall tau                   : 0.521  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd — Strategy B  top-X (N=144): n=144  coverage=0.196  MIL=0.5178  rho=0.697
+[2026-04-30 11:30:18] INFO     water_hsbd —   [C  top-N pca99 (N=87)] Interval coverage probability : 0.209 (33/158)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [C  top-N pca99 (N=87)] Mean interval loss            : 0.5143 log10 days  (~3.27 days geom. equiv.)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [C  top-N pca99 (N=87)] Class accuracy                : 0.209
+[2026-04-30 11:30:18] INFO     water_hsbd —   [C  top-N pca99 (N=87)] Spearman rho                  : 0.699  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd —   [C  top-N pca99 (N=87)] Kendall tau                   : 0.525  (p=0.0000)
+[2026-04-30 11:30:18] INFO     water_hsbd — Strategy C  top-N pca99 (N=87): n=87  coverage=0.209  MIL=0.5143  rho=0.699
+[2026-04-30 11:31:16] INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.190 (30/158)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5151 log10 days  (~3.27 days geom. equiv.)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.190
+[2026-04-30 11:31:16] INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.626  (p=0.0000)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.460  (p=0.0000)
+[2026-04-30 11:31:16] INFO     water_hsbd — Winner: C  top-N pca99 (N=87)  (n=87, coverage=0.209, rho=0.699)
+[2026-04-30 11:31:16] INFO     water_hsbd — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:31:16] INFO     water_hsbd — 5-fold CV on training set: R²=0.4104 (±0.0686)  RMSE(log10)=0.6070  RMSE(days-geom)=4.05×
+[2026-04-30 11:31:16] INFO     water_hsbd — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:31:16] INFO     water_hsbd —   [final] Interval coverage probability : 0.209 (33/158)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [final] Mean interval loss            : 0.5143 log10 days  (~3.27 days geom. equiv.)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [final] Class accuracy                : 0.209
+[2026-04-30 11:31:16] INFO     water_hsbd —   [final] Spearman rho                  : 0.699  (p=0.0000)
+[2026-04-30 11:31:16] INFO     water_hsbd —   [final] Kendall tau                   : 0.525  (p=0.0000)
+[2026-04-30 11:31:16] INFO     water_hsbd — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116.joblib
+[2026-04-30 11:31:16] INFO     water_hsbd — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116.json
+[2026-04-30 11:31:16] INFO     water_hsbd — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:31:17] INFO     water_hsbd — Learning curve val R² (final): 0.2572 ± 0.2134
+[2026-04-30 11:31:17] INFO     water_hsbd — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803
+[2026-04-30 11:31:17] INFO     water_hsbd — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:31:19] INFO     water_hsbd — PCA dimensionality: 35 components ≥95%, 52 components ≥99% (of 87 total).
+[2026-04-30 11:31:19] INFO     water_hsbd — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:31:19] INFO     water_hsbd — PCA coverage: 99.4%
+[2026-04-30 11:31:20] INFO     water_hsbd — AD-outside test compounds: 125
+[2026-04-30 11:31:20] INFO     water_hsbd — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/training_split_water.csv
+[2026-04-30 11:31:20] INFO     water_hsbd — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_water_hsbd_20260430_113116_ad.npz
+[2026-04-30 11:31:20] INFO     water_hsbd — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803/ad_membership_water.csv
+[2026-04-30 11:31:20] INFO     water_hsbd — Model JSON patched with artefact paths.
+[2026-04-30 11:31:20] INFO     water_hsbd — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:31:20] INFO     water_hsbd — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/water_hsbd/20260430_112803

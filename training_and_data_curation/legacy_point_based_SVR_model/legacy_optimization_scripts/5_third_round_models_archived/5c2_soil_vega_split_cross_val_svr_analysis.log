@@ -1,0 +1,17 @@
+[2026-02-18 13:07:06] SoilData, outlier removal: False
+============================================================
+[2026-02-18 13:07:06]   Preprocessing
+============================================================
+[2026-02-18 13:07:06] Number of samples: 226, Number of features: 375
+[2026-02-18 13:07:06] After dropping NaNs: 226 samples remain.
+[2026-02-18 13:07:06] Outlier removal not applied.
+[2026-02-18 13:07:06] After scaling: 226 samples, 375 features.
+[2026-02-18 13:07:07] After scaling and decorrelation: 226 samples, 253 features.
+============================================================
+[2026-02-18 13:07:07]   Model section
+============================================================
+[2026-02-18 13:07:07] After removing constant features: 226 samples, 253 features.
+[2026-02-18 13:07:29] Best results at test size: 0.35
+[2026-02-18 13:07:29] SVR parameters for best test size: {'C': 100, 'epsilon': 0.01, 'gamma': 'auto', 'kernel': 'rbf'}
+[2026-02-18 13:07:29] SVR metrics for best test size (0.35):
+{'R2': 0.7977226316597691, 'MAE': 151.13745269784891, 'MSE': 109222.16810377873, 'RMSE': 330.48777300193535, 'Explained Variance': 0.8052905161585624}

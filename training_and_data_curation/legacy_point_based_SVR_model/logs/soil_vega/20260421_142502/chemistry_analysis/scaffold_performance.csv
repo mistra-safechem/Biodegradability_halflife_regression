@@ -1,0 +1,6 @@
+scaffold_smiles,n_samples,coverage_pct,rmse,r2,mean_error
+c1ccccc1,20,37.04,36.997,0.792,1.705
+,13,24.07,146.035,-2.547,38.825
+c1ccc2c(c1)Oc1ccccc1O2,6,11.11,656.106,0.191,-268.004
+c1ccc(-c2ccccc2)cc1,5,9.26,933.325,-0.448,106.793
+c1ccc2c(c1)oc1ccccc12,2,3.7,1177.129,-0.124,-836.119

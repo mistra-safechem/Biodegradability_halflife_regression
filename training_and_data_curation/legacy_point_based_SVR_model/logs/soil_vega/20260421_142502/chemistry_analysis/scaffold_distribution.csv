@@ -1,0 +1,14 @@
+scaffold_smiles,count,coverage_pct,cumulative_pct
+c1ccccc1,20,37.04,37.04
+,13,24.07,61.11
+c1ccc2c(c1)Oc1ccccc1O2,6,11.11,72.22
+c1ccc(-c2ccccc2)cc1,5,9.26,81.48
+c1ccc2c(c1)oc1ccccc12,2,3.7,85.18
+C1=CCC=CC1,1,1.85,87.03
+c1ccc(Oc2ccccc2)cc1,1,1.85,88.88
+c1ccc2ccccc2c1,1,1.85,90.73
+c1ccc2ncccc2c1,1,1.85,92.58
+O=C(OCc1ccccc1)c1ccccc1,1,1.85,94.43
+c1ccc(Nc2ccccc2)cc1,1,1.85,96.28
+C1CCCCC1,1,1.85,98.13
+c1ccc(Cc2ccccc2)cc1,1,1.85,99.98

@@ -1,0 +1,106 @@
+[2026-04-30 11:39:08] INFO     soil_vega — 
+======================================================================
+  Interval-Aware SVR — SOIL / vega
+======================================================================
+[2026-04-30 11:39:08] INFO     soil_vega — Database: /Users/a/dev/WP3bioddeg_V2/processed_data/vega_t_half_soil_water_sediment.db
+[2026-04-30 11:39:08] INFO     soil_vega — Raw dataset: 226 rows
+[2026-04-30 11:39:09] INFO     soil_vega — Interval mapping table saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/interval_table_soil.csv
+[2026-04-30 11:39:09] INFO     soil_vega — T_half meta columns saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/t_half_meta_soil.csv
+[2026-04-30 11:39:09] INFO     soil_vega — 
+======================================================================
+  Model Training
+======================================================================
+[2026-04-30 11:39:14] INFO     soil_vega — 5-fold CV on training set: R²=0.8024 (±0.1176)  RMSE(log10)=0.3432  RMSE(days-geom)=2.20×
+[2026-04-30 11:39:14] INFO     soil_vega — 
+======================================================================
+  Interval Evaluation — Test Set
+======================================================================
+[2026-04-30 11:39:14] INFO     soil_vega —   [test]  Interval coverage probability : 0.222 (12/54)
+[2026-04-30 11:39:14] INFO     soil_vega —   [test]  Mean interval loss            : 0.5123 log10 days  (~3.25 days geom. equiv.)
+[2026-04-30 11:39:14] INFO     soil_vega —   [test]  Class accuracy                : 0.222
+[2026-04-30 11:39:14] INFO     soil_vega —   [test]  Spearman rho                  : 0.868  (p=0.0000)
+[2026-04-30 11:39:14] INFO     soil_vega —   [test]  Kendall tau                   : 0.746  (p=0.0000)
+[2026-04-30 11:39:14] INFO     soil_vega — 
+======================================================================
+  Interval Evaluation — Train Set (reference)
+======================================================================
+[2026-04-30 11:39:14] INFO     soil_vega —   [train] Interval coverage probability : 0.212 (34/160)
+[2026-04-30 11:39:14] INFO     soil_vega —   [train] Mean interval loss            : 0.5074 log10 days  (~3.22 days geom. equiv.)
+[2026-04-30 11:39:14] INFO     soil_vega —   [train] Class accuracy                : 0.212
+[2026-04-30 11:39:14] INFO     soil_vega —   [train] Spearman rho                  : 0.982  (p=0.0000)
+[2026-04-30 11:39:14] INFO     soil_vega —   [train] Kendall tau                   : 0.912  (p=0.0000)
+[2026-04-30 11:39:14] INFO     soil_vega — 
+======================================================================
+  Feature Analysis
+======================================================================
+[2026-04-30 11:39:16] INFO     soil_vega — PCA dimensionality: 34 components ≥95%, 55 components ≥99% (of 199 total).
+[2026-04-30 11:39:16] INFO     soil_vega — 
+======================================================================
+  Feature Reduction
+======================================================================
+[2026-04-30 11:39:16] INFO     soil_vega —   [A  top-SVR (importance>0)] Interval coverage probability : 0.259 (14/54)
+[2026-04-30 11:39:16] INFO     soil_vega —   [A  top-SVR (importance>0)] Mean interval loss            : 0.5128 log10 days  (~3.26 days geom. equiv.)
+[2026-04-30 11:39:16] INFO     soil_vega —   [A  top-SVR (importance>0)] Class accuracy                : 0.259
+[2026-04-30 11:39:16] INFO     soil_vega —   [A  top-SVR (importance>0)] Spearman rho                  : 0.917  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega —   [A  top-SVR (importance>0)] Kendall tau                   : 0.794  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega — Strategy A  top-SVR (importance>0): n=129  coverage=0.259  MIL=0.5128  rho=0.917
+[2026-04-30 11:39:16] INFO     soil_vega —   [B  top-X (N=129)] Interval coverage probability : 0.259 (14/54)
+[2026-04-30 11:39:16] INFO     soil_vega —   [B  top-X (N=129)] Mean interval loss            : 0.5128 log10 days  (~3.26 days geom. equiv.)
+[2026-04-30 11:39:16] INFO     soil_vega —   [B  top-X (N=129)] Class accuracy                : 0.259
+[2026-04-30 11:39:16] INFO     soil_vega —   [B  top-X (N=129)] Spearman rho                  : 0.917  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega —   [B  top-X (N=129)] Kendall tau                   : 0.794  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega — Strategy B  top-X (N=129): n=129  coverage=0.259  MIL=0.5128  rho=0.917
+[2026-04-30 11:39:16] INFO     soil_vega —   [C  top-N pca99 (N=55)] Interval coverage probability : 0.278 (15/54)
+[2026-04-30 11:39:16] INFO     soil_vega —   [C  top-N pca99 (N=55)] Mean interval loss            : 0.5086 log10 days  (~3.23 days geom. equiv.)
+[2026-04-30 11:39:16] INFO     soil_vega —   [C  top-N pca99 (N=55)] Class accuracy                : 0.278
+[2026-04-30 11:39:16] INFO     soil_vega —   [C  top-N pca99 (N=55)] Spearman rho                  : 0.921  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega —   [C  top-N pca99 (N=55)] Kendall tau                   : 0.802  (p=0.0000)
+[2026-04-30 11:39:16] INFO     soil_vega — Strategy C  top-N pca99 (N=55): n=55  coverage=0.278  MIL=0.5086  rho=0.921
+[2026-04-30 11:39:35] INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Interval coverage probability : 0.222 (12/54)
+[2026-04-30 11:39:35] INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Mean interval loss            : 0.5217 log10 days  (~3.32 days geom. equiv.)
+[2026-04-30 11:39:35] INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Class accuracy                : 0.222
+[2026-04-30 11:39:35] INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Spearman rho                  : 0.845  (p=0.0000)
+[2026-04-30 11:39:35] INFO     soil_vega —   [D  RFE (LinearSVR→RBF)] Kendall tau                   : 0.719  (p=0.0000)
+[2026-04-30 11:39:35] INFO     soil_vega — Winner: C  top-N pca99 (N=55)  (n=55, coverage=0.278, rho=0.921)
+[2026-04-30 11:39:35] INFO     soil_vega — 
+======================================================================
+  Feature Reduction — Final Model
+======================================================================
+[2026-04-30 11:39:35] INFO     soil_vega — 5-fold CV on training set: R²=0.8063 (±0.1184)  RMSE(log10)=0.3399  RMSE(days-geom)=2.19×
+[2026-04-30 11:39:35] INFO     soil_vega — 
+======================================================================
+  Final Model — Interval Evaluation
+======================================================================
+[2026-04-30 11:39:35] INFO     soil_vega —   [final] Interval coverage probability : 0.278 (15/54)
+[2026-04-30 11:39:35] INFO     soil_vega —   [final] Mean interval loss            : 0.5086 log10 days  (~3.23 days geom. equiv.)
+[2026-04-30 11:39:35] INFO     soil_vega —   [final] Class accuracy                : 0.278
+[2026-04-30 11:39:35] INFO     soil_vega —   [final] Spearman rho                  : 0.921  (p=0.0000)
+[2026-04-30 11:39:35] INFO     soil_vega —   [final] Kendall tau                   : 0.802  (p=0.0000)
+[2026-04-30 11:39:35] INFO     soil_vega — Model saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935.joblib
+[2026-04-30 11:39:35] INFO     soil_vega — Parameters saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935.json
+[2026-04-30 11:39:35] INFO     soil_vega — 
+======================================================================
+  Learning Curve
+======================================================================
+[2026-04-30 11:39:35] INFO     soil_vega — Learning curve val R² (final): 0.6666 ± 0.1444
+[2026-04-30 11:39:35] INFO     soil_vega — Basic diagnostic plots written to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908
+[2026-04-30 11:39:35] INFO     soil_vega — 
+======================================================================
+  Feature Analysis (reduced)
+======================================================================
+[2026-04-30 11:39:36] INFO     soil_vega — PCA dimensionality: 21 components ≥95%, 33 components ≥99% (of 55 total).
+[2026-04-30 11:39:36] INFO     soil_vega — 
+======================================================================
+  Applicability Domain
+======================================================================
+[2026-04-30 11:39:36] INFO     soil_vega — PCA coverage: 96.3%
+[2026-04-30 11:39:36] INFO     soil_vega — AD-outside test compounds: 39
+[2026-04-30 11:39:36] INFO     soil_vega — Training split CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/training_split_soil.csv
+[2026-04-30 11:39:36] INFO     soil_vega — AD artefact saved to /Users/a/dev/WP3bioddeg_V2/models/SVR_soil_vega_20260430_113935_ad.npz
+[2026-04-30 11:39:36] INFO     soil_vega — AD membership CSV saved to /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908/ad_membership_soil.csv
+[2026-04-30 11:39:36] INFO     soil_vega — Model JSON patched with artefact paths.
+[2026-04-30 11:39:36] INFO     soil_vega — 
+======================================================================
+  Run complete
+======================================================================
+[2026-04-30 11:39:36] INFO     soil_vega — All outputs in /Users/a/dev/WP3bioddeg_V2/logs/soil_vega/20260430_113908

@@ -1,0 +1,82 @@
+{
+  "MACCS_129": {
+    "importance": 0.002084393363456981,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "VSA_EState2": {
+    "importance": 0.0021990654218941334,
+    "interpretation": "Molecular descriptor"
+  },
+  "BCUT2D_LOGPHI": {
+    "importance": 0.0022034594418437496,
+    "interpretation": "Molecular descriptor"
+  },
+  "Ipc": {
+    "importance": 0.002454937607403597,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_nitro_arom_nonortho": {
+    "importance": 0.002601555009652259,
+    "interpretation": "Molecular descriptor"
+  },
+  "SlogP_VSA2": {
+    "importance": 0.002790868837660369,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_125": {
+    "importance": 0.0029579780574284995,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "EState_VSA10": {
+    "importance": 0.003106295265058329,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_133": {
+    "importance": 0.0031350937223280457,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "SMR_VSA5": {
+    "importance": 0.0031418400572372452,
+    "interpretation": "Molecular descriptor"
+  },
+  "BCUT2D_MWLOW": {
+    "importance": 0.0032137122547828633,
+    "interpretation": "Molecular descriptor"
+  },
+  "NHOHCount": {
+    "importance": 0.003494253588057776,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_nitro": {
+    "importance": 0.003991558747576436,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_124": {
+    "importance": 0.0041716022577692625,
+    "interpretation": "Structural fingerprint bit"
+  },
+  "fr_aldehyde": {
+    "importance": 0.0042450245596831445,
+    "interpretation": "Molecular descriptor"
+  },
+  "fr_alkyl_halide": {
+    "importance": 0.004466887673271363,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA4": {
+    "importance": 0.004718991049184868,
+    "interpretation": "Molecular descriptor"
+  },
+  "NumAliphaticHeterocycles": {
+    "importance": 0.006300733991150738,
+    "interpretation": "Molecular descriptor"
+  },
+  "PEOE_VSA1": {
+    "importance": 0.008599295129175857,
+    "interpretation": "Molecular descriptor"
+  },
+  "MACCS_127": {
+    "importance": 0.009279711661289304,
+    "interpretation": "Structural fingerprint bit"
+  }
+}

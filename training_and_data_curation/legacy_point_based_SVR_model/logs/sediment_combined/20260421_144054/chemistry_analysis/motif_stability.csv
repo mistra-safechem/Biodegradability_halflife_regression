@@ -1,0 +1,7 @@
+scaffold_smiles,n_samples,prediction_std,prediction_variance,mean_absolute_error,stable
+c1ccc2c(c1)Oc1ccccc1O2,3,682.979,466460.327,524.828,False
+c1ccccc1,27,127.086,16150.957,77.641,True
+,28,212.85,45305.247,74.246,True
+c1ccc(-c2ccccc2)cc1,8,591.637,350033.948,843.663,False
+O=P(Oc1ccccc1)(Oc1ccccc1)Oc1ccccc1,3,12.9,166.414,70.433,True
+c1ccc2ccccc2c1,4,80.464,6474.474,20.314,True
