@@ -15,6 +15,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import json
+import sys
 from pathlib import Path
 
 import joblib
@@ -25,16 +26,20 @@ import sqlalchemy as sa
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sqlalchemy.orm import sessionmaker
-from training_and_data_curation.src.db_schema import *
-from training_and_data_curation.src.db_utils import get_all_data
-from training_and_data_curation.src.log_utils import log_section, log_to_file
-from training_and_data_curation.src.ml_tools import PreprocessedData, Preprocessor, chemical_space_pca, t_t_split
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+TRAINING_DIR = SCRIPT_DIR.parents[2]
+sys.path.append(str(TRAINING_DIR))
+
+from src.db_schema import *
+from src.db_utils import get_all_data
+from src.legacy.log_utils import log_section, log_to_file
+from src.legacy.ml_tools import PreprocessedData, Preprocessor, chemical_space_pca, t_t_split
 
 pd.set_option("display.max_columns", None)
 
-SCRIPT_DIR = Path(__file__).parent.resolve()
-DATA_DIR = SCRIPT_DIR / "processed_data"
-DATABASE_FILE = DATA_DIR / "t_half_all.db"
+DATA_DIR = TRAINING_DIR / "processed_data"
+DATABASE_FILE = DATA_DIR / "hsbd_t_half_all.db"
 ENGINE = sa.create_engine(f"sqlite:///{DATABASE_FILE}")
 Session = sessionmaker(bind=ENGINE)
 

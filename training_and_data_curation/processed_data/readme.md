@@ -30,7 +30,7 @@ For HSBD data, due to missing identifiers (smiles, inchi, cas) or incorrect stru
 
 *Step 1b - OPTIONAL*
 Since this is a manual expert guided curation step, this is optional. A ready curated file 
-is available, no need to rerun those optional steps. Details can be found in `processed/data/missing/readme.md`.
+is available, no need to rerun those optional steps. Details can be found in `processed_data/missing/readme.md`.
 
 - Once finished, run notebook: `0a1_2_optional_missing_data.ipynb`.
 - csv files are created for all compartments
@@ -49,7 +49,7 @@ the data and create csv files for all compartments (not air) with notebook: `0a2
 
 ----
 ### Database building
-Data is handled via sqllite databases. 
+Data is handled via SQLite databases. 
 - notebooks: `0b1_create_hsbd_database.ipynb` & `0b2_create_vega_database.ipynb` for db and table build
 - notebooks: `1a1_descr_hsbd_calc.ipynb` & `1a2_descr_calc_vega.ipynb` calculates features and adds to db
 - notebook: `1a3_combined_hsbd_vega.ipynb` combines the data of the two datasets into third db

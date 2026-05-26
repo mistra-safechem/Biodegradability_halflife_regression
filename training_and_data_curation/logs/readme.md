@@ -17,7 +17,7 @@ applicability-domain metrics, into markdown table format, for a quick overview o
 ## Script 3: Generates "presentation-ready" summary
 Automates creation of `logs/log_summary_presentation.md` from `logs/log_summary.md`.
 
-It further formates and shortens the summary tables to obtain a quick overview of key performance metrics across all models.
+It further formats and shortens the summary tables to obtain a quick overview of key performance metrics across all models.
 
 
 # Date of last run

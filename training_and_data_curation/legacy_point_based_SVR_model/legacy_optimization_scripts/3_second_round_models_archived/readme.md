@@ -1,19 +1,20 @@
-# next round of model testing
-contains attempts at optimizations, finding best methods
-
+# First round of model testing
 kept for archiving
 
 # how to run
-Will not run from this folder without adjustments, e.g. to file paths such as src/, data loading, etc.
+Should be possible to run from this folder without adjustments -  
+a best effort for refactoring after files had been moved around without reexecuting.
 
-Either move one level up or add before the `src`related imports these lines:
+The paths in the notebook for importing src modules should be like this:
 
 ```python
 import os
-notebookdir = Path.cwd().parent.parent
+notebookdir = Path.cwd().parents[2]
 sys.path.append(str(notebookdir)) # this way we can import src modules even in different subfolders
 # and later on:
-working_dir = Path.cwd().parent.parent
+working_dir = Path.cwd().parents[2]
 ```
 
-also ensure that you use `from src.db_utils import get_all_data` to `from src.db_utils import get_selected_data` for loading the data.
+similarly for the py scripts.
+
+Also ensure that you use `from src.db_utils import get_all_data` to `from src.db_utils import get_selected_data` for loading the data.

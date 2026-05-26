@@ -1,7 +1,7 @@
 # About Log Review Tools
 Script for automatic log file aggregation and summary.
 
-For the legacy point based model and logs this differs from the main intervall based scripts due to, well, legacy, differnt log file formats, differnt metrics etc.
+For the legacy point-based model and logs this differs from the main interval-based scripts due to, well, legacy, different log file formats, different metrics etc.
 
 ## Script 1: Aggregates SVR output
 Automates concatenation of `logs/combined_logs.txt` from all individual SVR output log files 

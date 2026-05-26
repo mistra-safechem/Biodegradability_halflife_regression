@@ -21,6 +21,7 @@ So far beyond just basic model train and eval, but still lots more to do to be c
 
 import argparse
 import json
+import sys
 
 import joblib
 import matplotlib
@@ -39,10 +40,15 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import cross_validate, learning_curve
 from sklearn.svm import SVR
 from sqlalchemy.orm import sessionmaker
-from training_and_data_curation.src.db_schema import *
-from training_and_data_curation.src.db_utils import get_all_data
-from training_and_data_curation.src.log_utils import log_section, log_to_file
-from training_and_data_curation.src.ml_tools import (
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+TRAINING_DIR = SCRIPT_DIR.parents[2]
+sys.path.append(str(TRAINING_DIR))
+
+from src.db_schema import *
+from src.db_utils import get_all_data
+from src.legacy.log_utils import log_section, log_to_file
+from src.legacy.ml_tools import (
     PreprocessedData,
     Preprocessor,
     applicability_domain_leverage,
@@ -58,8 +64,11 @@ pd.set_option("display.max_columns", None)
 pd.set_option("display.max_rows", 250)
 
 # Paths and DB setup
-SCRIPT_DIR = Path(__file__).parent.resolve()
-data_dir = SCRIPT_DIR / "processed_data"
+data_dir = TRAINING_DIR / "processed_data"
+DATABASE_FILES = {
+    "hsbd": "hsbd_t_half_all.db",
+    "vega": "vega_t_half_soil_water_sediment.db",
+}
 
 
 def main(compartment: str, data_source: str):
@@ -72,7 +81,7 @@ def main(compartment: str, data_source: str):
     working_dir = SCRIPT_DIR
 
     # Database setup based on data source
-    DATABASE_FILE = data_dir / "t_half_vega_soil_water_sediment.db" if data_source == "vega" else data_dir / "t_half_all.db"
+    DATABASE_FILE = data_dir / DATABASE_FILES[data_source]
     ENGINE = sa.create_engine(f"sqlite:///{DATABASE_FILE}")
     Session = sessionmaker(bind=ENGINE)
     data_to_use = get_all_data(compartment, Session)

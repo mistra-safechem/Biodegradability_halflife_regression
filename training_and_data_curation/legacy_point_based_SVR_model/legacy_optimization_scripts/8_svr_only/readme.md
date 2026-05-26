@@ -1,5 +1,20 @@
-# backups of the 8_svr only approaches.
+# First round of model testing
+kept for archiving
 
-early versions of the point based SVR, kept for archiving. 
+# how to run
+Should be possible to run from this folder without adjustments -  
+a best effort for refactoring after files had been moved around without reexecuting.
 
-will not run without adjustments, e.g. to file paths such as src/, data loading, etc.
+The paths in the notebook for importing src modules should be like this:
+
+```python
+import os
+notebookdir = Path.cwd().parents[2]
+sys.path.append(str(notebookdir)) # this way we can import src modules even in different subfolders
+# and later on:
+working_dir = Path.cwd().parents[2]
+```
+
+similarly for the py scripts.
+
+Also ensure that you use `from src.db_utils import get_all_data` to `from src.db_utils import get_selected_data` for loading the data.

@@ -13,6 +13,7 @@ SVR in depth analysis
 
 # paths are not correct for the subfolder - check the other scripts for how to set up paths and db access, and adapt as needed
 import json
+import sys
 
 import joblib
 import matplotlib
@@ -31,10 +32,15 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import cross_validate, learning_curve
 from sklearn.svm import SVR
 from sqlalchemy.orm import sessionmaker
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+TRAINING_DIR = SCRIPT_DIR.parents[2]
+sys.path.append(str(TRAINING_DIR))
+
 from src.db_schema import *
 from src.db_utils import get_all_data
-from src.log_utils import log_section, log_to_file
-from src.ml_tools import (
+from src.legacy.log_utils import log_section, log_to_file
+from src.legacy.ml_tools import (
     PreprocessedData,
     Preprocessor,
     output_metrics,
@@ -48,8 +54,7 @@ pd.set_option("display.max_columns", None)
 pd.set_option("display.max_rows", 250)
 
 # Use script directory for all relative paths
-SCRIPT_DIR = Path(__file__).parent.resolve()
-DATA_DIR = SCRIPT_DIR / "processed_data"
+DATA_DIR = TRAINING_DIR / "processed_data"
 DATABASE_FILE = DATA_DIR / "hsbd_t_half_all.db"
 ENGINE = sa.create_engine(f"sqlite:///{DATABASE_FILE}")
 Session = sessionmaker(bind=ENGINE)

@@ -6,7 +6,7 @@ The focus shifted to the interval-based model due to the nature of the underlyin
 as described in the readme.md files in the other subfolders where more details on the data and the modelling approach are provided.
 
 Even older files related to the model development are retained in the `legacy_optimization_scripts` folder, 
-such as the RFR, XBGoost approach, etc - see the readme.md file in that folder for details:
+such as the RFR, XGBoost approach, etc - see the readme.md file in that folder for details:
 [legacy_optimization_scripts/readme.md](legacy_optimization_scripts/readme.md).
 
 ## How to run

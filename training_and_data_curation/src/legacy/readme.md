@@ -1,9 +1,8 @@
 # Legacy modules
-Due to refactoring for the intervall based API, modules as used by the p
-oint-based invtervall API are stored here.
+Due to refactoring for the interval-based API, modules as used by the point-based interval API are stored here.
 
 This way no major refactoring was required, which could have been possible 
-but deemed unnecessrary for the time being (time/resources) for something that is not equally interesting.
+but deemed unnecessary for the time being (time/resources) for something that is not equally interesting.
 
 For some of the earlier "legacy_optimization_scripts", of note:
 
